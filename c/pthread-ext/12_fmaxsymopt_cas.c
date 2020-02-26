@@ -5,7 +5,7 @@ extern int __VERIFIER_nondet_int();
 #include <pthread.h>
 
 #define assume(e) __VERIFIER_assume(e)
-#define assert_nl(e) { if(!(e)) { goto ERROR; } }
+#define assert_nl(e) { if(!(e)) { __VERIFIER_error(); } }
 #define assert(e) { if(!(e)) { ERROR: __VERIFIER_error();(void)0; } }
 
 void __VERIFIER_atomic_CAS(

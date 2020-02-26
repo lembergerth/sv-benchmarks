@@ -14,7 +14,7 @@ int main() {
         int *pa = &a, *pb = &b;
         assign(&pa, &pb);
         if (a != b) {
-                goto ERROR;
+                __VERIFIER_error();
         }
 
         return 0;

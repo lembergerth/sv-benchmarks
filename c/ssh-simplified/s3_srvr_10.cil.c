@@ -521,7 +521,7 @@ int ssl3_accept(int initial_state )
                                                                               blastFlag = 5;
                                                                             } else {
                                                                               if (blastFlag == 5) {
-                                                                                goto ERROR;
+                                                                                __VERIFIER_error();
                                                                               }
                                                                             }
                                                                             if (ret <= 0) {
@@ -594,7 +594,7 @@ int ssl3_accept(int initial_state )
         if(s__state == 8496){
          if(cb != 0){
           if(s__info_callback != 0){
-           goto ERROR;
+           __VERIFIER_error();
           }
          }
         }

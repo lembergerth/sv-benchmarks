@@ -615,19 +615,19 @@ int main(void) {
   sll_circular_prepend(&s, uneq);
   SLL ptr = s;
   if(uneq != ptr->data) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   ptr = ptr->next;
   int count = 1;
   do {
     if(data != ptr->data) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     ptr = ptr->next;
     count++;
   } while(ptr != s);
   if(count != 1 + len) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   sll_circular_destroy(s);
   return 0;

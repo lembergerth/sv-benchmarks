@@ -20,7 +20,7 @@ int main()
     pd->b = 0;
   }
   if (pd == &d2 && d1.a != 0) {
-    goto ERROR;
+    __VERIFIER_error();
   }
 
   return 0;

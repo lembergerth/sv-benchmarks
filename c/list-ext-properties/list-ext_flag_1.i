@@ -544,16 +544,16 @@ int main() {
   while (p->h != 3) {
     if (p->flag) {
         if (p->h != 1)
-            goto ERROR;
+            __VERIFIER_error();
     } else {
         if (p->h != 2)
-            goto ERROR;
+            __VERIFIER_error();
     }
     p = p->n;
     i++;
   }
   if (p->h != 3 || i > 20)
-    goto ERROR;
+    __VERIFIER_error();
   p = a;
   while (p->n != 0) {
     t = p->n;

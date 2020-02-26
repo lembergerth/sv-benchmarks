@@ -75,27 +75,27 @@ int main() {
   while(ptr && count != mid_index) {
     SLL temp = ptr->next;
     if(data != ptr->data) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     ptr = temp;
     count++;
   }
   /* check middle element */
   if(uneq != ptr->data) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   ptr = ptr->next;
   count++;
   while(ptr) {
     SLL temp = ptr->next;
     if(data != ptr->data) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     ptr = temp;
     count++;
   }
   if(count != 1 + len) {
-    goto ERROR;
+    __VERIFIER_error();
   }
 
   sll_destroy(s);

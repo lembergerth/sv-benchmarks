@@ -97,26 +97,26 @@ int main(void) {
   int count = 0;
   do {
     if(data != ptr->data) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     ptr = ptr->next;
     count++;
   } while(ptr != s && count != mid_index);
   /* check middle element */
   if(uneq != ptr->data) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   ptr = ptr->next;
   count++;
   do {
     if(data != ptr->data) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     ptr = ptr->next;
     count++;
   } while(ptr != s);
   if(count != 1 + len) {
-    goto ERROR;
+    __VERIFIER_error();
   }
 
   dll_circular_destroy(s);

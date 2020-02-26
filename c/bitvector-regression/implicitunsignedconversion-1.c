@@ -5,7 +5,7 @@ int main() {
   int minus_one = -1;
 
   if(plus_one < minus_one) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   
   return (0);

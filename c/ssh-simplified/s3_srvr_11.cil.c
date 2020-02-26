@@ -515,7 +515,7 @@ int ssl3_accept(int initial_state )
                                                                             switch_1_8673: 
                                                                             ret = __VERIFIER_nondet_int();
                                                                             if (blastFlag == 4) {
-                                                                              goto ERROR;
+                                                                              __VERIFIER_error();
                                                                             }
                                                                             if (ret <= 0) {
                                                                               goto end;
@@ -607,7 +607,7 @@ int ssl3_accept(int initial_state )
          if(__cil_tmp58 != 4294967294){
           if(tmp___7 != 1024){
            if(tmp___7 != 512){
-            goto ERROR;
+            __VERIFIER_error();
            }
           }
          }

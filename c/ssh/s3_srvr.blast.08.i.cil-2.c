@@ -1539,7 +1539,7 @@ int ssl3_accept(SSL *s )
                                                                               if (blastFlag == 7) {
                                                                                 blastFlag = 8;
                                                                               } else {
-                                                                                goto ERROR;
+                                                                                __VERIFIER_error();
                                                                               }
                                                                             }
                                                                             if (ret <= 0) {

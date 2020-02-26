@@ -509,7 +509,7 @@ int ssl3_accept(int initial_state )
                                                                             switch_1_8673: 
                                                                             ret = __VERIFIER_nondet_int();
                                                                             if (blastFlag == 4) {
-                                                                              goto ERROR;
+                                                                              __VERIFIER_error();
                                                                             }
                                                                             if (ret <= 0) {
                                                                               goto end;

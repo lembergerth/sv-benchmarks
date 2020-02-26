@@ -14,7 +14,7 @@ int main() {
     a = f(p1, p2);
 
     if (*p1) {
-        goto ERROR;
+        __VERIFIER_error();
     }
 
     return 0;

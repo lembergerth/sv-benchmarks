@@ -697,7 +697,7 @@ inline static void akbd_read_char(int wait) {
  __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { ERROR: __VERIFIER_error();(void)0; } };;
  if (!buf && wait){
   { COND = 0; __VERIFIER_atomic_release(); __VERIFIER_assume(COND); __VERIFIER_atomic_acquire(); };
-  { if(!(COND)) { goto ERROR; } };}
+  { if(!(COND)) { __VERIFIER_error(); } };}
  if (!buf) {
   __VERIFIER_atomic_release();
   return; }

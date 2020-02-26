@@ -1543,7 +1543,7 @@ int ssl3_accept(SSL *s )
                                                                                   blastFlag = 11;
                                                                                 } else {
                                                                                   if (blastFlag == 13) {
-                                                                                    goto ERROR;
+                                                                                    __VERIFIER_error();
                                                                                   } else {
 
                                                                                   }

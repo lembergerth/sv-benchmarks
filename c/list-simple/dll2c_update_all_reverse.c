@@ -83,7 +83,7 @@ int main() {
   for(i = len - 1; i > -1; i--) {
     int expected = i + len;
     if(expected != dll_circular_get_data_at(s, i)) {
-      goto ERROR;
+      __VERIFIER_error();
     }
   }
   dll_circular_destroy(s);

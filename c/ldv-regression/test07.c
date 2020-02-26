@@ -27,7 +27,7 @@ int main() {
     a = f();
 
     if (!a || p1 != p2) {
-        goto ERROR;
+        __VERIFIER_error();
     }
 
     return 0;

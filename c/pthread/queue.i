@@ -989,11 +989,11 @@ void *t1(void *arg)
   pthread_mutex_lock(&m);
   value = __VERIFIER_nondet_int();
   if (enqueue(&queue,value)) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   stored_elements[0]=value;
   if (empty(&queue)) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   pthread_mutex_unlock(&m);
   for(i=0; i<((20)-1); i++)
@@ -1038,7 +1038,7 @@ int main(void)
   init(&queue);
   if (!empty(&queue)==(-1)) {
     ERROR: __VERIFIER_error();
-    goto ERROR;
+    __VERIFIER_error();
   }
   pthread_mutex_init(&m, 0);
   pthread_create(&id1, ((void *)0), t1, &queue);

@@ -23,7 +23,7 @@ int main()
   assign2(&pd->a, &pd->b);
 
   if (a != b) {
-    goto ERROR;
+    __VERIFIER_error();
   }
 
   return 0;

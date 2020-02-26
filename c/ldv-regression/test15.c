@@ -11,7 +11,7 @@ int main() {
         b = __VERIFIER_nondet_int();
         assign(&a, &b);
         if (a != b) {
-                goto ERROR;
+                __VERIFIER_error();
         }
 
         return 0;

@@ -49,7 +49,7 @@ int main() {
                     method_id = 5;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -69,7 +69,7 @@ int main() {
                     method_id = 2;
                     // non-conformance condition 
                     if ( (this_m_conn != 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -85,7 +85,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( (this_m_delta != 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -101,7 +101,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (this_m_delta != 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -117,7 +117,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( (this_m_conn != 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -133,7 +133,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (((((((((((((((((((((((((((((((((((((-1000 >= P3) && ((P3 < 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))) || (((-(P3) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || ((1000 <= P3) && ((P3 >= 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))) || (((P3 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P2) - 50) <= 0) && ((-1000 >= P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P2) - 50) > 0) && ((-1000 >= P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) <= 0) && (((-(P2) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((-(P2) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) <= 0) && (((-(P2) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((-(P2) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P2) - 50) <= 0) && ((1000 <= P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P2) - 50) > 0) && ((1000 <= P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) <= 0) && (((-(P2) - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((-(P2) - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) <= 0) && (((-(P2) - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((-(P2) - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || ((-1000 >= P3) && ((P3 < 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))) || (((-(P3) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || ((1000 <= P3) && ((P3 >= 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))) || (((P3 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P2 - 50) <= 0) && ((-1000 >= P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P2 - 50) > 0) && ((-1000 >= P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) <= 0) && (((P2 - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((P2 - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) <= 0) && (((P2 - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((P2 - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P2 - 50) <= 0) && ((1000 <= P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P2 - 50) > 0) && ((1000 <= P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) <= 0) && (((P2 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((P2 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) <= 0) && (((P2 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((P2 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -153,7 +153,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -169,7 +169,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -185,7 +185,7 @@ int main() {
                     method_id = 2;
                     // non-conformance condition 
                     if ( (this_m_conn != 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -201,7 +201,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( (this_m_delta == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -217,7 +217,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (this_m_delta == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -233,7 +233,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( (this_m_conn != 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -249,7 +249,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (((((((((((((((((((((((((((((((((((((-1000 >= P3) && ((P3 < 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))) || (((-(P3) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || ((1000 <= P3) && ((P3 >= 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))) || (((P3 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P2) - 50) <= 0) && ((-1000 >= P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P2) - 50) > 0) && ((-1000 >= P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) <= 0) && (((-(P2) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((-(P2) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) <= 0) && (((-(P2) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((-(P2) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P2) - 50) <= 0) && ((1000 <= P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P2) - 50) > 0) && ((1000 <= P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) <= 0) && (((-(P2) - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((-(P2) - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) <= 0) && (((-(P2) - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((-(P2) - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || ((-1000 >= P3) && ((P3 < 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))) || (((-(P3) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || ((1000 <= P3) && ((P3 >= 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))) || (((P3 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P2 - 50) <= 0) && ((-1000 >= P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P2 - 50) > 0) && ((-1000 >= P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) <= 0) && (((P2 - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((P2 - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) <= 0) && (((P2 - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((P2 - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P2 - 50) <= 0) && ((1000 <= P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P2 - 50) > 0) && ((1000 <= P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) <= 0) && (((P2 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((P2 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) <= 0) && (((P2 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((P2 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -265,7 +265,7 @@ int main() {
                     method_id = 8;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -281,7 +281,7 @@ int main() {
                     method_id = 8;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -297,7 +297,7 @@ int main() {
                     method_id = 9;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;
@@ -313,7 +313,7 @@ int main() {
                     method_id = 9;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;
@@ -333,7 +333,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -349,7 +349,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -365,7 +365,7 @@ int main() {
                     method_id = 2;
                     // non-conformance condition 
                     if ( (this_m_conn == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -381,7 +381,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( (this_m_delta == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -397,7 +397,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (this_m_delta == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -413,7 +413,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( (this_m_conn == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -429,7 +429,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -445,7 +445,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -461,7 +461,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -477,7 +477,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -493,7 +493,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -509,7 +509,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -525,7 +525,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -541,7 +541,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -557,7 +557,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -573,7 +573,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -589,7 +589,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -605,7 +605,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -621,7 +621,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -637,7 +637,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -653,7 +653,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -669,7 +669,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -685,7 +685,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -701,7 +701,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -717,7 +717,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -733,7 +733,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -749,7 +749,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -765,7 +765,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -781,7 +781,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -797,7 +797,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -813,7 +813,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -829,7 +829,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -845,7 +845,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -861,7 +861,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -877,7 +877,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -893,7 +893,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -909,7 +909,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -925,7 +925,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -941,7 +941,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -957,7 +957,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -973,7 +973,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -989,7 +989,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (this_m_conn_data_listener == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -1005,7 +1005,7 @@ int main() {
                     method_id = 8;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -1021,7 +1021,7 @@ int main() {
                     method_id = 8;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -1037,7 +1037,7 @@ int main() {
                     method_id = 9;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -1053,7 +1053,7 @@ int main() {
                     method_id = 9;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -1073,7 +1073,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;
@@ -1089,7 +1089,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;
@@ -1105,7 +1105,7 @@ int main() {
                     method_id = 2;
                     // non-conformance condition 
                     if ( (this_m_conn == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -1121,7 +1121,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( (this_m_delta == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;
@@ -1137,7 +1137,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (this_m_delta == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;
@@ -1153,7 +1153,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( (this_m_conn == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;
@@ -1169,7 +1169,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( (((((((((((((((((((((((((((((((((((((-1000 >= P3) && ((P3 < 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))) || (((-(P3) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || ((1000 <= P3) && ((P3 >= 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))) || (((P3 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 >= P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P2) - 50) <= 0) && ((-1000 >= P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P2) - 50) > 0) && ((-1000 >= P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) <= 0) && (((-(P2) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((-(P2) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) <= 0) && (((-(P2) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((-(P2) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P2) - 50) <= 0) && ((1000 <= P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((-(P2) - 50) > 0) && ((1000 <= P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) <= 0) && (((-(P2) - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((-(P2) - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) <= 0) && (((-(P2) - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((-(P2) - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((-1000 < P2) && ((P2 < 0) && (this_m_conn_data_listener != 0)))))))) || ((-1000 >= P3) && ((P3 < 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))) || (((-(P3) - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || ((1000 <= P3) && ((P3 >= 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))) || (((P3 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 <= P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P2 - 50) <= 0) && ((-1000 >= P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P2 - 50) > 0) && ((-1000 >= P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((-(P3) - 50) <= 0) && (((P2 - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((P2 - 50) <= 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) <= 0) && (((P2 - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((-(P3) - 50) > 0) && (((P2 - 50) > 0) && ((-1000 < P3) && ((P3 < 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P2 - 50) <= 0) && ((1000 <= P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P2 - 50) > 0) && ((1000 <= P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0))))))) || (((P3 - 50) <= 0) && (((P2 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((P2 - 50) <= 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) <= 0) && (((P2 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) || (((P3 - 50) > 0) && (((P2 - 50) > 0) && ((1000 > P3) && ((P3 >= 0) && ((1000 > P2) && ((P2 >= 0) && (this_m_conn_data_listener != 0)))))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -1185,7 +1185,7 @@ int main() {
                     method_id = 8;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;
@@ -1201,7 +1201,7 @@ int main() {
                     method_id = 8;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;
@@ -1217,7 +1217,7 @@ int main() {
                     method_id = 9;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;
@@ -1233,7 +1233,7 @@ int main() {
                     method_id = 9;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;

@@ -513,7 +513,7 @@ int ssl3_accept(int initial_state )
                                                                               blastFlag = 5;
                                                                             } else {
                                                                               if (blastFlag == 3) {
-                                                                                goto ERROR;
+                                                                                __VERIFIER_error();
                                                                               }
                                                                             }
                                                                             if (ret <= 0) {

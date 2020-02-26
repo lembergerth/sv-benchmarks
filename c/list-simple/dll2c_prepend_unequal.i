@@ -622,19 +622,19 @@ int main(void) {
   dll_circular_prepend(&s, uneq);
   DLL ptr = s;
   if(uneq != ptr->data) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   ptr = ptr->next;
   int count = 1;
   do {
     if(data != ptr->data) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     ptr = ptr->next;
     count++;
   } while(ptr != s);
   if(count != 1 + len) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   dll_circular_destroy(s);
   return 0;

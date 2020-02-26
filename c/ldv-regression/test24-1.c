@@ -27,7 +27,7 @@ int main()
       ++i;
     }
     if (!check(ad1, i)) {
-      goto ERROR;
+      __VERIFIER_error();
     }
   }
 

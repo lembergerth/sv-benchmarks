@@ -38,7 +38,7 @@ int main() {
                     method_id = 2;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -58,7 +58,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (this_sink != 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -74,7 +74,7 @@ int main() {
                     method_id = 5;
                     // non-conformance condition 
                     if ( ((P2 != 1) && ((this_sink == 0) && (P1 != 0))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -90,7 +90,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -110,7 +110,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -126,7 +126,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -142,7 +142,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -158,7 +158,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -174,7 +174,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (this_sink != 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -190,7 +190,7 @@ int main() {
                     method_id = 5;
                     // non-conformance condition 
                     if ( (((this_sink != 0) && (P1 != 0)) && ((P2 != 1) && (P1 != 0))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -206,7 +206,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -226,7 +226,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -242,7 +242,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -258,7 +258,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -274,7 +274,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -290,7 +290,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (this_sink == 0) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -306,7 +306,7 @@ int main() {
                     method_id = 5;
                     // non-conformance condition 
                     if ( ((P2 != 1) && ((this_sink == 0) && (P1 != 0))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -322,7 +322,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;

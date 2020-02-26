@@ -631,7 +631,7 @@ int main() {
   SLL ptr = head;
   for(i = min; ((void *)0) != ptr; i++) {
     if(i > max) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     while(ptr) {
       int count = sll_length(ptr->inner);
@@ -643,7 +643,7 @@ int main() {
       } else if(i + 1 == count && i < max) {
  break;
       } else {
- goto ERROR;
+ __VERIFIER_error();
       }
     }
   }

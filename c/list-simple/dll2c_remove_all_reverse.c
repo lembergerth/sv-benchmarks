@@ -65,7 +65,7 @@ int main() {
     dll_circular_remove_last(&s);
   }
   if(NULL != s) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   return 0;
  ERROR: __VERIFIER_error();

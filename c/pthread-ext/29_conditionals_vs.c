@@ -5,7 +5,7 @@ extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 #include <pthread.h>
 
 #define assume(e) __VERIFIER_assume(e)
-#define assert_nl(e) { if(!(e)) { goto ERROR; } }
+#define assert_nl(e) { if(!(e)) { __VERIFIER_error(); } }
 #define assert(e) { if(!(e)) { ERROR: __VERIFIER_error();(void)0; } }
 
 int m = 0;

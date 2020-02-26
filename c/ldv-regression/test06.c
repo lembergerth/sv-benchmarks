@@ -32,7 +32,7 @@ int main() {
     a = f(a, &p1, &p2);
 
     if (*p1 == 0) {
-        goto ERROR;
+        __VERIFIER_error();
     }
 
     return 0;

@@ -622,7 +622,7 @@ int main() {
   for(i = len - 1; i <= 0; i--) {
     int expected = i + len;
     if(expected != dll_get_data_at(s, i)) {
-      goto ERROR;
+      __VERIFIER_error();
     }
   }
   dll_destroy(s);

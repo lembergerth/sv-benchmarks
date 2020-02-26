@@ -1454,7 +1454,7 @@ int ssl3_accept(SSL *s )
                                                                                   (s->s3)->tmp.cert_request = 1;
                                                                                   ret = __VERIFIER_nondet_int();
                                                                                   if (blastFlag == 7) {
-                                                                                    goto ERROR;
+                                                                                    __VERIFIER_error();
                                                                                   } else {
 
                                                                                   }
@@ -1552,7 +1552,7 @@ int ssl3_accept(SSL *s )
                                                                               blastFlag = 5;
                                                                             } else {
                                                                               if (blastFlag == 5) {
-                                                                                goto ERROR;
+                                                                                __VERIFIER_error();
                                                                               } else {
                                                                                 if (blastFlag == 7) {
                                                                                   blastFlag = 8;

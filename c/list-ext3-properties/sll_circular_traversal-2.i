@@ -589,7 +589,7 @@ int main() {
   SLL ptr = head;
   do {
     if(data_init != ptr->data) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     ptr->data = data_new;
     ptr = ptr->next;
@@ -598,7 +598,7 @@ int main() {
   data_new = data_new - len;
   do {
     if(data_new != ptr->data) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     SLL temp = ptr->next;
     free(ptr);

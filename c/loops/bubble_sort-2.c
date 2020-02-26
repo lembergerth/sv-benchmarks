@@ -23,7 +23,7 @@ static void fail(void)
 
   {
   ERROR: __VERIFIER_error();assert(0);
-  goto ERROR;
+  __VERIFIER_error();
 }
 }
 struct list_head gl_list  =    {& gl_list, & gl_list};

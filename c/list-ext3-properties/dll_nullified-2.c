@@ -45,7 +45,7 @@ int main() {
   /* forward traversal */
   while(head->next) {
     if(0 != head->data_0 || 0 != head->data_1 || 0 != head->data_2) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     head = head->next;
   }
@@ -53,7 +53,7 @@ int main() {
   while(head) {
     DLL temp = head->prev;
     if(0 != head->data_0 || 0 != head->data_1 || 0 != head->data_2) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     free(head);
     head = temp;

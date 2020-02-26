@@ -700,7 +700,7 @@ inline void findMax(int offset){
   if(e > my_max) {
    my_max = e;
   }
-  { if(!(e <= my_max)) { goto ERROR; } };
+  { if(!(e <= my_max)) { __VERIFIER_error(); } };
  }
  while(1){
   c = max;

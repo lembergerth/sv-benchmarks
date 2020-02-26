@@ -70,18 +70,18 @@ int main() {
     while(ptr->next) {
       SLL temp = ptr->next;
       if(data != ptr->data) {
-	goto ERROR;
+	__VERIFIER_error();
       }
       ptr = temp;
       count++;
     }
     if(uneq != ptr->data) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     count++;
   }
   if(count != 1 + len) {
-    goto ERROR;
+    __VERIFIER_error();
   }
 
   sll_destroy(s);

@@ -3,7 +3,7 @@ extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 
 void check(int *a, int *b) {
         if (a != b) {
-                goto ERROR;
+                __VERIFIER_error();
         }
         return;
 

@@ -48,7 +48,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;
@@ -68,7 +68,7 @@ int main() {
                     method_id = 2;
                     // non-conformance condition 
                     if ( (((((P1 % 2) != (this_expect % 2)) && (this_buffer_empty == 1)) && !((P1 % 2) != (0 % 2))) || ((this_buffer_empty != 1) && !((P1 % 2) != (0 % 2)))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 3;
@@ -84,7 +84,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( (((P3 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && !(P3 != (((0 + 1) - 1) % 2))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -100,7 +100,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (((((P4 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && ((P4 % 2) != (0 % 2))) && (((P4 % 2) != (0 % 2)) && (((P4 % 2) != ((0 + 1) % 2)) && ((P4 % 2) != (0 % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -116,7 +116,7 @@ int main() {
                     method_id = 5;
                     // non-conformance condition 
                     if ( (((((P6 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && ((P6 % 2) != (0 % 2))) && (((P6 % 2) != (0 % 2)) && !(((P6 % 2) != ((0 + 1) % 2)) && ((P6 % 2) != (0 % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -132,7 +132,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( ((((P8 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && (P8 != (((0 + 1) - 1) % 2))) && ((P8 != (((0 + 1) - 1) % 2)) && ((P8 != ((((0 + 1) + 1) - 1) % 2)) && (P8 != (((0 + 1) - 1) % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -148,7 +148,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( ((((P9 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && (P9 != (((0 + 1) - 1) % 2))) && ((P9 != (((0 + 1) - 1) % 2)) && !((P9 != ((((0 + 1) + 1) - 1) % 2)) && (P9 != (((0 + 1) - 1) % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -168,7 +168,7 @@ int main() {
                     method_id = 2;
                     // non-conformance condition 
                     if ( ((((P1 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && !((P1 % 2) != (0 % 2))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -184,7 +184,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( (((P3 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && !(P3 != (((0 + 1) - 1) % 2))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -200,7 +200,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (((((P4 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && ((P4 % 2) != (0 % 2))) && (((P4 % 2) != (0 % 2)) && (((P4 % 2) != ((0 + 1) % 2)) && ((P4 % 2) != (0 % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -216,7 +216,7 @@ int main() {
                     method_id = 5;
                     // non-conformance condition 
                     if ( (((((P6 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && ((P6 % 2) != (0 % 2))) && (((P6 % 2) != (0 % 2)) && !(((P6 % 2) != ((0 + 1) % 2)) && ((P6 % 2) != (0 % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -232,7 +232,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( ((((P8 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && (P8 != (((0 + 1) - 1) % 2))) && ((P8 != (((0 + 1) - 1) % 2)) && ((P8 != ((((0 + 1) + 1) - 1) % 2)) && (P8 != (((0 + 1) - 1) % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -248,7 +248,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( ((((P9 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && (P9 != (((0 + 1) - 1) % 2))) && ((P9 != (((0 + 1) - 1) % 2)) && !((P9 != ((((0 + 1) + 1) - 1) % 2)) && (P9 != (((0 + 1) - 1) % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -268,7 +268,7 @@ int main() {
                     method_id = 2;
                     // non-conformance condition 
                     if ( ((((P1 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && !((P1 % 2) != (0 % 2))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -284,7 +284,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( (((this_buffer_empty == 1) && !(P3 != (((0 + 1) - 1) % 2))) || (((P3 != ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && !(P3 != (((0 + 1) - 1) % 2)))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 4;
@@ -300,7 +300,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (((((P4 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && ((P4 % 2) != (0 % 2))) && (((P4 % 2) != (0 % 2)) && (((P4 % 2) != ((0 + 1) % 2)) && ((P4 % 2) != (0 % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -316,7 +316,7 @@ int main() {
                     method_id = 5;
                     // non-conformance condition 
                     if ( (((((P6 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && ((P6 % 2) != (0 % 2))) && (((P6 % 2) != (0 % 2)) && !(((P6 % 2) != ((0 + 1) % 2)) && ((P6 % 2) != (0 % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -332,7 +332,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( ((((P8 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && (P8 != (((0 + 1) - 1) % 2))) && ((P8 != (((0 + 1) - 1) % 2)) && ((P8 != ((((0 + 1) + 1) - 1) % 2)) && (P8 != (((0 + 1) - 1) % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -348,7 +348,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( ((((P9 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && (P9 != (((0 + 1) - 1) % 2))) && ((P9 != (((0 + 1) - 1) % 2)) && !((P9 != ((((0 + 1) + 1) - 1) % 2)) && (P9 != (((0 + 1) - 1) % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -368,7 +368,7 @@ int main() {
                     method_id = 2;
                     // non-conformance condition 
                     if ( ((((P1 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && !((P1 % 2) != (0 % 2))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -384,7 +384,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( (((P3 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && !(P3 != (((0 + 1) - 1) % 2))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -400,7 +400,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (((((P4 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && ((P4 % 2) != (0 % 2))) && (((P4 % 2) != (0 % 2)) && (((P4 % 2) != ((0 + 1) % 2)) && ((P4 % 2) != (0 % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -416,7 +416,7 @@ int main() {
                     method_id = 5;
                     // non-conformance condition 
                     if ( ((((((P6 % 2) != (this_expect % 2)) && (this_buffer_empty == 1)) && ((P6 % 2) != (0 % 2))) && (((P6 % 2) != (0 % 2)) && !(((P6 % 2) != ((0 + 1) % 2)) && ((P6 % 2) != (0 % 2))))) || (((this_buffer_empty != 1) && ((P6 % 2) != (0 % 2))) && (((P6 % 2) != (0 % 2)) && !(((P6 % 2) != ((0 + 1) % 2)) && ((P6 % 2) != (0 % 2)))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 5;
@@ -432,7 +432,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( ((((P8 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && (P8 != (((0 + 1) - 1) % 2))) && ((P8 != (((0 + 1) - 1) % 2)) && ((P8 != ((((0 + 1) + 1) - 1) % 2)) && (P8 != (((0 + 1) - 1) % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -448,7 +448,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( ((((P9 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && (P9 != (((0 + 1) - 1) % 2))) && ((P9 != (((0 + 1) - 1) % 2)) && !((P9 != ((((0 + 1) + 1) - 1) % 2)) && (P9 != (((0 + 1) - 1) % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -468,7 +468,7 @@ int main() {
                     method_id = 2;
                     // non-conformance condition 
                     if ( ((((P1 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && !((P1 % 2) != (0 % 2))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -484,7 +484,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( (((P3 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && !(P3 != (((0 + 1) - 1) % 2))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -500,7 +500,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( (((((P4 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && ((P4 % 2) != (0 % 2))) && (((P4 % 2) != (0 % 2)) && (((P4 % 2) != ((0 + 1) % 2)) && ((P4 % 2) != (0 % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -516,7 +516,7 @@ int main() {
                     method_id = 5;
                     // non-conformance condition 
                     if ( (((((P6 % 2) == (this_expect % 2)) && (this_buffer_empty == 1)) && ((P6 % 2) != (0 % 2))) && (((P6 % 2) != (0 % 2)) && !(((P6 % 2) != ((0 + 1) % 2)) && ((P6 % 2) != (0 % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -532,7 +532,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( ((((P8 == ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && (P8 != (((0 + 1) - 1) % 2))) && ((P8 != (((0 + 1) - 1) % 2)) && ((P8 != ((((0 + 1) + 1) - 1) % 2)) && (P8 != (((0 + 1) - 1) % 2))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 2;
@@ -548,7 +548,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( ((((this_buffer_empty == 1) && (P9 != (((0 + 1) - 1) % 2))) && ((P9 != (((0 + 1) - 1) % 2)) && !((P9 != ((((0 + 1) + 1) - 1) % 2)) && (P9 != (((0 + 1) - 1) % 2))))) || ((((P9 != ((this_expect - 1) % 2)) && (this_buffer_empty != 1)) && (P9 != (((0 + 1) - 1) % 2))) && ((P9 != (((0 + 1) - 1) % 2)) && !((P9 != ((((0 + 1) + 1) - 1) % 2)) && (P9 != (((0 + 1) - 1) % 2)))))) ) {
-                      goto ERROR;
+                      __VERIFIER_error();
                     }
                     // state update
                     q = 1;

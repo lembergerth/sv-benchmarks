@@ -7,7 +7,7 @@ int main() {
     int *p2 = &b;
 
     if (p1 == p2) {
-        goto ERROR;
+        __VERIFIER_error();
     }
 
     return 0;

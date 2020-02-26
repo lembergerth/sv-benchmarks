@@ -1578,7 +1578,7 @@ int ssl3_accept(SSL *s )
                                                                                   blastFlag = 16;
                                                                                 } else {
                                                                                   if (blastFlag == 18) {
-                                                                                    goto ERROR;
+                                                                                    __VERIFIER_error();
                                                                                   } else {
 
                                                                                   }

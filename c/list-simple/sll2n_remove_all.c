@@ -49,7 +49,7 @@ int main() {
     sll_remove_first(&s);
   }
   if(NULL != s) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   return 0;
  ERROR: __VERIFIER_error();

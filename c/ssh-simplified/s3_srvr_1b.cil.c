@@ -15,7 +15,7 @@ int main() {
   blastFlag = 0;
 
   while (1) {
-	  if (s__state <= 8512 && blastFlag > 2) { goto ERROR; }
+	  if (s__state <= 8512 && blastFlag > 2) { __VERIFIER_error(); }
               {
                 {
                   {
@@ -93,7 +93,7 @@ int main() {
                                                                               blastFlag = 5;
                                                                             } else {
                                                                               if (blastFlag == 5) {
-                                                                                goto ERROR;
+                                                                                __VERIFIER_error();
                                                                               }
                                                                             }
                                                                             if (s__hit) {

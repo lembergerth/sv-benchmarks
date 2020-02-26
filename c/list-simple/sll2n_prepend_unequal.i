@@ -598,20 +598,20 @@ int main() {
   sll_prepend(&s, uneq);
   SLL ptr = s;
   if(uneq != ptr->data) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   ptr = ptr->next;
   int count = 1;
   while(ptr) {
     SLL temp = ptr->next;
     if(data != ptr->data) {
-      goto ERROR;
+      __VERIFIER_error();
     }
     ptr = temp;
     count++;
   }
   if(count != 1 + len) {
-    goto ERROR;
+    __VERIFIER_error();
   }
   sll_destroy(s);
   return 0;

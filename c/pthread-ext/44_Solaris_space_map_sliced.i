@@ -687,32 +687,32 @@ void __VERIFIER_atomic_release()
 _Bool LOADED = 0;
 _Bool LOADING = 0;
 inline void space_map_contains(){
- { if(!((MTX==1))) { goto ERROR; } };
+ { if(!((MTX==1))) { __VERIFIER_error(); } };
   { if(!(1)) { ERROR: __VERIFIER_error();(void)0; } };
 }
 inline void space_map_walk(){
- { if(!((MTX==1))) { goto ERROR; } };
+ { if(!((MTX==1))) { __VERIFIER_error(); } };
   { if(!(1)) { ERROR: __VERIFIER_error();(void)0; } };
 }
 inline void space_map_load_wait(){
- { if(!((MTX==1))) { goto ERROR; } };
+ { if(!((MTX==1))) { __VERIFIER_error(); } };
  while (LOADING) {
-  { if(!(!LOADED)) { goto ERROR; } };
+  { if(!(!LOADED)) { __VERIFIER_error(); } };
   { COND = 0; __VERIFIER_atomic_release(); __VERIFIER_assume(COND); __VERIFIER_atomic_acquire(); };
-  { if(!(COND)) { goto ERROR; } }; }
-       __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { goto ERROR; } };;
+  { if(!(COND)) { __VERIFIER_error(); } }; }
+       __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { __VERIFIER_error(); } };;
   { if(!(1)) { ERROR: __VERIFIER_error();(void)0; } };
 }
 inline void space_map_load(){
- { if(!((MTX==1))) { goto ERROR; } };
- { if(!(!LOADED)) { goto ERROR; } };
- { if(!(!LOADING)) { goto ERROR; } };
+ { if(!((MTX==1))) { __VERIFIER_error(); } };
+ { if(!(!LOADED)) { __VERIFIER_error(); } };
+ { if(!(!LOADING)) { __VERIFIER_error(); } };
  LOADING = 1;
  __VERIFIER_atomic_release();
- __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { goto ERROR; } };;
+ __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { __VERIFIER_error(); } };;
  for (;__VERIFIER_nondet_int();) {
   __VERIFIER_atomic_release();
-  __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { goto ERROR; } };;
+  __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { __VERIFIER_error(); } };;
   if (__VERIFIER_nondet_int())
    break; }
  if (__VERIFIER_nondet_int())
@@ -722,37 +722,37 @@ inline void space_map_load(){
   { if(!(1)) { ERROR: __VERIFIER_error();(void)0; } };
 }
 inline void space_map_unload(){
- { if(!((MTX==1))) { goto ERROR; } };
+ { if(!((MTX==1))) { __VERIFIER_error(); } };
  LOADED = 0;
- { if(!((MTX==1))) { goto ERROR; } };
+ { if(!((MTX==1))) { __VERIFIER_error(); } };
   { if(!(1)) { ERROR: __VERIFIER_error();(void)0; } };
 }
 inline int space_map_alloc(){
  if (__VERIFIER_nondet_int())
-  { if(!((MTX==1))) { goto ERROR; } };
+  { if(!((MTX==1))) { __VERIFIER_error(); } };
   { if(!(1)) { ERROR: __VERIFIER_error();(void)0; } };
  return __VERIFIER_nondet_int();
 }
 inline void space_map_sync(){
- { if(!((MTX==1))) { goto ERROR; } };
+ { if(!((MTX==1))) { __VERIFIER_error(); } };
  if (__VERIFIER_nondet_int())
   return;
  while (__VERIFIER_nondet_int()) {
   while (__VERIFIER_nondet_int()) {
    if (__VERIFIER_nondet_int()) {
     __VERIFIER_atomic_release();
-    __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { goto ERROR; } };; }}}
+    __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { __VERIFIER_error(); } };; }}}
  if (__VERIFIER_nondet_int()) {
   __VERIFIER_atomic_release();
-  __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { goto ERROR; } };; }
+  __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { __VERIFIER_error(); } };; }
   { if(!(1)) { ERROR: __VERIFIER_error();(void)0; } };
 }
 inline void space_map_ref_generate_map(){
- { if(!((MTX==1))) { goto ERROR; } };
+ { if(!((MTX==1))) { __VERIFIER_error(); } };
   { if(!(1)) { ERROR: __VERIFIER_error();(void)0; } };
 }
 void* thr1(void* arg){
- __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { goto ERROR; } };;
+ __VERIFIER_atomic_acquire();{ if(!(MTX==1)) { __VERIFIER_error(); } };;
  switch(__VERIFIER_nondet_int()){
   case 1: space_map_contains(); break;
   case 2: space_map_walk(); break;
@@ -766,7 +766,7 @@ void* thr1(void* arg){
   case 6: space_map_alloc(); break;
   case 7: space_map_sync(); break;
   case 8: space_map_ref_generate_map(); break; }
- { if(!((MTX==1))) { goto ERROR; } };
+ { if(!((MTX==1))) { __VERIFIER_error(); } };
  __VERIFIER_atomic_release();
   { if(!(1)) { ERROR: __VERIFIER_error();(void)0; } };
   return 0;

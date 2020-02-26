@@ -712,7 +712,7 @@ void* thr1(void* arg)
   while(1)
   {
     __VERIFIER_atomic_acquire(&mutexa);
-    { if(!(count >= -1)) { goto ERROR; } };
+    { if(!(count >= -1)) { __VERIFIER_error(); } };
     __VERIFIER_atomic_acquire(&mutexb);
     { if(!(count == 0)) { ERROR: __VERIFIER_error();(void)0; } };
     __VERIFIER_atomic_release(&mutexb);

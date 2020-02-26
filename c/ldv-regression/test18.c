@@ -14,7 +14,7 @@ int main() {
         int a, b;
         f(&a, &b);
         if (b != 0) {
-                goto ERROR;
+                __VERIFIER_error();
         }
 
         return 0;

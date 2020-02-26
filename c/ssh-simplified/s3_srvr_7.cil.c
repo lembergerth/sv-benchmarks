@@ -403,7 +403,7 @@ int ssl3_accept(int initial_state )
                                                                                   s__s3__tmp__cert_request = 1;
                                                                                   ret = __VERIFIER_nondet_int();
                                                                                   if (blastFlag == 8) {
-                                                                                    goto ERROR;
+                                                                                    __VERIFIER_error();
                                                                                   }
                                                                                   if (ret <= 0) {
                                                                                     goto end;
@@ -481,7 +481,7 @@ int ssl3_accept(int initial_state )
                                                                             switch_1_8641: 
                                                                             ret = __VERIFIER_nondet_int();
                                                                             if (blastFlag == 5) {
-                                                                              goto ERROR;
+                                                                              __VERIFIER_error();
                                                                             }
                                                                             if (ret <= 0) {
                                                                               goto end;

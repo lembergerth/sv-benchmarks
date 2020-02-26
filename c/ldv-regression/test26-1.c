@@ -16,7 +16,7 @@ int main()
   assign(&pd->a, &pd->b);
 
   if (pd->a != global.b) {
-    goto ERROR;
+    __VERIFIER_error();
   }
 
   return 0;

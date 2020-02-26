@@ -33,7 +33,7 @@ int main()
   struct dummy *pd1 = get_dummy(), *pd2 = get_dummy();
   if (pd1 != 0 && pd1 == pd2) {
     if (!check(pd1, pd2)) {
-      goto ERROR;
+      __VERIFIER_error();
     }
   }
 
