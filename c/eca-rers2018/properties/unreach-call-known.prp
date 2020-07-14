@@ -1,1 +1,1 @@
-CHECK( init(main()), LTL(G ! call(unreach_error())) )
+CHECK( init(main()), LTL(G ! call(un__VERIFIER_error())) )
