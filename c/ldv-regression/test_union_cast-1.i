@@ -25,6 +25,6 @@ int main(void) {
  union X var;
  var.z = 0x1.4p+4;
  var.y = 10u;
- __VERIFIER_assert(var.y==10u);
+ if (!(var.y==10u)) __VERIFIER_error();
  return 0;
 }

@@ -19,7 +19,7 @@ int main()
   }
 
   for(int l=1;l<i;l++)
-    __VERIFIER_assert(a[l]>=k);
+    if (!(a[l]>=k)) __VERIFIER_error();
   return 0;
 }
 

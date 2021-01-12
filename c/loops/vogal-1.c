@@ -41,7 +41,7 @@ int main(void)
     }       
     i++;       
   }    
-  __VERIFIER_assert(cont_aux==cont);                          
+  if (!(cont_aux==cont)) __VERIFIER_error();                          
 
   return 0;
 }

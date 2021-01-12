@@ -16,7 +16,7 @@ int main()
   while(x<100) {
    (*p)++;
   }                       
-  __VERIFIER_assert(0);    
+  if (!(0)) __VERIFIER_error();    
 
   return 0;
 }

@@ -15,6 +15,6 @@ int main()
     x1 = x/1.6;
   }
 
-  __VERIFIER_assert(x == 0);
+  if (!(x == 0)) __VERIFIER_error();
   return 0;
 }

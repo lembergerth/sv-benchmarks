@@ -24,6 +24,6 @@ int main() {
 	  
   }
   j = i/4 ;
-    __VERIFIER_assert( (j * 4) == i);
+    if (!( (j * 4) == i)) __VERIFIER_error();
   return 0;
 }

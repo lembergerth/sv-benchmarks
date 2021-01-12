@@ -41,7 +41,7 @@ int main()
 	while(i < q){
 		j=0;
 		while(j < s){
-                        __VERIFIER_assert(A[i][j]==i+j+C);
+                        if (!(A[i][j]==i+j+C)) __VERIFIER_error();
 			j=j+1;
 		}
 		i=i+1;

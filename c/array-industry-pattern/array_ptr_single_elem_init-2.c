@@ -39,7 +39,7 @@ int main()
 	{
 		if(i==15000)
 		{
-			__VERIFIER_assert(a[i] != 1); 
+			if (!(a[i] != 1)) __VERIFIER_error(); 
 		}
 	}
 	return 0;

@@ -13,7 +13,7 @@ int main(void) {
       ++s;
     }
     if (__VERIFIER_nondet_uint()) {
-      __VERIFIER_assert(s == 0);
+      if (!(s == 0)) __VERIFIER_error();
     }
   }
   return 0;

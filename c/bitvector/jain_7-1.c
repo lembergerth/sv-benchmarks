@@ -21,7 +21,7 @@ int main()
       y = y +2097152*__VERIFIER_nondet_int();
       z = z +4194304*__VERIFIER_nondet_int();
 
-      __VERIFIER_assert(4*x-2*y+z!=1048576);
+      if (!(4*x-2*y+z!=1048576)) __VERIFIER_error();
     }
     return 0;
 }

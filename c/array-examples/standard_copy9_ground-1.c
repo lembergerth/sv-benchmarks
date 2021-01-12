@@ -53,7 +53,7 @@ int main( ) {
   
   int x;
   for ( x = 0 ; x < N ; x++ ) {
-    __VERIFIER_assert(  a1[x] == a0[x]  );
+    if (!(  a1[x] == a0[x]  )) __VERIFIER_error();
   }
   return 0;
 }

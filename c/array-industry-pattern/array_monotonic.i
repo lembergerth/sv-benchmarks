@@ -15,6 +15,6 @@ int main()
  for(i = 0; i < 100000; i = i + 2)
  {
   if(a[i] == 10)
-   __VERIFIER_assert(b[i] == 20);
+   if (!(b[i] == 20)) __VERIFIER_error();
  }
 }

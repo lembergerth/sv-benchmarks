@@ -41,7 +41,7 @@ int main()
     ui = K*(ei+sumej*T/taui+taud/T*(ei-epi));
     epi = ei;
 
-    __VERIFIER_assert(epi >= -1. && epi <= 1.);
+    if (!(epi >= -1. && epi <= 1.)) __VERIFIER_error();
   }
   return 0;
 }

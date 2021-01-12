@@ -676,7 +676,7 @@ void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 volatile int x;
 volatile int n;
 void* thr1(void* arg) {
-    __VERIFIER_assert(x <= n);
+    if (!(x <= n)) __VERIFIER_error();
 }
 void* thr2(void* arg) {
     int t;

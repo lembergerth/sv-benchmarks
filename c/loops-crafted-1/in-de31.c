@@ -30,6 +30,6 @@ int main()
     z++;
   }
 
-  __VERIFIER_assert(z==n);
+  if (!(z==n)) __VERIFIER_error();
   return 0;
 }

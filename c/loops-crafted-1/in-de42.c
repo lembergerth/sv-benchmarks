@@ -36,6 +36,6 @@ int main()
     z++;
   }
 
-  __VERIFIER_assert(z==2*n);
+  if (!(z==2*n)) __VERIFIER_error();
   return 0;
 }

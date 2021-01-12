@@ -1113,6 +1113,6 @@ int main()
  for (tid=sum=0; tid<SIGMA; tid++) {
   sum += array[tid];
  }
- __VERIFIER_assert(sum == SIGMA);
+ if (!(sum == SIGMA)) __VERIFIER_error();
  return 0;
 }

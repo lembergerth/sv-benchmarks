@@ -28,7 +28,7 @@ int main() {
     v = a;
 
     while (1) {
-        __VERIFIER_assert(x*u + y*v == 2*a*b);
+        if (!(x*u + y*v == 2*a*b)) __VERIFIER_error();
 
         if (!(x != y))
             break;
@@ -42,7 +42,7 @@ int main() {
         }
     }
 
-    __VERIFIER_assert(x*u + y*v == 2*a*b);
+    if (!(x*u + y*v == 2*a*b)) __VERIFIER_error();
     // x == gcd(a,b)
     //(u + v)/2==lcm(a,b)
 

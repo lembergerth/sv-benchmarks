@@ -17,7 +17,7 @@ int main() {
  }
  x = x + 1;
     }
-    __VERIFIER_assert((m >= 0 || n <= 0));
-    __VERIFIER_assert((m < n || n <= 0));
+    if (!((m >= 0 || n <= 0))) __VERIFIER_error();
+    if (!((m < n || n <= 0))) __VERIFIER_error();
     return 0;
 }

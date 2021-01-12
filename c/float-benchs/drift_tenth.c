@@ -12,6 +12,6 @@ int main()
   for (i = 0; i < 10; i++) {
     time += tick;
   }
-  __VERIFIER_assert(time != 1.0);
+  if (!(time != 1.0)) __VERIFIER_error();
   return 0;
 }

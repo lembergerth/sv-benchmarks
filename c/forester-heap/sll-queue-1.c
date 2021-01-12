@@ -50,55 +50,55 @@ int main()
 			status = 3;
 		}
 
-		__VERIFIER_assert(head != NULL);
-		__VERIFIER_assert(item != NULL);
+		if (!(head != NULL)) __VERIFIER_error();
+		if (!(item != NULL)) __VERIFIER_error();
 	}
 
-	__VERIFIER_assert(head != NULL);
+	if (!(head != NULL)) __VERIFIER_error();
 	if (status == 1)
 	{
-		__VERIFIER_assert(head != NULL);
-		__VERIFIER_assert(head->next != NULL);
+		if (!(head != NULL)) __VERIFIER_error();
+		if (!(head->next != NULL)) __VERIFIER_error();
 	}
 	if (status == 2)
 	{
-		__VERIFIER_assert(head != NULL);
-		__VERIFIER_assert(head->next != NULL);
-		__VERIFIER_assert(head->next->next != NULL);
+		if (!(head != NULL)) __VERIFIER_error();
+		if (!(head->next != NULL)) __VERIFIER_error();
+		if (!(head->next->next != NULL)) __VERIFIER_error();
 	}
 	if (status == 3)
 	{
-		__VERIFIER_assert(head != NULL);
-		__VERIFIER_assert(head->next != NULL);
-		__VERIFIER_assert(head->next->next != NULL);
-		__VERIFIER_assert(head->next->next->next != NULL);
-		__VERIFIER_assert(head->next->next->next->data == 3);
+		if (!(head != NULL)) __VERIFIER_error();
+		if (!(head->next != NULL)) __VERIFIER_error();
+		if (!(head->next->next != NULL)) __VERIFIER_error();
+		if (!(head->next->next->next != NULL)) __VERIFIER_error();
+		if (!(head->next->next->next->data == 3)) __VERIFIER_error();
 	}
 
 	item = head->next;
 	// status = 0; Uncommenting suprisingly make it shorter
 	while(item && __VERIFIER_nondet_int())
 	{
-		__VERIFIER_assert(!status || item->data > 0);
+		if (!(!status || item->data > 0)) __VERIFIER_error();
 		/* Uncommenting suprisingly make it shorter
 		if (status == 0 && item->data != 0)
 		{
-			__VERIFIER_assert(item->data == 1);
+			if (!(item->data == 1)) __VERIFIER_error();
 			status = 1;
 		}
 		else if (status == 1 && item->data != 1)
 		{
-			__VERIFIER_assert(item->data == 2);
+			if (!(item->data == 2)) __VERIFIER_error();
 			status = 2;
 		}
 		else if (status == 2 && item->data != 2)
 		{
-			__VERIFIER_assert(item->data == 3);
+			if (!(item->data == 3)) __VERIFIER_error();
 			status = 3;
 		}
 		else if (status == 2)
 		{
-			__VERIFIER_assert(item->data == 3);
+			if (!(item->data == 3)) __VERIFIER_error();
 			status = 3;
 		}
 		*/

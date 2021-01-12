@@ -11,36 +11,36 @@ int main(void) {
 		fesetround(modes[i]);
 		switch (modes[i]) {
 		case FE_DOWNWARD:
-			__VERIFIER_assert(nearbyint(12.9) == 12.);
-			__VERIFIER_assert(nearbyint(-12.1) == -13.);
+			if (!(nearbyint(12.9) == 12.)) __VERIFIER_error();
+			if (!(nearbyint(-12.1) == -13.)) __VERIFIER_error();
 			break;
 		case FE_TONEAREST:
-			__VERIFIER_assert(nearbyint(12.4) == 12.);
-			__VERIFIER_assert(nearbyint(-12.4) == -12.);
+			if (!(nearbyint(12.4) == 12.)) __VERIFIER_error();
+			if (!(nearbyint(-12.4) == -12.)) __VERIFIER_error();
 			break;
 		case FE_TOWARDZERO:
-			__VERIFIER_assert(nearbyint(12.9) == 12.);
-			__VERIFIER_assert(nearbyint(-12.9) == -12.);
+			if (!(nearbyint(12.9) == 12.)) __VERIFIER_error();
+			if (!(nearbyint(-12.9) == -12.)) __VERIFIER_error();
 			break;
 		case FE_UPWARD:
-			__VERIFIER_assert(nearbyint(12.1) == 13.);
-			__VERIFIER_assert(nearbyint(-12.9) == -12.);
+			if (!(nearbyint(12.1) == 13.)) __VERIFIER_error();
+			if (!(nearbyint(-12.9) == -12.)) __VERIFIER_error();
 			break;
 		}
 	}
 
 	fesetround(FE_DOWNWARD);
-	__VERIFIER_assert(nearbyint(12.9) == 12.);
-	__VERIFIER_assert(nearbyint(-12.1) == -13.);
+	if (!(nearbyint(12.9) == 12.)) __VERIFIER_error();
+	if (!(nearbyint(-12.1) == -13.)) __VERIFIER_error();
 	fesetround(FE_TONEAREST);
-	__VERIFIER_assert(nearbyint(12.4) == 12.);
-	__VERIFIER_assert(nearbyint(-12.4) == -12.);
+	if (!(nearbyint(12.4) == 12.)) __VERIFIER_error();
+	if (!(nearbyint(-12.4) == -12.)) __VERIFIER_error();
 	fesetround(FE_TOWARDZERO);
-	__VERIFIER_assert(nearbyint(12.9) == 12.);
-	__VERIFIER_assert(nearbyint(-12.9) == -12.);
+	if (!(nearbyint(12.9) == 12.)) __VERIFIER_error();
+	if (!(nearbyint(-12.9) == -12.)) __VERIFIER_error();
 	fesetround(FE_UPWARD);
-	__VERIFIER_assert(nearbyint(12.1) == 13.);
-	__VERIFIER_assert(nearbyint(-12.9) == -12.);
+	if (!(nearbyint(12.1) == 13.)) __VERIFIER_error();
+	if (!(nearbyint(-12.9) == -12.)) __VERIFIER_error();
 	return 0;
 }
 

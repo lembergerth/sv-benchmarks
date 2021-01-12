@@ -18,6 +18,6 @@ int main(void) {
       --y; --z;
     }
   }
-  __VERIFIER_assert(w == x && y == z);
+  if (!(w == x && y == z)) __VERIFIER_error();
   return 0;
 }

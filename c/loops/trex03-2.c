@@ -24,7 +24,7 @@ int main()
     c2=__VERIFIER_nondet_bool();
   }
 
-  __VERIFIER_assert(x1==0 || x2==0 || x3==0);
+  if (!(x1==0 || x2==0 || x3==0)) __VERIFIER_error();
   return 0;
 }
 

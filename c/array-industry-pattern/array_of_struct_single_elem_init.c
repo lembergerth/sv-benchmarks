@@ -46,7 +46,7 @@ int main()
 		struct S s1 = a[i];
 		if (i != 3 && s1.n == 0)
 		{
-			__VERIFIER_assert(s1.p == 10); 
+			if (!(s1.p == 10)) __VERIFIER_error(); 
 		}
 	}
 	return 0;

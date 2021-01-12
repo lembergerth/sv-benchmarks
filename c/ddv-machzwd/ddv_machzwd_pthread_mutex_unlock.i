@@ -675,7 +675,7 @@ extern inline int pthread_mutex_lock(pthread_mutex_t *__mutex)
 extern inline int pthread_mutex_unlock(pthread_mutex_t *__mutex)
 {
   __VERIFIER_HIDE:
-  __VERIFIER_assert(__mutex->locked, "pthread_mutex_unlock without lock");
+  if (!(__mutex->locked, "pthread_mutex_unlock without lock")) __VERIFIER_error();
   __mutex->locked=0;
   return 0;
 }

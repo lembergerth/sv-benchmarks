@@ -20,7 +20,7 @@ float cast(double d)
     *(unsigned*)&f = 0xff7fffff;
   }
   else {
-    __VERIFIER_assert(d >= -3.41e38 && d <= 3.41e38);
+    if (!(d >= -3.41e38 && d <= 3.41e38)) __VERIFIER_error();
     f = d;
   }
   

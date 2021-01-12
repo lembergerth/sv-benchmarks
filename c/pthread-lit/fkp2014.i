@@ -694,7 +694,7 @@ void incs() {
 }
 void* thr(void* arg) {
     inct();
-    __VERIFIER_assert(s < t);
+    if (!(s < t)) __VERIFIER_error();
     incs();
     return 0;
 }

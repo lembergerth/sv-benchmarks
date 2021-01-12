@@ -18,6 +18,6 @@ int main() {
      y = y + 1;
  }
     }
-    __VERIFIER_assert(y == 100);
+    if (!(y == 100)) __VERIFIER_error();
     return 0;
 }

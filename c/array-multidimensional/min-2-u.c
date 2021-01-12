@@ -53,7 +53,7 @@ int main()
 		j=0;
 		while(j < n){
                     
-			__VERIFIER_assert(A[i][j]>=min);
+			if (!(A[i][j]>=min)) __VERIFIER_error();
 			j=j+1;
 		}
 		i=i+1;

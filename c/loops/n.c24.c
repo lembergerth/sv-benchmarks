@@ -85,7 +85,7 @@ int main(){
             }
       }
    }
-   __VERIFIER_assert(offset>=0 && offset<=1000);
+   if (!(offset>=0 && offset<=1000)) __VERIFIER_error();
    return 1;
 }
 

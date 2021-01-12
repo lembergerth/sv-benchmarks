@@ -868,10 +868,10 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 
 int main(void)
 {
-    __VERIFIER_assert(__builtin_isunordered((__builtin_nanf ("")), 1.0));
-    __VERIFIER_assert(__builtin_isunordered(1.0, (__builtin_nanf (""))));
-    __VERIFIER_assert(__builtin_isunordered((__builtin_nanf ("")), (__builtin_nanf (""))));
-    __VERIFIER_assert(!__builtin_isunordered(1.0, 0.0));
+    if (!(__builtin_isunordered((__builtin_nanf ("")), 1.0))) __VERIFIER_error();
+    if (!(__builtin_isunordered(1.0, (__builtin_nanf (""))))) __VERIFIER_error();
+    if (!(__builtin_isunordered((__builtin_nanf ("")), (__builtin_nanf (""))))) __VERIFIER_error();
+    if (!(!__builtin_isunordered(1.0, 0.0))) __VERIFIER_error();
 
     return 0;
 }

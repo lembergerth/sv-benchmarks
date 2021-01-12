@@ -49,7 +49,7 @@ int main()
     S0 = S;
     S = A1*E - E0*A2 + E1*A3 + S0*B1 + S1*B2;
 
-    __VERIFIER_assert(S >= -100. && S <= 100.);
+    if (!(S >= -100. && S <= 100.)) __VERIFIER_error();
   }
   return 0;
 }

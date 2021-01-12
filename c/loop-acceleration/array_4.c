@@ -23,5 +23,5 @@ int main(void) {
   for (i = 0; A[i] != 0; i++) {
   }
 
-  __VERIFIER_assert(i <= N);
+  if (!(i <= N)) __VERIFIER_error();
 }

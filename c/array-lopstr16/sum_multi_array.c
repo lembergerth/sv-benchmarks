@@ -33,7 +33,7 @@ int main()
 
 	for(i = 0; i < SIZE; i++)
 	{
-		__VERIFIER_assert(c[i].n == a[i].n + b[i].n);
+		if (!(c[i].n == a[i].n + b[i].n)) __VERIFIER_error();
 	}
 
 	return 0;

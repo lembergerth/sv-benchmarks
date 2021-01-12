@@ -782,7 +782,7 @@ void * P1(void *arg)
   x$w_buff0 = 2;
   x$w_buff1_used = x$w_buff0_used;
   x$w_buff0_used = (_Bool)1;
-  __VERIFIER_assert(!(x$w_buff1_used && x$w_buff0_used));
+  if (!(!(x$w_buff1_used && x$w_buff0_used))) __VERIFIER_error();
   x$r_buff1_thd0 = x$r_buff0_thd0;
   x$r_buff1_thd1 = x$r_buff0_thd1;
   x$r_buff1_thd2 = x$r_buff0_thd2;
@@ -793,7 +793,7 @@ void * P1(void *arg)
   y$w_buff0 = 1;
   y$w_buff1_used = y$w_buff0_used;
   y$w_buff0_used = (_Bool)1;
-  __VERIFIER_assert(!(y$w_buff1_used && y$w_buff0_used));
+  if (!(!(y$w_buff1_used && y$w_buff0_used))) __VERIFIER_error();
   y$r_buff1_thd0 = y$r_buff0_thd0;
   y$r_buff1_thd1 = y$r_buff0_thd1;
   y$r_buff1_thd2 = y$r_buff0_thd2;
@@ -895,6 +895,6 @@ int main()
   x = x$flush_delayed ? x$mem_tmp : x;
   x$flush_delayed = (_Bool)0;
   __VERIFIER_atomic_end();
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }

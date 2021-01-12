@@ -8,7 +8,7 @@ volatile int x;
 #define N 50
 
 void* thr1(void* arg) {
-    __VERIFIER_assert(x < N);
+    if (!(x < N)) __VERIFIER_error();
     return 0;
 }
 

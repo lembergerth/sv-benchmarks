@@ -25,39 +25,39 @@ int main()
         goto END;
     }
     cp = scheme;
-    __VERIFIER_assert(cp-1 < urilen);
-    __VERIFIER_assert(0 <= cp-1);
+    if (!(cp-1 < urilen)) __VERIFIER_error();
+    if (!(0 <= cp-1)) __VERIFIER_error();
     if (__VERIFIER_nondet_int()) {
-        __VERIFIER_assert(cp < urilen);
-        __VERIFIER_assert(0 <= cp);
+        if (!(cp < urilen)) __VERIFIER_error();
+        if (!(0 <= cp)) __VERIFIER_error();
         while ( cp != urilen-1) {
             if(__VERIFIER_nondet_int()) break;
-            __VERIFIER_assert(cp < urilen);
-            __VERIFIER_assert(0 <= cp);
+            if (!(cp < urilen)) __VERIFIER_error();
+            if (!(0 <= cp)) __VERIFIER_error();
             ++cp;
         }
-        __VERIFIER_assert(cp < urilen);
-        __VERIFIER_assert( 0 <= cp );
+        if (!(cp < urilen)) __VERIFIER_error();
+        if (!( 0 <= cp )) __VERIFIER_error();
         if (cp == urilen-1) goto END;
-        __VERIFIER_assert(cp+1 < urilen);
-        __VERIFIER_assert( 0 <= cp+1 );
+        if (!(cp+1 < urilen)) __VERIFIER_error();
+        if (!( 0 <= cp+1 )) __VERIFIER_error();
         if (cp+1 == urilen-1) goto END;
         ++cp;
         scheme = cp;
         if (__VERIFIER_nondet_int()) {
             c = 0;
-            __VERIFIER_assert(cp < urilen);
-            __VERIFIER_assert(0<=cp);
+            if (!(cp < urilen)) __VERIFIER_error();
+            if (!(0<=cp)) __VERIFIER_error();
             while ( cp != urilen-1
                     && c < tokenlen - 1) {
-                __VERIFIER_assert(cp < urilen);
-                __VERIFIER_assert(0<=cp);
+                if (!(cp < urilen)) __VERIFIER_error();
+                if (!(0<=cp)) __VERIFIER_error();
                 if (__VERIFIER_nondet_int()) {
                     ++c;
-                    __VERIFIER_assert(c < tokenlen);
-                    __VERIFIER_assert(0<=c);
-                    __VERIFIER_assert(cp < urilen);
-                    __VERIFIER_assert(0<=cp);
+                    if (!(c < tokenlen)) __VERIFIER_error();
+                    if (!(0<=c)) __VERIFIER_error();
+                    if (!(cp < urilen)) __VERIFIER_error();
+                    if (!(0<=cp)) __VERIFIER_error();
                 }
                 ++cp;
             }

@@ -102,7 +102,7 @@ int main()
         n_stones1 = correct_version(n, m, a);
         n_stones2 = student_version(n, m, a);
     }
-    __VERIFIER_assert(n_stones1 == n_stones2);
+    if (!(n_stones1 == n_stones2)) __VERIFIER_error();
     return 0;
 }
 

@@ -3131,12 +3131,12 @@ int aws_array_list_init_dynamic(
     list->item_size = item_size;
     list->alloc = alloc;
 
-    __VERIFIER_assert((list->current_size == 0 || list->data));
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((list->current_size == 0 || list->data))) __VERIFIER_error();
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return (0);
 
 error:
-    __VERIFIER_assert((aws_is_mem_zeroed(&(*list), sizeof(*list))));
+    if (!((aws_is_mem_zeroed(&(*list), sizeof(*list))))) __VERIFIER_error();
     return (-1);
 }
 
@@ -3166,7 +3166,7 @@ void aws_array_list_init_static(
     list->item_size = item_size;
     list->length = 0;
     list->data = raw_array;
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
 }
 
 static inline
@@ -3230,11 +3230,11 @@ int aws_array_list_push_back(struct aws_array_list *restrict list, const void *v
     int err_code = aws_array_list_set_at(list, val, aws_array_list_length(list));
 
     if (err_code && aws_last_error() == AWS_ERROR_INVALID_INDEX && !list->alloc) {
-        __VERIFIER_assert((aws_array_list_is_valid(list)));
+        if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
         return aws_raise_error(AWS_ERROR_LIST_EXCEEDS_MAX_SIZE);
     }
 
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return err_code;
 }
 
@@ -3246,12 +3246,12 @@ int aws_array_list_front(const struct aws_array_list *restrict list, void *val) 
                                                                                      ;
     if (aws_array_list_length(list) > 0) {
         memcpy(val, list->data, list->item_size);
-        __VERIFIER_assert(((1)));
-        __VERIFIER_assert((aws_array_list_is_valid(list)));
+        if (!(((1)))) __VERIFIER_error();
+        if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
         return (0);
     }
 
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return aws_raise_error(AWS_ERROR_LIST_EMPTY);
 }
 
@@ -3260,11 +3260,11 @@ int aws_array_list_pop_front(struct aws_array_list *restrict list) {
     __VERIFIER_assume((aws_array_list_is_valid(list)));
     if (aws_array_list_length(list) > 0) {
         aws_array_list_pop_front_n(list, 1);
-        __VERIFIER_assert((aws_array_list_is_valid(list)));
+        if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
         return (0);
     }
 
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return aws_raise_error(AWS_ERROR_LIST_EMPTY);
 }
 
@@ -3273,7 +3273,7 @@ void aws_array_list_pop_front_n(struct aws_array_list *restrict list, size_t n) 
     __VERIFIER_assume((aws_array_list_is_valid(list)));
     if (n >= aws_array_list_length(list)) {
         aws_array_list_clear(list);
-        __VERIFIER_assert((aws_array_list_is_valid(list)));
+        if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
         return;
     }
 
@@ -3287,7 +3287,7 @@ void aws_array_list_pop_front_n(struct aws_array_list *restrict list, size_t n) 
 
 
     }
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
 }
 
 int aws_array_list_erase(struct aws_array_list *restrict list, size_t index) {
@@ -3296,7 +3296,7 @@ int aws_array_list_erase(struct aws_array_list *restrict list, size_t index) {
     const size_t length = aws_array_list_length(list);
 
     if (index >= length) {
-        __VERIFIER_assert((aws_array_list_is_valid(list)));
+        if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
         return aws_raise_error(AWS_ERROR_INVALID_INDEX);
     }
 
@@ -3317,7 +3317,7 @@ int aws_array_list_erase(struct aws_array_list *restrict list, size_t index) {
         aws_array_list_pop_back(list);
     }
 
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return (0);
 }
 
@@ -3331,11 +3331,11 @@ int aws_array_list_back(const struct aws_array_list *restrict list, void *val) {
         size_t last_item_offset = list->item_size * (aws_array_list_length(list) - 1);
 
         memcpy(val, (void *)((uint8_t *)list->data + last_item_offset), list->item_size);
-        __VERIFIER_assert((aws_array_list_is_valid(list)));
+        if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
         return (0);
     }
 
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return aws_raise_error(AWS_ERROR_LIST_EMPTY);
 }
 
@@ -3350,11 +3350,11 @@ int aws_array_list_pop_back(struct aws_array_list *restrict list) {
 
         memset((void *)((uint8_t *)list->data + last_item_offset), 0, list->item_size);
         list->length--;
-        __VERIFIER_assert((aws_array_list_is_valid(list)));
+        if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
         return (0);
     }
 
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return aws_raise_error(AWS_ERROR_LIST_EMPTY);
 }
 
@@ -3367,7 +3367,7 @@ void aws_array_list_clear(struct aws_array_list *restrict list) {
 
         list->length = 0;
     }
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
 }
 
 static inline
@@ -3384,8 +3384,8 @@ void aws_array_list_swap_contents(
     struct aws_array_list tmp = *list_a;
     *list_a = *list_b;
     *list_b = tmp;
-    __VERIFIER_assert((aws_array_list_is_valid(list_a)));
-    __VERIFIER_assert((aws_array_list_is_valid(list_b)));
+    if (!((aws_array_list_is_valid(list_a)))) __VERIFIER_error();
+    if (!((aws_array_list_is_valid(list_b)))) __VERIFIER_error();
 }
 
 static inline
@@ -3393,7 +3393,7 @@ size_t aws_array_list_capacity(const struct aws_array_list *restrict list) {
     __VERIFIER_assume((list->item_size));
     __VERIFIER_assume((aws_array_list_is_valid(list)));
     size_t capacity = list->current_size / list->item_size;
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return capacity;
 }
 
@@ -3406,7 +3406,7 @@ size_t aws_array_list_length(const struct aws_array_list *restrict list) {
     __VERIFIER_assume((!list->length || list->data));
     __VERIFIER_assume((aws_array_list_is_valid(list)));
     size_t len = list->length;
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return len;
 }
 
@@ -3418,10 +3418,10 @@ int aws_array_list_get_at(const struct aws_array_list *restrict list, void *val,
                                                                                      ;
     if (aws_array_list_length(list) > index) {
         memcpy(val, (void *)((uint8_t *)list->data + (list->item_size * index)), list->item_size);
-        __VERIFIER_assert((aws_array_list_is_valid(list)));
+        if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
         return (0);
     }
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return aws_raise_error(AWS_ERROR_INVALID_INDEX);
 }
 
@@ -3433,10 +3433,10 @@ int aws_array_list_get_at_ptr(const struct aws_array_list *restrict list, void *
    ));
     if (aws_array_list_length(list) > index) {
         *val = (void *)((uint8_t *)list->data + (list->item_size * index));
-        __VERIFIER_assert((aws_array_list_is_valid(list)));
+        if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
         return (0);
     }
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return aws_raise_error(AWS_ERROR_INVALID_INDEX);
 }
 
@@ -3448,7 +3448,7 @@ int aws_array_list_set_at(struct aws_array_list *restrict list, const void *val,
                                                                                      ;
 
     if (aws_array_list_ensure_capacity(list, index)) {
-        __VERIFIER_assert((aws_array_list_is_valid(list)));
+        if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
         return (-1);
     }
 
@@ -3462,12 +3462,12 @@ int aws_array_list_set_at(struct aws_array_list *restrict list, const void *val,
 
     if (index >= aws_array_list_length(list)) {
         if (aws_add_size_checked(index, 1, &list->length)) {
-            __VERIFIER_assert((aws_array_list_is_valid(list)));
+            if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
             return (-1);
         }
     }
 
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
     return (0);
 }
 
@@ -3477,7 +3477,7 @@ void aws_array_list_sort(struct aws_array_list *restrict list, aws_array_list_co
     if (list->data) {
         qsort(list->data, aws_array_list_length(list), list->item_size, compare_fn);
     }
-    __VERIFIER_assert((aws_array_list_is_valid(list)));
+    if (!((aws_array_list_is_valid(list)))) __VERIFIER_error();
 }
 
 
@@ -5664,7 +5664,7 @@ _Bool
     uninterpreted_predicate_fn(uint8_t value);
 
 void assert_bytes_match(const uint8_t *const a, const uint8_t *const b, const size_t len) {
-    __VERIFIER_assert(!a == !b);
+    if (!(!a == !b)) __VERIFIER_error();
     if (len > 0 && a != 
                        ((void *)0) 
                             && b != 
@@ -5674,7 +5674,7 @@ void assert_bytes_match(const uint8_t *const a, const uint8_t *const b, const si
         __VERIFIER_assume(i < len && len < (
        (18446744073709551615UL) 
        >> (8 + 1)));
-        __VERIFIER_assert(a[i] == b[i]);
+        if (!(a[i] == b[i])) __VERIFIER_error();
     }
 }
 
@@ -5684,7 +5684,7 @@ void assert_all_bytes_are(const uint8_t *const a, const uint8_t c, const size_t 
                            ) {
         size_t i = nondet_uint64_t();
         __VERIFIER_assume(i < len);
-        __VERIFIER_assert(a[i] == c);
+        if (!(a[i] == c)) __VERIFIER_error();
     }
 }
 
@@ -5694,7 +5694,7 @@ void assert_all_zeroes(const uint8_t *const a, const size_t len) {
 
 void assert_byte_from_buffer_matches(const uint8_t *const buffer, const struct store_byte_from_buffer *const b) {
     if (buffer && b) {
-        __VERIFIER_assert(*(buffer + b->index) == b->byte);
+        if (!(*(buffer + b->index) == b->byte)) __VERIFIER_error();
     }
 }
 
@@ -5714,12 +5714,12 @@ void assert_array_list_equivalence(
     if (lhs == rhs) {
         return;
     } else {
-        __VERIFIER_assert(lhs && rhs);
+        if (!(lhs && rhs)) __VERIFIER_error();
     }
-    __VERIFIER_assert(lhs->alloc == rhs->alloc);
-    __VERIFIER_assert(lhs->current_size == rhs->current_size);
-    __VERIFIER_assert(lhs->length == rhs->length);
-    __VERIFIER_assert(lhs->item_size == rhs->item_size);
+    if (!(lhs->alloc == rhs->alloc)) __VERIFIER_error();
+    if (!(lhs->current_size == rhs->current_size)) __VERIFIER_error();
+    if (!(lhs->length == rhs->length)) __VERIFIER_error();
+    if (!(lhs->item_size == rhs->item_size)) __VERIFIER_error();
     if (lhs->current_size > 0) {
         assert_byte_from_buffer_matches((uint8_t *)lhs->data, rhs_byte);
     }
@@ -5733,11 +5733,11 @@ void assert_byte_buf_equivalence(
     if (lhs == rhs) {
         return;
     } else {
-        __VERIFIER_assert(lhs && rhs);
+        if (!(lhs && rhs)) __VERIFIER_error();
     }
-    __VERIFIER_assert(lhs->len == rhs->len);
-    __VERIFIER_assert(lhs->capacity == rhs->capacity);
-    __VERIFIER_assert(lhs->allocator == rhs->allocator);
+    if (!(lhs->len == rhs->len)) __VERIFIER_error();
+    if (!(lhs->capacity == rhs->capacity)) __VERIFIER_error();
+    if (!(lhs->allocator == rhs->allocator)) __VERIFIER_error();
     if (lhs->len > 0) {
         assert_byte_from_buffer_matches(lhs->buffer, rhs_byte);
     }
@@ -5747,9 +5747,9 @@ void assert_byte_cursor_equivalence(
     const struct aws_byte_cursor *const lhs,
     const struct aws_byte_cursor *const rhs,
     const struct store_byte_from_buffer *const rhs_byte) {
-    __VERIFIER_assert(!lhs == !rhs);
+    if (!(!lhs == !rhs)) __VERIFIER_error();
     if (lhs && rhs) {
-        __VERIFIER_assert(lhs->len == rhs->len);
+        if (!(lhs->len == rhs->len)) __VERIFIER_error();
         if (lhs->len > 0) {
             assert_byte_from_buffer_matches(lhs->ptr, rhs_byte);
         }
@@ -5760,13 +5760,13 @@ void assert_ring_buffer_equivalence(
     const struct aws_ring_buffer *const lhs,
     const struct aws_ring_buffer *const rhs)
 {
-    __VERIFIER_assert(!lhs == !rhs);
+    if (!(!lhs == !rhs)) __VERIFIER_error();
     if (lhs && rhs) {
-        __VERIFIER_assert(lhs->allocator == rhs->allocator);
-        __VERIFIER_assert(lhs->allocation == rhs->allocation);
-        __VERIFIER_assert(lhs->head.value == rhs->head.value);
-        __VERIFIER_assert(lhs->tail.value == rhs->tail.value);
-        __VERIFIER_assert(lhs->allocation_end == rhs->allocation_end);
+        if (!(lhs->allocator == rhs->allocator)) __VERIFIER_error();
+        if (!(lhs->allocation == rhs->allocation)) __VERIFIER_error();
+        if (!(lhs->head.value == rhs->head.value)) __VERIFIER_error();
+        if (!(lhs->tail.value == rhs->tail.value)) __VERIFIER_error();
+        if (!(lhs->allocation_end == rhs->allocation_end)) __VERIFIER_error();
     }
 }
 
@@ -5780,7 +5780,7 @@ void save_byte_from_hash_table(const struct aws_hash_table *map, struct store_by
 void check_hash_table_unchanged(const struct aws_hash_table *map, const struct store_byte_from_buffer *storage) {
     struct hash_table_state *state = map->p_impl;
     uint8_t *byte_array = (uint8_t *)state;
-    __VERIFIER_assert(byte_array[storage->index] == storage->byte);
+    if (!(byte_array[storage->index] == storage->byte)) __VERIFIER_error();
 }
 
 int nondet_compare(const void *const a, const void *const b) {
@@ -6286,7 +6286,7 @@ void aws_common_fatal_assert_library_initialized(void) {
            stderr
                  , "%s", "aws_common_library_init() must be called before using any functionality in aws-c-common.");
 
-        __VERIFIER_assert(s_common_library_initialized);
+        if (!(s_common_library_initialized)) __VERIFIER_error();
     }
 }
 struct aws_string {
@@ -8011,7 +8011,7 @@ void aws_hash_table_move(struct aws_hash_table *restrict to, struct aws_hash_tab
 
     *to = *from;
     do { memset(&(*from), 0, sizeof(*from)); } while (0);
-    __VERIFIER_assert((aws_hash_table_is_valid(to)));
+    if (!((aws_hash_table_is_valid(to)))) __VERIFIER_error();
 }
 static int s_find_entry1(
     struct hash_table_state *state,
@@ -8533,7 +8533,7 @@ static inline void s_get_next_element(struct aws_hash_iter *iter, size_t start_s
                              ;
     iter->slot = iter->limit;
     iter->status = AWS_HASH_ITER_STATUS_DONE;
-    __VERIFIER_assert((aws_hash_iter_is_valid(iter)));
+    if (!((aws_hash_iter_is_valid(iter)))) __VERIFIER_error();
 }
 
 struct aws_hash_iter aws_hash_iter_begin(const struct aws_hash_table *map) {
@@ -8573,7 +8573,7 @@ _Bool
     __VERIFIER_assert((rval == (iter->status == AWS_HASH_ITER_STATUS_DONE)))
 
                                                                                        ;
-    __VERIFIER_assert((aws_hash_iter_is_valid(iter)));
+    if (!((aws_hash_iter_is_valid(iter)))) __VERIFIER_error();
     return rval;
 }
 
@@ -8587,7 +8587,7 @@ void aws_hash_iter_next(struct aws_hash_iter *iter) {
     __VERIFIER_assert((iter->status == AWS_HASH_ITER_STATUS_DONE || iter->status == AWS_HASH_ITER_STATUS_READY_FOR_USE))
 
                                                                                           ;
-    __VERIFIER_assert((aws_hash_iter_is_valid(iter)));
+    if (!((aws_hash_iter_is_valid(iter)))) __VERIFIER_error();
 }
 
 void aws_hash_iter_delete(struct aws_hash_iter *iter, 
@@ -8622,7 +8622,7 @@ void aws_hash_iter_delete(struct aws_hash_iter *iter,
     __VERIFIER_assert((iter->status == AWS_HASH_ITER_STATUS_DELETE_CALLED))
 
                                                                            ;
-    __VERIFIER_assert((aws_hash_iter_is_valid(iter)));
+    if (!((aws_hash_iter_is_valid(iter)))) __VERIFIER_error();
 }
 
 void aws_hash_table_clear(struct aws_hash_table *map) {
@@ -8649,7 +8649,7 @@ void aws_hash_table_clear(struct aws_hash_table *map) {
     memset(state->slots, 0, sizeof(*state->slots) * state->size);
 
     state->entry_count = 0;
-    __VERIFIER_assert((aws_hash_table_is_valid(map)));
+    if (!((aws_hash_table_is_valid(map)))) __VERIFIER_error();
 }
 
 uint64_t aws_hash_c_string(const void *item) {
@@ -9016,7 +9016,7 @@ static inline void aws_linked_list_node_reset(struct aws_linked_list_node *node)
    ((void *)0)
    ));
     do { memset(&(*node), 0, sizeof(*node)); } while (0);
-    __VERIFIER_assert((aws_is_mem_zeroed(&(*node), sizeof(*node))));
+    if (!((aws_is_mem_zeroed(&(*node), sizeof(*node))))) __VERIFIER_error();
 }
 static inline 
                _Bool 
@@ -9119,8 +9119,8 @@ static inline void aws_linked_list_init(struct aws_linked_list *list) {
     list->tail.next = 
                      ((void *)0)
                          ;
-    __VERIFIER_assert((aws_linked_list_is_valid(list)));
-    __VERIFIER_assert((aws_linked_list_empty(list)));
+    if (!((aws_linked_list_is_valid(list)))) __VERIFIER_error();
+    if (!((aws_linked_list_empty(list)))) __VERIFIER_error();
 }
 
 
@@ -9129,8 +9129,8 @@ static inline void aws_linked_list_init(struct aws_linked_list *list) {
 static inline struct aws_linked_list_node *aws_linked_list_begin(const struct aws_linked_list *list) {
     __VERIFIER_assume((aws_linked_list_is_valid(list)));
     struct aws_linked_list_node *rval = list->head.next;
-    __VERIFIER_assert((aws_linked_list_is_valid(list)));
-    __VERIFIER_assert((rval == list->head.next));
+    if (!((aws_linked_list_is_valid(list)))) __VERIFIER_error();
+    if (!((rval == list->head.next))) __VERIFIER_error();
     return rval;
 }
 
@@ -9140,8 +9140,8 @@ static inline struct aws_linked_list_node *aws_linked_list_begin(const struct aw
 static inline const struct aws_linked_list_node *aws_linked_list_end(const struct aws_linked_list *list) {
     __VERIFIER_assume((aws_linked_list_is_valid(list)));
     const struct aws_linked_list_node *rval = &list->tail;
-    __VERIFIER_assert((aws_linked_list_is_valid(list)));
-    __VERIFIER_assert((rval == &list->tail));
+    if (!((aws_linked_list_is_valid(list)))) __VERIFIER_error();
+    if (!((rval == &list->tail))) __VERIFIER_error();
     return rval;
 }
 
@@ -9153,8 +9153,8 @@ static inline const struct aws_linked_list_node *aws_linked_list_end(const struc
 static inline struct aws_linked_list_node *aws_linked_list_rbegin(const struct aws_linked_list *list) {
     __VERIFIER_assume((aws_linked_list_is_valid(list)));
     struct aws_linked_list_node *rval = list->tail.prev;
-    __VERIFIER_assert((aws_linked_list_is_valid(list)));
-    __VERIFIER_assert((rval == list->tail.prev));
+    if (!((aws_linked_list_is_valid(list)))) __VERIFIER_error();
+    if (!((rval == list->tail.prev))) __VERIFIER_error();
     return rval;
 }
 
@@ -9165,8 +9165,8 @@ static inline struct aws_linked_list_node *aws_linked_list_rbegin(const struct a
 static inline const struct aws_linked_list_node *aws_linked_list_rend(const struct aws_linked_list *list) {
     __VERIFIER_assume((aws_linked_list_is_valid(list)));
     const struct aws_linked_list_node *rval = &list->head;
-    __VERIFIER_assert((aws_linked_list_is_valid(list)));
-    __VERIFIER_assert((rval == &list->head));
+    if (!((aws_linked_list_is_valid(list)))) __VERIFIER_error();
+    if (!((rval == &list->head))) __VERIFIER_error();
     return rval;
 }
 
@@ -9176,9 +9176,9 @@ static inline const struct aws_linked_list_node *aws_linked_list_rend(const stru
 static inline struct aws_linked_list_node *aws_linked_list_next(const struct aws_linked_list_node *node) {
     __VERIFIER_assume((aws_linked_list_node_next_is_valid(node)));
     struct aws_linked_list_node *rval = node->next;
-    __VERIFIER_assert((aws_linked_list_node_next_is_valid(node)));
-    __VERIFIER_assert((aws_linked_list_node_prev_is_valid(rval)));
-    __VERIFIER_assert((rval == node->next));
+    if (!((aws_linked_list_node_next_is_valid(node)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_prev_is_valid(rval)))) __VERIFIER_error();
+    if (!((rval == node->next))) __VERIFIER_error();
     return rval;
 }
 
@@ -9188,9 +9188,9 @@ static inline struct aws_linked_list_node *aws_linked_list_next(const struct aws
 static inline struct aws_linked_list_node *aws_linked_list_prev(const struct aws_linked_list_node *node) {
     __VERIFIER_assume((aws_linked_list_node_prev_is_valid(node)));
     struct aws_linked_list_node *rval = node->prev;
-    __VERIFIER_assert((aws_linked_list_node_prev_is_valid(node)));
-    __VERIFIER_assert((aws_linked_list_node_next_is_valid(rval)));
-    __VERIFIER_assert((rval == node->prev));
+    if (!((aws_linked_list_node_prev_is_valid(node)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_next_is_valid(rval)))) __VERIFIER_error();
+    if (!((rval == node->prev))) __VERIFIER_error();
     return rval;
 }
 
@@ -9208,10 +9208,10 @@ static inline void aws_linked_list_insert_after(
     to_add->next = after->next;
     after->next->prev = to_add;
     after->next = to_add;
-    __VERIFIER_assert((aws_linked_list_node_next_is_valid(after)));
-    __VERIFIER_assert((aws_linked_list_node_prev_is_valid(to_add)));
-    __VERIFIER_assert((aws_linked_list_node_next_is_valid(to_add)));
-    __VERIFIER_assert((after->next == to_add));
+    if (!((aws_linked_list_node_next_is_valid(after)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_prev_is_valid(to_add)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_next_is_valid(to_add)))) __VERIFIER_error();
+    if (!((after->next == to_add))) __VERIFIER_error();
 }
 
 
@@ -9239,10 +9239,10 @@ static inline void aws_linked_list_swap_nodes(struct aws_linked_list_node *a, st
     *a = *b;
     *b = tmp;
 
-    __VERIFIER_assert((aws_linked_list_node_prev_is_valid(a)));
-    __VERIFIER_assert((aws_linked_list_node_next_is_valid(a)));
-    __VERIFIER_assert((aws_linked_list_node_prev_is_valid(b)));
-    __VERIFIER_assert((aws_linked_list_node_next_is_valid(b)));
+    if (!((aws_linked_list_node_prev_is_valid(a)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_next_is_valid(a)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_prev_is_valid(b)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_next_is_valid(b)))) __VERIFIER_error();
 }
 
 
@@ -9259,10 +9259,10 @@ static inline void aws_linked_list_insert_before(
     to_add->prev = before->prev;
     before->prev->next = to_add;
     before->prev = to_add;
-    __VERIFIER_assert((aws_linked_list_node_prev_is_valid(before)));
-    __VERIFIER_assert((aws_linked_list_node_prev_is_valid(to_add)));
-    __VERIFIER_assert((aws_linked_list_node_next_is_valid(to_add)));
-    __VERIFIER_assert((before->prev == to_add));
+    if (!((aws_linked_list_node_prev_is_valid(before)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_prev_is_valid(to_add)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_next_is_valid(to_add)))) __VERIFIER_error();
+    if (!((before->prev == to_add))) __VERIFIER_error();
 }
 
 
@@ -9291,8 +9291,8 @@ static inline void aws_linked_list_push_back(struct aws_linked_list *list, struc
    ((void *)0)
    ));
     aws_linked_list_insert_before(&list->tail, node);
-    __VERIFIER_assert((aws_linked_list_is_valid(list)));
-    __VERIFIER_assert((list->tail.prev == node));
+    if (!((aws_linked_list_is_valid(list)))) __VERIFIER_error();
+    if (!((list->tail.prev == node))) __VERIFIER_error();
 }
 
 
@@ -9302,9 +9302,9 @@ static inline struct aws_linked_list_node *aws_linked_list_back(const struct aws
     __VERIFIER_assume((aws_linked_list_is_valid(list)));
     __VERIFIER_assume((!aws_linked_list_empty(list)));
     struct aws_linked_list_node *rval = list->tail.prev;
-    __VERIFIER_assert((aws_linked_list_is_valid(list)));
-    __VERIFIER_assert((aws_linked_list_node_prev_is_valid(rval)));
-    __VERIFIER_assert((aws_linked_list_node_next_is_valid(rval)));
+    if (!((aws_linked_list_is_valid(list)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_prev_is_valid(rval)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_next_is_valid(rval)))) __VERIFIER_error();
     return rval;
 }
 
@@ -9321,7 +9321,7 @@ static inline struct aws_linked_list_node *aws_linked_list_pop_back(struct aws_l
    && back->prev == 
    ((void *)0)
    ));
-    __VERIFIER_assert((aws_linked_list_is_valid(list)));
+    if (!((aws_linked_list_is_valid(list)))) __VERIFIER_error();
     return back;
 }
 
@@ -9334,8 +9334,8 @@ static inline void aws_linked_list_push_front(struct aws_linked_list *list, stru
    ((void *)0)
    ));
     aws_linked_list_insert_before(list->head.next, node);
-    __VERIFIER_assert((aws_linked_list_is_valid(list)));
-    __VERIFIER_assert((list->head.next == node));
+    if (!((aws_linked_list_is_valid(list)))) __VERIFIER_error();
+    if (!((list->head.next == node))) __VERIFIER_error();
 }
 
 
@@ -9345,9 +9345,9 @@ static inline struct aws_linked_list_node *aws_linked_list_front(const struct aw
     __VERIFIER_assume((aws_linked_list_is_valid(list)));
     __VERIFIER_assume((!aws_linked_list_empty(list)));
     struct aws_linked_list_node *rval = list->head.next;
-    __VERIFIER_assert((aws_linked_list_is_valid(list)));
-    __VERIFIER_assert((aws_linked_list_node_prev_is_valid(rval)));
-    __VERIFIER_assert((aws_linked_list_node_next_is_valid(rval)));
+    if (!((aws_linked_list_is_valid(list)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_prev_is_valid(rval)))) __VERIFIER_error();
+    if (!((aws_linked_list_node_next_is_valid(rval)))) __VERIFIER_error();
     return rval;
 }
 
@@ -9364,7 +9364,7 @@ static inline struct aws_linked_list_node *aws_linked_list_pop_front(struct aws_
    && front->prev == 
    ((void *)0)
    ));
-    __VERIFIER_assert((aws_linked_list_is_valid(list)));
+    if (!((aws_linked_list_is_valid(list)))) __VERIFIER_error();
     return front;
 }
 
@@ -9393,8 +9393,8 @@ static inline void aws_linked_list_swap_contents(struct aws_linked_list *a, stru
         b->tail.prev = a_last;
         b->tail.prev->next = &b->tail;
     }
-    __VERIFIER_assert((aws_linked_list_is_valid(a)));
-    __VERIFIER_assert((aws_linked_list_is_valid(b)));
+    if (!((aws_linked_list_is_valid(a)))) __VERIFIER_error();
+    if (!((aws_linked_list_is_valid(b)))) __VERIFIER_error();
 }
 
 

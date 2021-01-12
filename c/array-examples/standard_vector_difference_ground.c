@@ -29,7 +29,7 @@ int main( ) {
   
   int x;
   for ( x = 0 ; x < SIZE ; x++ ) {
-    __VERIFIER_assert(  c[x] == a[x] - b[x]  );
+    if (!(  c[x] == a[x] - b[x]  )) __VERIFIER_error();
   }
   return 0;
 }

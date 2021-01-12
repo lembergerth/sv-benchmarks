@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
   }
   j = 0;
   while( j < n ) {
-    __VERIFIER_assert(k > 0);
+    if (!(k > 0)) __VERIFIER_error();
     j++;
     k--;
   }

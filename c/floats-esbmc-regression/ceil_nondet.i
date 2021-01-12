@@ -1003,15 +1003,15 @@ int main(void)
   double result = rint(d);
   fesetround(save_round);
 
-  __VERIFIER_assert(ceil(d) == result);
+  if (!(ceil(d) == result)) __VERIFIER_error();
 
   double d1 = __VERIFIER_nondet_double();
   __VERIFIER_assume((sizeof (d1) == sizeof (float) ? __isinff (d1) : sizeof (d1) == sizeof (double) ? __isinf (d1) : __isinfl (d1)));
-  __VERIFIER_assert((sizeof (ceil(d1)) == sizeof (float) ? __isinff (ceil(d1)) : sizeof (ceil(d1)) == sizeof (double) ? __isinf (ceil(d1)) : __isinfl (ceil(d1))));
+  if (!((sizeof (ceil(d1)) == sizeof (float) ? __isinff (ceil(d1)) : sizeof (ceil(d1)) == sizeof (double) ? __isinf (ceil(d1)) : __isinfl (ceil(d1))))) __VERIFIER_error();
 
   double d2 = __VERIFIER_nondet_double();
   __VERIFIER_assume((sizeof (d2) == sizeof (float) ? __isinff (d2) : sizeof (d2) == sizeof (double) ? __isinf (d2) : __isinfl (d2)));
-  __VERIFIER_assert((sizeof (ceil(d2)) == sizeof (float) ? __isinff (ceil(d2)) : sizeof (ceil(d2)) == sizeof (double) ? __isinf (ceil(d2)) : __isinfl (ceil(d2))));
+  if (!((sizeof (ceil(d2)) == sizeof (float) ? __isinff (ceil(d2)) : sizeof (ceil(d2)) == sizeof (double) ? __isinf (ceil(d2)) : __isinfl (ceil(d2))))) __VERIFIER_error();
 
   return 0;
 }

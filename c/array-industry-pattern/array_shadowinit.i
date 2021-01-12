@@ -16,7 +16,7 @@ int main() {
   }
   i=0;
   while(i < N) {
-   __VERIFIER_assert(a[i]==i);
+   if (!(a[i]==i)) __VERIFIER_error();
    i=i+1;
   }
  }

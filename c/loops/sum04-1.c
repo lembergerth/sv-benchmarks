@@ -14,6 +14,6 @@ int main() {
     if (i<4)
     sn = sn + a;
   }
-  __VERIFIER_assert(sn==SIZE*a || sn == 0);
+  if (!(sn==SIZE*a || sn == 0)) __VERIFIER_error();
 }
 

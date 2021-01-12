@@ -31,7 +31,7 @@ int main(){
    }
 
    a[i]=0;
-   __VERIFIER_assert(j<1025);
+   if (!(j<1025)) __VERIFIER_error();
    a[j]=0;
    a[b]=0;
    if (b >= 0 && b < 1023)

@@ -38,9 +38,9 @@ int main()
 
     g = gcd_test(x, y);
 
-    __VERIFIER_assert(x % g == 0);
-    __VERIFIER_assert(y % g == 0);
-    __VERIFIER_assert(g == 9);
+    if (!(x % g == 0)) __VERIFIER_error();
+    if (!(y % g == 0)) __VERIFIER_error();
+    if (!(g == 9)) __VERIFIER_error();
 
     return 0;
 }

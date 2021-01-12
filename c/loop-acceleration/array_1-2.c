@@ -15,5 +15,5 @@ int main(void) {
     A[i] = i;
   }
 
-  __VERIFIER_assert(A[1023] == 1023);
+  if (!(A[1023] == 1023)) __VERIFIER_error();
 }

@@ -31,7 +31,7 @@ int main()
     tmp = index;
   }
 
-  __VERIFIER_assert(tmp < 10000 && array[tmp] == tmp);
+  if (!(tmp < 10000 && array[tmp] == tmp)) __VERIFIER_error();
 
 
 }

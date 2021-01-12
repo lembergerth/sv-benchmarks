@@ -1266,5 +1266,5 @@ int main(void)
  __VERIFIER_assume(queue[0].head == __CS_cp_queue[1].head);
  __VERIFIER_assume(queue[0].tail == __CS_cp_queue[1].tail);
  __VERIFIER_assume(queue[0].amount == __CS_cp_queue[1].amount);
- __VERIFIER_assert(__CS_error != 1);
+ if (!(__CS_error != 1)) __VERIFIER_error();
 }

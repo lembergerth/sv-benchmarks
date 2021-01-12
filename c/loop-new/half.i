@@ -17,6 +17,6 @@ int main() {
      n ++;
  }
     }
-    __VERIFIER_assert(k < 0 || n == k);
+    if (!(k < 0 || n == k)) __VERIFIER_error();
     return 0;
 }

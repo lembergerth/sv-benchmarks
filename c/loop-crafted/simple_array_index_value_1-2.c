@@ -29,7 +29,7 @@ int main()
     tmp = index;
   }
 
-  __VERIFIER_assert(tmp < SIZE && array[tmp] == tmp);
+  if (!(tmp < SIZE && array[tmp] == tmp)) __VERIFIER_error();
   
 
 }

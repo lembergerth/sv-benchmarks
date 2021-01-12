@@ -10,7 +10,7 @@ extern int __VERIFIER_nondet_int(void);
 extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 
 #define CREATE_INNER(N)                                         \
-    __VERIFIER_assert(N != NULL);                               \
+    if (!(N != NULL)) __VERIFIER_error();                               \
 	if (__VERIFIER_nondet_int()) {                              \
 		N->inner = NULL;                                        \
 	}                                                           \
@@ -19,7 +19,7 @@ extern void __VERIFIER_error() __attribute__ ((__noreturn__));
         N->inner->next = NULL;                                  \
         N->inner->inner = NULL;                                 \
     }                                                           \
-    __VERIFIER_assert(N->inner != NULL || N->inner == NULL);
+    if (!(N->inner != NULL || N->inner == NULL)) __VERIFIER_error();
 
 typedef struct TSLL
 {
@@ -46,7 +46,7 @@ int main()
 		end->next->prev = end;
 		end = end->next;
 		end->next = NULL;
-		__VERIFIER_assert(NULL != end);
+		if (!(NULL != end)) __VERIFIER_error();
 		CREATE_INNER(end);
 	}
 
@@ -54,7 +54,7 @@ int main()
 	end = list;
 
 	// check the invariant
-	__VERIFIER_assert(NULL != end);
+	if (!(NULL != end)) __VERIFIER_error();
 
 	while (NULL != end)
 	{
@@ -66,12 +66,12 @@ int main()
 				len = 1;
 			else
 				len = 2;
-			__VERIFIER_assert(NULL != inner);
-			__VERIFIER_assert(NULL == inner->inner);
-			__VERIFIER_assert(NULL == inner->next);
+			if (!(NULL != inner)) __VERIFIER_error();
+			if (!(NULL == inner->inner)) __VERIFIER_error();
+			if (!(NULL == inner->next)) __VERIFIER_error();
 			inner = inner->inner;
 		}
-		__VERIFIER_assert(len <= 1);
+		if (!(len <= 1)) __VERIFIER_error();
 
 		end = end->next;
 	}
@@ -83,9 +83,9 @@ int main()
 		// while (NULL != end)
 		if (NULL != end)
 		{
-			__VERIFIER_assert(NULL != end);
-			__VERIFIER_assert(NULL == end->inner);
-			__VERIFIER_assert(NULL == end->next);
+			if (!(NULL != end)) __VERIFIER_error();
+			if (!(NULL == end->inner)) __VERIFIER_error();
+			if (!(NULL == end->next)) __VERIFIER_error();
 			free(end);
 			list->inner = NULL;
 		}

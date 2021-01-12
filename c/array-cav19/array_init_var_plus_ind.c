@@ -17,7 +17,7 @@ int main()
   }
 
   for(int k=1;k<i;k++)
-    __VERIFIER_assert(a[k]>=0);
+    if (!(a[k]>=0)) __VERIFIER_error();
   return 0;
 }
 

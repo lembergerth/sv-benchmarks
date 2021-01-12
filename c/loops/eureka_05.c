@@ -36,7 +36,7 @@ int main(void){
 	SelectionSort();
 
 	for(i=0; i<SIZE; i++)
-		__VERIFIER_assert(array[i]==i);
+		if (!(array[i]==i)) __VERIFIER_error();
 
 }
 

@@ -54,7 +54,7 @@ int main()
 
   found = (j>nc_B-1)<<i;
 
-  __VERIFIER_assert(found == 0 || found == 1);
+  if (!(found == 0 || found == 1)) __VERIFIER_error();
 
   return 0;
 }

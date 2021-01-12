@@ -15,5 +15,5 @@ int main() {
     sn = sn + a;
     j--;
   }
-  __VERIFIER_assert(sn==n*a || sn == 0);
+  if (!(sn==n*a || sn == 0)) __VERIFIER_error();
 }

@@ -18,7 +18,7 @@ int main() {
     c = 0;
 
     while (1) {
-        __VERIFIER_assert(-2*y*y*y*y*y*y - 6 * y*y*y*y*y - 5 * y*y*y*y + y*y + 12*x == 0);
+        if (!(-2*y*y*y*y*y*y - 6 * y*y*y*y*y - 5 * y*y*y*y + y*y + 12*x == 0)) __VERIFIER_error();
 
         if (!(c < k))
             break;
@@ -28,7 +28,7 @@ int main() {
         x = y * y * y * y * y + x;
     }
     
-    __VERIFIER_assert(-2*y*y*y*y*y*y - 6 * y*y*y*y*y - 5 * y*y*y*y + y*y + 12*x == 0);
-    __VERIFIER_assert(k*y == y*y);		      
+    if (!(-2*y*y*y*y*y*y - 6 * y*y*y*y*y - 5 * y*y*y*y + y*y + 12*x == 0)) __VERIFIER_error();
+    if (!(k*y == y*y)) __VERIFIER_error();		      
     return 0;
 }

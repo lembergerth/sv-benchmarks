@@ -868,32 +868,32 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 
 int main(void)
 {
-  __VERIFIER_assert(round(2.3) == 2.0);
-  __VERIFIER_assert(round(3.8) == 4.0);
-  __VERIFIER_assert(round(5.5) == 6.0);
-  __VERIFIER_assert(round(-2.3) == -2.0);
-  __VERIFIER_assert(round(-3.8) == -4.0);
-  __VERIFIER_assert(round(-5.5) == -6.0);
+  if (!(round(2.3) == 2.0)) __VERIFIER_error();
+  if (!(round(3.8) == 4.0)) __VERIFIER_error();
+  if (!(round(5.5) == 6.0)) __VERIFIER_error();
+  if (!(round(-2.3) == -2.0)) __VERIFIER_error();
+  if (!(round(-3.8) == -4.0)) __VERIFIER_error();
+  if (!(round(-5.5) == -6.0)) __VERIFIER_error();
 
-  __VERIFIER_assert(floor(2.3) == 2.0);
-  __VERIFIER_assert(floor(3.8) == 3.0);
-  __VERIFIER_assert(floor(5.5) == 5.0);
-  __VERIFIER_assert(floor(-2.3) == -3.0);
-  __VERIFIER_assert(floor(-3.8) == -4.0);
-  __VERIFIER_assert(floor(-5.5) == -6.0);
+  if (!(floor(2.3) == 2.0)) __VERIFIER_error();
+  if (!(floor(3.8) == 3.0)) __VERIFIER_error();
+  if (!(floor(5.5) == 5.0)) __VERIFIER_error();
+  if (!(floor(-2.3) == -3.0)) __VERIFIER_error();
+  if (!(floor(-3.8) == -4.0)) __VERIFIER_error();
+  if (!(floor(-5.5) == -6.0)) __VERIFIER_error();
 
-  __VERIFIER_assert(ceil(2.3) == 3.0);
-  __VERIFIER_assert(ceil(3.8) == 4.0);
-  __VERIFIER_assert(ceil(5.5) == 6.0);
-  __VERIFIER_assert(ceil(-2.3) == -2.0);
-  __VERIFIER_assert(ceil(-3.8) == -3.0);
-  __VERIFIER_assert(ceil(-5.5) == -5.0);
+  if (!(ceil(2.3) == 3.0)) __VERIFIER_error();
+  if (!(ceil(3.8) == 4.0)) __VERIFIER_error();
+  if (!(ceil(5.5) == 6.0)) __VERIFIER_error();
+  if (!(ceil(-2.3) == -2.0)) __VERIFIER_error();
+  if (!(ceil(-3.8) == -3.0)) __VERIFIER_error();
+  if (!(ceil(-5.5) == -5.0)) __VERIFIER_error();
 
-  __VERIFIER_assert(trunc(2.3) == 2.0);
-  __VERIFIER_assert(trunc(3.8) == 3.0);
-  __VERIFIER_assert(trunc(5.5) == 5.0);
-  __VERIFIER_assert(trunc(-2.3) == -2.0);
-  __VERIFIER_assert(trunc(-3.8) == -3.0);
-  __VERIFIER_assert(trunc(-5.5) == -5.0);
+  if (!(trunc(2.3) == 2.0)) __VERIFIER_error();
+  if (!(trunc(3.8) == 3.0)) __VERIFIER_error();
+  if (!(trunc(5.5) == 5.0)) __VERIFIER_error();
+  if (!(trunc(-2.3) == -2.0)) __VERIFIER_error();
+  if (!(trunc(-3.8) == -3.0)) __VERIFIER_error();
+  if (!(trunc(-5.5) == -5.0)) __VERIFIER_error();
 
 }

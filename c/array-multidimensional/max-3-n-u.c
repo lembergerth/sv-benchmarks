@@ -67,7 +67,7 @@ int main()
 		while(j < n){
 			k=0;
 			while(k < p){
-					__VERIFIER_assert(A[i][j][k]<=max);
+					if (!(A[i][j][k]<=max)) __VERIFIER_error();
 					k=k+1;
 			}
 			j=j+1;

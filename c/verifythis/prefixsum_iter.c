@@ -47,7 +47,7 @@ int is_pow2 (unsigned int x)
 void check(int *a0, int *a, int n) {
     int i, sum = 0;
     for(i=0; i<n; i++) {
-        __VERIFIER_assert(sum == a[i]);
+        if (!(sum == a[i])) __VERIFIER_error();
         sum += a0[i];
     }
 }

@@ -97,7 +97,7 @@ int main()
 					if(i == j) a[i][j] *= 10.0;
 					w += a[i][j];
 			}
-                        __VERIFIER_assert(i==2);
+                        if (!(i==2)) __VERIFIER_error();
 			b[i] = w;	
 	}
 

@@ -5,9 +5,9 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 
 int main(void)
 {
-  __VERIFIER_assert(fmax(2,1) == 2.f);
-  __VERIFIER_assert(fmax(-INFINITY,0) == 0);
-  __VERIFIER_assert(fmax(NAN,-1) == -1.f);
-  __VERIFIER_assert(!(fmax(NAN,NAN) == NAN));
+  if (!(fmax(2,1) == 2.f)) __VERIFIER_error();
+  if (!(fmax(-INFINITY,0) == 0)) __VERIFIER_error();
+  if (!(fmax(NAN,-1) == -1.f)) __VERIFIER_error();
+  if (!(!(fmax(NAN,NAN) == NAN))) __VERIFIER_error();
 }
 

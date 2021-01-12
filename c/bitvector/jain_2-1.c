@@ -20,7 +20,7 @@ int main()
       y = y +2U*__VERIFIER_nondet_uint();
 
 
-      __VERIFIER_assert(x+y!=1U);
+      if (!(x+y!=1U)) __VERIFIER_error();
     }
     return 0;
 }

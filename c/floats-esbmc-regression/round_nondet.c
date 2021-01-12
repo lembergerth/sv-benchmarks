@@ -18,14 +18,14 @@ int main(void)
   double result = rint(copysign(0.5 + fabs(d), d));
   fesetround(save_round);
 
-  __VERIFIER_assert(round(d) == result);
+  if (!(round(d) == result)) __VERIFIER_error();
 
   double d1 = __VERIFIER_nondet_double();
   __VERIFIER_assume(isinf(d1));
-  __VERIFIER_assert(isinf(round(d1)));
+  if (!(isinf(round(d1)))) __VERIFIER_error();
 
   double d2 = __VERIFIER_nondet_double();
   __VERIFIER_assume(isinf(d2));
-  __VERIFIER_assert(isinf(round(d2)));
+  if (!(isinf(round(d2)))) __VERIFIER_error();
 }
 

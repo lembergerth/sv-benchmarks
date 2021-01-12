@@ -42,7 +42,7 @@ void bary()
     X = 0.50000001f*X + 0.30000001f*Y + 0.20000001f*Z;
   }
 
-  __VERIFIER_assert(X >= -5.f && X <= 5.f);
+  if (!(X >= -5.f && X <= 5.f)) __VERIFIER_error();
 }
 
 int main () 

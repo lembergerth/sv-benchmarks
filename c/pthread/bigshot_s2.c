@@ -31,7 +31,7 @@ int main()
   pthread_create(&t2, 0, thread2, 0);
   pthread_join(t2, 0);
 
-  __VERIFIER_assert(v[0] == 'B');  // <---- wrong, malloc() can fail and therefore no strcpy! Competition's rule: malloc() never fails, thus it is safe.
+  if (!(v[0] == 'B')) __VERIFIER_error();  // <---- wrong, malloc() can fail and therefore no strcpy! Competition's rule: malloc() never fails, thus it is safe.
 
   return 0;
 }

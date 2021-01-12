@@ -27,7 +27,7 @@ int main()
   j = 0;
   while( i < size )
   {
-	__VERIFIER_assert( a[j] == b[j] );
+	if (!( a[j] == b[j] )) __VERIFIER_error();
         i = i+1;
         j = j+1;
   }

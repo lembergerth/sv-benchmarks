@@ -17,5 +17,5 @@ int main(void) {
       break;
     }
   }
-  __VERIFIER_assert(i <= 1024);
+  if (!(i <= 1024)) __VERIFIER_error();
 }

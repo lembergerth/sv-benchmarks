@@ -72,6 +72,6 @@ int main()
   b = FREXP(a, &e);
   c = LDEXP(b, e/2);
 
-  __VERIFIER_assert(c >= 0.f && c <= 1e6);
+  if (!(c >= 0.f && c <= 1e6)) __VERIFIER_error();
   return 0;
 }

@@ -73,7 +73,7 @@ int main(void){
 	}
 
 	temp = search_list(mylist,2);
-	__VERIFIER_assert(temp->key==2);
+	if (!(temp->key==2)) __VERIFIER_error();
 	delete_list(temp);
 
 	mylist = head;

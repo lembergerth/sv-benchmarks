@@ -24,7 +24,7 @@ int main ( ) {
   }
   int x;
   for ( x = 0 ; x < 100000 ; x++ ) {
-    __VERIFIER_assert( a[x] == 46 );
+    if (!( a[x] == 46 )) __VERIFIER_error();
   }
   return 0;
 }

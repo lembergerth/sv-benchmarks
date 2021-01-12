@@ -56,6 +56,6 @@ int main()
 		sum[0] = sum[0] + c[i];
 	}
 
-	__VERIFIER_assert(sum[0] <= 3*N);
+	if (!(sum[0] <= 3*N)) __VERIFIER_error();
 	return 1;
 }

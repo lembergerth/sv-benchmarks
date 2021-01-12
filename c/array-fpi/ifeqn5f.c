@@ -43,7 +43,7 @@ int main()
 
 	for(i=0; i<N; i++)
 	{
-		__VERIFIER_assert(b[i] == 5*i*i + 5*i + 5);
+		if (!(b[i] == 5*i*i + 5*i + 5)) __VERIFIER_error();
 	}
 	return 1;
 }

@@ -19,7 +19,7 @@ int main ( ) {
   }
   int x;
   for ( x = 0 ; x < 100000 ; x++ ) {
-    __VERIFIER_assert( a[x] == 44 );
+    if (!( a[x] == 44 )) __VERIFIER_error();
   }
   return 0;
 }

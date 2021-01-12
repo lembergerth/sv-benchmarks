@@ -8,7 +8,7 @@ volatile int x;
 volatile int n;
 
 void* thr1(void* arg) {
-    __VERIFIER_assert(x < n);
+    if (!(x < n)) __VERIFIER_error();
     return 0;
 }
 

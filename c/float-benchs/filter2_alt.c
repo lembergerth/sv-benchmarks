@@ -35,7 +35,7 @@ void filter2 ()
            (E[1] * 0.4344376f)) + 
           (S[0] * 1.5419f)) - 
          (S[1] * 0.6740477f));
-    __VERIFIER_assert(P >= -15.f && P <= 15.f);
+    if (!(P >= -15.f && P <= 15.f)) __VERIFIER_error();
 
   }
   E[1] = E[0]; E[0] = X;

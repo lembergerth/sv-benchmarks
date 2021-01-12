@@ -26,10 +26,10 @@ int main ( ) {
   
   int x; 
   for ( x = 0 ; x < j ; x++ ) {
-    __VERIFIER_assert(  C[x] <= x + i - j  );
+    if (!(  C[x] <= x + i - j  )) __VERIFIER_error();
   }
   for ( x = 0 ; x < j ; x++ ) {
-    __VERIFIER_assert(  C[x] >= x  );
+    if (!(  C[x] >= x  )) __VERIFIER_error();
   }
   return 0;
 }

@@ -49,10 +49,10 @@ int main()
     
     int x;
     for( x = 0 ; x < MAX ; x++ ) {
-      __VERIFIER_assert(  array[ x ] <= largest1  );
+      if (!(  array[ x ] <= largest1  )) __VERIFIER_error();
     }
     for( x = 0 ; x < MAX ; x++ ) {
-      __VERIFIER_assert(  array[x] <= largest2 || array[x] == largest1  );
+      if (!(  array[x] <= largest2 || array[x] == largest1  )) __VERIFIER_error();
     }
   return 0;
 }

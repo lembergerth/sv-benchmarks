@@ -53,35 +53,35 @@ int main()
 			status = 3;
 		}
 
-		__VERIFIER_assert(head != NULL);
-		__VERIFIER_assert(item != NULL);
+		if (!(head != NULL)) __VERIFIER_error();
+		if (!(item != NULL)) __VERIFIER_error();
 	}
 
-	__VERIFIER_assert(head != NULL);
+	if (!(head != NULL)) __VERIFIER_error();
 	if (status == 1)
 	{
-		__VERIFIER_assert(head != NULL);
-		__VERIFIER_assert(head->next != NULL);
+		if (!(head != NULL)) __VERIFIER_error();
+		if (!(head->next != NULL)) __VERIFIER_error();
 	}
 	if (status == 2)
 	{
-		__VERIFIER_assert(head != NULL);
-		__VERIFIER_assert(head->next != NULL);
-		__VERIFIER_assert(head->next->next != NULL);
+		if (!(head != NULL)) __VERIFIER_error();
+		if (!(head->next != NULL)) __VERIFIER_error();
+		if (!(head->next->next != NULL)) __VERIFIER_error();
 	}
 	if (status == 3)
 	{
-		__VERIFIER_assert(head != NULL);
-		__VERIFIER_assert(head->next != NULL);
-		__VERIFIER_assert(head->next->next != NULL);
-		__VERIFIER_assert(head->next->next->next != NULL);
-		__VERIFIER_assert(head->next->next->next->data != 3);
+		if (!(head != NULL)) __VERIFIER_error();
+		if (!(head->next != NULL)) __VERIFIER_error();
+		if (!(head->next->next != NULL)) __VERIFIER_error();
+		if (!(head->next->next->next != NULL)) __VERIFIER_error();
+		if (!(head->next->next->next->data != 3)) __VERIFIER_error();
 	}
 
 	item = head->next;
 	while(item && __VERIFIER_nondet_int())
 	{
-		__VERIFIER_assert(!status || item->data > 0);
+		if (!(!status || item->data > 0)) __VERIFIER_error();
 		item = item->next;
 	}
 

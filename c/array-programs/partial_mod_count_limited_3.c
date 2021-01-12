@@ -16,7 +16,7 @@ __VERIFIER_assume(0 < lim && lim < N/R);
   }
   for(i=0;i<N;i++){
     if (a[i]==0) j++;
-     __VERIFIER_assert(j < (N/(2*R))+2);
+     if (!(j < (N/(2*R))+2)) __VERIFIER_error();
   }
   return 0;
 }

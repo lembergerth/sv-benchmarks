@@ -1122,6 +1122,6 @@ int main(void)
   pthread_t t;
   pthread_create(&t, 0, thread0, 0);
   pthread_join(t, 0);
-  __VERIFIER_assert(v[0] == 'X' || v[0] == 'Y');
+  if (!(v[0] == 'X' || v[0] == 'Y')) __VERIFIER_error();
   return 0;
 }

@@ -869,17 +869,17 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 int main(void)
 {
 
-  __VERIFIER_assert(remainder(5.1f, 3) == -0x1.ccccdp-1);
-  __VERIFIER_assert(remainder(5.1f, -3) == -0x1.ccccdp-1);
-  __VERIFIER_assert(remainder(-5.1f, -3) == 0x1.ccccdp-1);
-  __VERIFIER_assert(remainder(-5.1f, 3) == 0x1.ccccdp-1);
+  if (!(remainder(5.1f, 3) == -0x1.ccccdp-1)) __VERIFIER_error();
+  if (!(remainder(5.1f, -3) == -0x1.ccccdp-1)) __VERIFIER_error();
+  if (!(remainder(-5.1f, -3) == 0x1.ccccdp-1)) __VERIFIER_error();
+  if (!(remainder(-5.1f, 3) == 0x1.ccccdp-1)) __VERIFIER_error();
 
   double rem = remainder(0.0, 1);
-  __VERIFIER_assert((rem == 0.0) && (!(sizeof (rem) == sizeof (float) ? __signbitf (rem) : sizeof (rem) == sizeof (double) ? __signbit (rem) : __signbitl (rem))));
+  if (!((rem == 0.0) && (!(sizeof (rem) == sizeof (float) ? __signbitf (rem) : sizeof (rem) == sizeof (double) ? __signbit (rem) : __signbitl (rem))))) __VERIFIER_error();
 
   rem = remainder(-.0, 1);
-  __VERIFIER_assert((rem == 0.0) && ((sizeof (rem) == sizeof (float) ? __signbitf (rem) : sizeof (rem) == sizeof (double) ? __signbit (rem) : __signbitl (rem))));
+  if (!((rem == 0.0) && ((sizeof (rem) == sizeof (float) ? __signbitf (rem) : sizeof (rem) == sizeof (double) ? __signbit (rem) : __signbitl (rem))))) __VERIFIER_error();
 
-  __VERIFIER_assert((sizeof (remainder(5.1, 0)) == sizeof (float) ? __isnanf (remainder(5.1, 0)) : sizeof (remainder(5.1, 0)) == sizeof (double) ? __isnan (remainder(5.1, 0)) : __isnanl (remainder(5.1, 0))));
-  __VERIFIER_assert(remainder(5.1, (__builtin_inff())) == 5.1);
+  if (!((sizeof (remainder(5.1, 0)) == sizeof (float) ? __isnanf (remainder(5.1, 0)) : sizeof (remainder(5.1, 0)) == sizeof (double) ? __isnan (remainder(5.1, 0)) : __isnanl (remainder(5.1, 0))))) __VERIFIER_error();
+  if (!(remainder(5.1, (__builtin_inff())) == 5.1)) __VERIFIER_error();
 }

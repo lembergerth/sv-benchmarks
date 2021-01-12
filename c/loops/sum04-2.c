@@ -13,6 +13,6 @@ int main() {
   for(i=1; i<=SIZE; i++) {
     sn = sn + a;
   }
-  __VERIFIER_assert(sn==SIZE*a || sn == 0);
+  if (!(sn==SIZE*a || sn == 0)) __VERIFIER_error();
 }
 

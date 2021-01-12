@@ -25,22 +25,22 @@ int main ()
   {
     if (buf == buflim)
       break;
-    __VERIFIER_assert(0<=buf);
-    __VERIFIER_assert(buf<bufferlen); 
+    if (!(0<=buf)) __VERIFIER_error();
+    if (!(buf<bufferlen)) __VERIFIER_error(); 
     buf++;
 out:
     in++;
-    __VERIFIER_assert(0<=in);
-    __VERIFIER_assert(in<inlen);
+    if (!(0<=in)) __VERIFIER_error();
+    if (!(in<inlen)) __VERIFIER_error();
   }
 
-    __VERIFIER_assert(0<=buf);
-    __VERIFIER_assert(buf<bufferlen);
+    if (!(0<=buf)) __VERIFIER_error();
+    if (!(buf<bufferlen)) __VERIFIER_error();
     buf++;
 
   /* OK */
-  __VERIFIER_assert(0<=buf);//6
-  __VERIFIER_assert(buf<bufferlen);
+  if (!(0<=buf)) __VERIFIER_error();//6
+  if (!(buf<bufferlen)) __VERIFIER_error();
 
   buf++;
 

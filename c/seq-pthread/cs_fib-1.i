@@ -840,5 +840,5 @@ int main(int argc, char **argv)
  __VERIFIER_assume(j[2] == __CS_cp_j[3]);
  __VERIFIER_assume(j[3] == __CS_cp_j[4]);
  __VERIFIER_assume(j[4] == __CS_cp_j[5]);
- __VERIFIER_assert(__CS_error != 1);
+ if (!(__CS_error != 1)) __VERIFIER_error();
 }

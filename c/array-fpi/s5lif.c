@@ -43,6 +43,6 @@ int main()
 		sum[0] = sum[0] + a[i];
 	}
 
-	__VERIFIER_assert(sum[0] == 6*N);
+	if (!(sum[0] == 6*N)) __VERIFIER_error();
 	return 1;
 }

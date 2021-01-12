@@ -40,7 +40,7 @@ int main()
 	for(i = 0; i < SIZE; i++)
 	{
 		if (flag == 0)
-		__VERIFIER_assert(a[i].n == NULL);
+		if (!(a[i].n == NULL)) __VERIFIER_error();
 	}
 	
 	

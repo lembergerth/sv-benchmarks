@@ -189,7 +189,7 @@ void pc8736x_gpio_set(unsigned minor, int val)
 
 	dev_dbg(&pdev->dev, "wrote %x, read: %x\n", curval, val);
 	pc8736x_gpio_shadow[port] = val;
-	__VERIFIER_assert(pc8736x_gpio_shadow[port] == val);
+	if (!(pc8736x_gpio_shadow[port] == val)) __VERIFIER_error();
 }
 
 int pc8736x_gpio_current(unsigned minor)
@@ -199,7 +199,7 @@ int pc8736x_gpio_current(unsigned minor)
 	port = minor >> 3;
 	bit = minor & 7;
         u8 tmp = pc8736x_gpio_shadow[port];
-        __VERIFIER_assert(tmp == pc8736x_gpio_shadow[port]);
+        if (!(tmp == pc8736x_gpio_shadow[port])) __VERIFIER_error();
 	return ((tmp >> bit) & 0x01);
 }
 
@@ -222,7 +222,7 @@ int pc8736x_gpio_open(struct inode *inode, struct file *file)
 {
 	unsigned m = iminor(inode);
 	file->private_data = &pc8736x_gpio_ops;
-	__VERIFIER_assert(file->private_data == &pc8736x_gpio_ops);
+	if (!(file->private_data == &pc8736x_gpio_ops)) __VERIFIER_error();
 
 
 	dev_dbg(&pdev->dev, "open %d\n", m);
@@ -276,7 +276,7 @@ int __init pc8736x_gpio_init(void)
 		goto undo_platform_dev_add;
 	}
 	pc8736x_gpio_ops.dev = &pdev->dev;
-        __VERIFIER_assert(pc8736x_gpio_ops.dev == &pdev->dev);
+        if (!(pc8736x_gpio_ops.dev == &pdev->dev)) __VERIFIER_error();
 
 	/* Verify that chip and it's GPIO unit are both enabled.
 	   My BIOS does this, so I take minimum action here

@@ -53,7 +53,7 @@ int main()
 
 		for ( i = 0; i < SIZE; i++)  
 		{
-			__VERIFIER_assert(a[i]!=DEFAULTVAL);
+			if (!(a[i]!=DEFAULTVAL)) __VERIFIER_error();
 		}
 	}
 	return 1;

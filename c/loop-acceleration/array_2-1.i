@@ -14,5 +14,5 @@ int main(void) {
     tmp = A[i];
     B[i] = tmp;
   }
-  __VERIFIER_assert(A[2048/2] != B[2048/2]);
+  if (!(A[2048/2] != B[2048/2])) __VERIFIER_error();
 }

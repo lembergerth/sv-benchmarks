@@ -39,7 +39,7 @@ int main(void) {
 	struct l_struct_2E_X llvm_cbe_var;
 	*((&llvm_cbe_var.field0)) = 0x1.4p+4;
 	*(((unsigned int *)((&llvm_cbe_var.field0)))) = 10u;
-	__VERIFIER_assert(*(((unsigned int *)((&llvm_cbe_var.field0)))) == 10u);
+	if (!(*(((unsigned int *)((&llvm_cbe_var.field0)))) == 10u)) __VERIFIER_error();
 // #endif
 	return 0;
 }

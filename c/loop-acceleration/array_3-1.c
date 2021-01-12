@@ -24,5 +24,5 @@ int main(void) {
     }
   }
 
-  __VERIFIER_assert(i <= N);
+  if (!(i <= N)) __VERIFIER_error();
 }

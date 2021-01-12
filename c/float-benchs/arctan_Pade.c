@@ -46,6 +46,6 @@ int main()
 
   r = ARCTAN(a);
   
-  __VERIFIER_assert(r >= -1.571 && r <= 1.571);
+  if (!(r >= -1.571 && r <= 1.571)) __VERIFIER_error();
   return 0;
 }

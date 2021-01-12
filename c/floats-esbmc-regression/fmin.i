@@ -868,8 +868,8 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 
 int main(void)
 {
-  __VERIFIER_assert(fmin(2,1) == 1.f);
-  __VERIFIER_assert(fmin(-(__builtin_inff()),0) == -(1./0.0));
-  __VERIFIER_assert(fmin((__builtin_nanf ("")),-1) == -1.f);
-  __VERIFIER_assert(!(fmin((__builtin_nanf ("")),(__builtin_nanf (""))) == (__builtin_nanf (""))));
+  if (!(fmin(2,1) == 1.f)) __VERIFIER_error();
+  if (!(fmin(-(__builtin_inff()),0) == -(1./0.0))) __VERIFIER_error();
+  if (!(fmin((__builtin_nanf ("")),-1) == -1.f)) __VERIFIER_error();
+  if (!(!(fmin((__builtin_nanf ("")),(__builtin_nanf (""))) == (__builtin_nanf (""))))) __VERIFIER_error();
 }

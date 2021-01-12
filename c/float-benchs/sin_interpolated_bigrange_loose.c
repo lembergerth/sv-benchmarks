@@ -147,6 +147,6 @@ int main()
 
   r = SIN(a);
   
-  __VERIFIER_assert(r >= -1e5 && r <= 1e5);
+  if (!(r >= -1e5 && r <= 1e5)) __VERIFIER_error();
   return 0;
 }

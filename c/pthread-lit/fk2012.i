@@ -1038,7 +1038,7 @@ void* consumer(void *arg) {
  release1();
     }
     counter--;
-    __VERIFIER_assert(counter >= 0);
+    if (!(counter >= 0)) __VERIFIER_error();
     release1();
     return ((void *)0);
 }

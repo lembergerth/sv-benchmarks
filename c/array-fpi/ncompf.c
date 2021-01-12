@@ -44,7 +44,7 @@ int main()
 
 	for(i=0; i<N; i++)
 	{
-		__VERIFIER_assert(c[i] == N + i*i*i);
+		if (!(c[i] == N + i*i*i)) __VERIFIER_error();
 	}
 	return 1;
 }

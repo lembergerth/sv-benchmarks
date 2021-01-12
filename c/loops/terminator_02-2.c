@@ -29,7 +29,7 @@ int main()
         }
     }                       
 
-    __VERIFIER_assert(x>=100 || z<=100);
+    if (!(x>=100 || z<=100)) __VERIFIER_error();
 
     return 0;
 }

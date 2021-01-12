@@ -16,7 +16,7 @@ int main( ) {
   
   int x;
   for ( x = 0 ; x < N/2 ; x++ ) {
-    __VERIFIER_assert(  A[x] == A[N - x - 1]  ); 
+    if (!(  A[x] == A[N - x - 1]  )) __VERIFIER_error(); 
   }
   return 0;
 }

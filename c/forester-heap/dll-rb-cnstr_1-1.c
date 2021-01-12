@@ -49,24 +49,24 @@ int main()
 			end->next = NULL;
 			end->colour = BLACK;
 		}
-		__VERIFIER_assert(BLACK == end->colour);
-		__VERIFIER_assert(NULL == end->next);
-		__VERIFIER_assert(NULL != end);
+		if (!(BLACK == end->colour)) __VERIFIER_error();
+		if (!(NULL == end->next)) __VERIFIER_error();
+		if (!(NULL != end)) __VERIFIER_error();
 	}
 
 	end = NULL;
 	end = list;
 
 	// check the invariant
-	__VERIFIER_assert(NULL != end);
-	__VERIFIER_assert(BLACK == end->colour);
+	if (!(NULL != end)) __VERIFIER_error();
+	if (!(BLACK == end->colour)) __VERIFIER_error();
 	while (NULL != end)
 	{
 		if (RED == end->colour)
 		{
 			end = end->next;
-			__VERIFIER_assert(NULL != end);
-			__VERIFIER_assert(BLACK == end->colour);
+			if (!(NULL != end)) __VERIFIER_error();
+			if (!(BLACK == end->colour)) __VERIFIER_error();
 		}
 
 		end = end->next;

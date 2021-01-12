@@ -22,9 +22,9 @@ int main()
 
   for (index = 0; index < SIZE; index++) {
     if (index % 2 == 0) {
-      __VERIFIER_assert(array[index] == 0);
+      if (!(array[index] == 0)) __VERIFIER_error();
     } else {
-      __VERIFIER_assert(array[index] != 0);
+      if (!(array[index] != 0)) __VERIFIER_error();
     }
   }
 

@@ -23,7 +23,7 @@ int main() {
         }
     }
 
-    __VERIFIER_assert(y<=0 || (y>0 && x>=100));
+    if (!(y<=0 || (y>0 && x>=100))) __VERIFIER_error();
 
     return 0;
 }

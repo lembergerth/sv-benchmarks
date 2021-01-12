@@ -50,16 +50,16 @@ int main()
 
 		x->data = state;
 
-		__VERIFIER_assert(NULL != x);
+		if (!(NULL != x)) __VERIFIER_error();
 	}
 	x->data = state;
 
 	x = head->next;
-	__VERIFIER_assert(NULL != x);
+	if (!(NULL != x)) __VERIFIER_error();
 
 	while (x->data != 0)
 	{
-		__VERIFIER_assert(x->next->data == 0 || x->data <= x->next->data);
+		if (!(x->next->data == 0 || x->data <= x->next->data)) __VERIFIER_error();
 		x = x->next;
 	}
 

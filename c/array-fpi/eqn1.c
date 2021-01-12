@@ -37,7 +37,7 @@ int main()
 
 	for(i=0; i<N; i++)
 	{
-		__VERIFIER_assert(b[i] == i*i + i + 1);
+		if (!(b[i] == i*i + i + 1)) __VERIFIER_error();
 	}
 	return 1;
 }

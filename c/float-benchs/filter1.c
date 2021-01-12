@@ -33,7 +33,7 @@ int main()
     }
     E1 = E0;
 
-    __VERIFIER_assert(S >= -10000. && S <= 10000.);
+    if (!(S >= -10000. && S <= 10000.)) __VERIFIER_error();
   }
   return 0;
 }

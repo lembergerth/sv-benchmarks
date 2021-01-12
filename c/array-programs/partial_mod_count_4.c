@@ -12,7 +12,7 @@ int i,j=0,a[N];
   }
   for(i=0;i<N;i++){
     if (a[i]==0) j++;
-     __VERIFIER_assert(j < (N/8));
+     if (!(j < (N/8))) __VERIFIER_error();
   }
   return 0;
 }

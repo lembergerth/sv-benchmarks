@@ -27,10 +27,10 @@ int main( ) {
   }
   int x;
   for ( x = 0 ; x < b ; x++ ) {
-    __VERIFIER_assert( bb[ x ] >= 0 );
+    if (!( bb[ x ] >= 0 )) __VERIFIER_error();
   }
   for ( x = 0 ; x < c ; x++ ) {
-    __VERIFIER_assert( cc[ x ] < 0 );
+    if (!( cc[ x ] < 0 )) __VERIFIER_error();
   }
   return 0;
 }

@@ -19,7 +19,7 @@ int main()
   }
 
   for(i=1;i<N;i++)
-    __VERIFIER_assert(c[i] >= 3);
+    if (!(c[i] >= 3)) __VERIFIER_error();
   return 0;
 }
 

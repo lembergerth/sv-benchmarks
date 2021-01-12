@@ -17,12 +17,12 @@ int main() {
   for(i=0; i<n; i++)
   {
     x = x-y;
-    __VERIFIER_assert(x==0);
+    if (!(x==0)) __VERIFIER_error();
     y = __VERIFIER_nondet_int();
     if (!(y!=0)) return 0;
     x = x+y;
-    __VERIFIER_assert(x!=0);
+    if (!(x!=0)) __VERIFIER_error();
   }
-  __VERIFIER_assert(x==0);
+  if (!(x==0)) __VERIFIER_error();
 }
 

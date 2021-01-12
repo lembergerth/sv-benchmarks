@@ -101,7 +101,7 @@ unsigned int addflt(unsigned int a , unsigned int b )
   mb = b & ((1U << 24U) - 1U);
   eb = (int )(b >> 24U) - 128;
   mb = mb | (1U << 24U);
-  __VERIFIER_assert(ea >= eb);
+  if (!(ea >= eb)) __VERIFIER_error();
   delta = ea - eb;
   mb = mb >> delta;
   }
@@ -125,7 +125,7 @@ unsigned int addflt(unsigned int a , unsigned int b )
 
   }
   {
-  __VERIFIER_assert(ma < 1U << 25U);
+  if (!(ma < 1U << 25U)) __VERIFIER_error();
   ma = ma & ((1U << 24U) - 1U);
   res = ma | (unsigned int )((ea + 128) << 24U);
   }
@@ -253,7 +253,7 @@ int main(void)
       tmp___1 = tmp___0;
     }
     {
-    __VERIFIER_assert(tmp___1 == 0);
+    if (!(tmp___1 == 0)) __VERIFIER_error();
     }
   } else {
 

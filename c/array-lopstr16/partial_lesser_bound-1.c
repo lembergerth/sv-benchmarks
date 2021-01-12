@@ -23,7 +23,7 @@ int main()
 
 	for(i=0;i<SIZE/2;i++)
 	{
-		__VERIFIER_assert(a[i]==10);
+		if (!(a[i]==10)) __VERIFIER_error();
 	}
 	
 	return 0;

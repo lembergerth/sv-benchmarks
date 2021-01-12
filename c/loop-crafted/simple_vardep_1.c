@@ -21,7 +21,7 @@ int main()
     j = j + 2;
     k = k + 3;
 
-    __VERIFIER_assert(k == (i + j));
+    if (!(k == (i + j))) __VERIFIER_error();
   }
 
 }

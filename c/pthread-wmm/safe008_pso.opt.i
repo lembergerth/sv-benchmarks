@@ -730,7 +730,7 @@ void * P0(void *arg)
   z$w_buff0 = 2;
   z$w_buff1_used = z$w_buff0_used;
   z$w_buff0_used = (_Bool)1;
-  __VERIFIER_assert(!(z$w_buff1_used && z$w_buff0_used));
+  if (!(!(z$w_buff1_used && z$w_buff0_used))) __VERIFIER_error();
   z$r_buff1_thd0 = z$r_buff0_thd0;
   z$r_buff1_thd1 = z$r_buff0_thd1;
   z$r_buff1_thd2 = z$r_buff0_thd2;
@@ -836,6 +836,6 @@ int main()
   z = z$flush_delayed ? z$mem_tmp : z;
   z$flush_delayed = (_Bool)0;
   __VERIFIER_atomic_end();
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }

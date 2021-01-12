@@ -508,13 +508,13 @@ int main(int argc, char **argv)
 
 
 	//cseq: Error check
-	__VERIFIER_assert(__CS_error_detail != __ERR_MAXTHREADS_REACHED);
-	__VERIFIER_assert(__CS_error_detail != __ERR_ASSERT_FAILURE);
-	__VERIFIER_assert(__CS_error_detail != __ERR_ERROR_LABEL_REACHED);
-	__VERIFIER_assert(__CS_error_detail != __ERR_UNLOCK_ATTEMPT);
-	__VERIFIER_assert(__CS_error_detail != __ERR_JOIN_FAILED_WRONG_THREAD_ID);
-	__VERIFIER_assert(__CS_error_detail != __ERR_JOIN_FAILED_THREAD_NOT_CREATED);
-	__VERIFIER_assert(__CS_error != 1);
+	if (!(__CS_error_detail != __ERR_MAXTHREADS_REACHED)) __VERIFIER_error();
+	if (!(__CS_error_detail != __ERR_ASSERT_FAILURE)) __VERIFIER_error();
+	if (!(__CS_error_detail != __ERR_ERROR_LABEL_REACHED)) __VERIFIER_error();
+	if (!(__CS_error_detail != __ERR_UNLOCK_ATTEMPT)) __VERIFIER_error();
+	if (!(__CS_error_detail != __ERR_JOIN_FAILED_WRONG_THREAD_ID)) __VERIFIER_error();
+	if (!(__CS_error_detail != __ERR_JOIN_FAILED_THREAD_NOT_CREATED)) __VERIFIER_error();
+	if (!(__CS_error != 1)) __VERIFIER_error();
 }
 
 

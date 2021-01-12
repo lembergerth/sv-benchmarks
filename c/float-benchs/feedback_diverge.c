@@ -33,6 +33,6 @@ int main()
     wait_for_clock();
   }
 
-  __VERIFIER_assert(A >= -100.f && A <= 100.f);
+  if (!(A >= -100.f && A <= 100.f)) __VERIFIER_error();
   return 0;
 }

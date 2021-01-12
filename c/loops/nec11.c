@@ -25,7 +25,7 @@ int main(){
 
       len++;
    }
-   __VERIFIER_assert(len==5);
+   if (!(len==5)) __VERIFIER_error();
    return 1;
 
    

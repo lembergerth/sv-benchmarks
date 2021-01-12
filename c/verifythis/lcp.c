@@ -20,11 +20,11 @@ void check(int *a, int n, int x, int y, int l) {
     /* is prefix? */
     int i = __VERIFIER_nondet_int();
     __VERIFIER_assume(0 <= i && i < l);
-    __VERIFIER_assert(a[x+i] == a[y+i]);
+    if (!(a[x+i] == a[y+i])) __VERIFIER_error();
 
     /* maximal */
     if(x+l<n && y+l<n)
-        __VERIFIER_assert(a[x+l] != a[y+l]);
+        if (!(a[x+l] != a[y+l])) __VERIFIER_error();
 }
 
 int main() {

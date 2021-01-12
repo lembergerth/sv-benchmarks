@@ -62,7 +62,7 @@ int main( ) {
     {
       for(i=0; i < SIZE - 1; i++)
       {
-        __VERIFIER_assert(set[i] != element);
+        if (!(set[i] != element)) __VERIFIER_error();
       }
     }
 }

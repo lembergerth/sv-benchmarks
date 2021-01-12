@@ -27,9 +27,9 @@ int main() {
     q = 0;
 
     while (1) {
-        __VERIFIER_assert(q == 0);
-        __VERIFIER_assert(r == A);
-        __VERIFIER_assert(d == B * p);
+        if (!(q == 0)) __VERIFIER_error();
+        if (!(r == A)) __VERIFIER_error();
+        if (!(d == B * p)) __VERIFIER_error();
         if (!(r >= d)) break;
 
         d = 2 * d;
@@ -37,8 +37,8 @@ int main() {
     }
 
     while (1) {
-        __VERIFIER_assert(A == q*B + r);
-        __VERIFIER_assert(d == B*p);
+        if (!(A == q*B + r)) __VERIFIER_error();
+        if (!(d == B*p)) __VERIFIER_error();
 
         if (!(p != 1)) break;
 
@@ -50,7 +50,7 @@ int main() {
         }
     }
 
-    __VERIFIER_assert(A == d*q + r);
-    __VERIFIER_assert(B == d);    
+    if (!(A == d*q + r)) __VERIFIER_error();
+    if (!(B == d)) __VERIFIER_error();    
     return 0;
 }

@@ -35,10 +35,10 @@ int main() {
 
     i = __VERIFIER_nondet_int();
     __VERIFIER_assume(0 <= i && i < n);
-    __VERIFIER_assert(a[i] <= a[x]);
+    if (!(a[i] <= a[x])) __VERIFIER_error();
 
     for(i=0; i<n; i++) {
-        __VERIFIER_assert(a[i] <= a[x]);
+        if (!(a[i] <= a[x])) __VERIFIER_error();
     }
     free(a);
 

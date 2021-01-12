@@ -1003,13 +1003,13 @@ int main(void)
   double result = rint(copysign(0.5 + fabs(d), d));
   fesetround(save_round);
 
-  __VERIFIER_assert(round(d) == result);
+  if (!(round(d) == result)) __VERIFIER_error();
 
   double d1 = __VERIFIER_nondet_double();
   __VERIFIER_assume((sizeof (d1) == sizeof (float) ? __isinff (d1) : sizeof (d1) == sizeof (double) ? __isinf (d1) : __isinfl (d1)));
-  __VERIFIER_assert((sizeof (round(d1)) == sizeof (float) ? __isinff (round(d1)) : sizeof (round(d1)) == sizeof (double) ? __isinf (round(d1)) : __isinfl (round(d1))));
+  if (!((sizeof (round(d1)) == sizeof (float) ? __isinff (round(d1)) : sizeof (round(d1)) == sizeof (double) ? __isinf (round(d1)) : __isinfl (round(d1))))) __VERIFIER_error();
 
   double d2 = __VERIFIER_nondet_double();
   __VERIFIER_assume((sizeof (d2) == sizeof (float) ? __isinff (d2) : sizeof (d2) == sizeof (double) ? __isinf (d2) : __isinfl (d2)));
-  __VERIFIER_assert((sizeof (round(d2)) == sizeof (float) ? __isinff (round(d2)) : sizeof (round(d2)) == sizeof (double) ? __isinf (round(d2)) : __isinfl (round(d2))));
+  if (!((sizeof (round(d2)) == sizeof (float) ? __isinff (round(d2)) : sizeof (round(d2)) == sizeof (double) ? __isinf (round(d2)) : __isinfl (round(d2))))) __VERIFIER_error();
 }

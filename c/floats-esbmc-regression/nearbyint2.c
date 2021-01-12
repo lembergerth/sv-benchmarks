@@ -7,22 +7,22 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 int main(void) 
 {
   fesetround(FE_TONEAREST);
-  __VERIFIER_assert(nearbyint(2.3) == 2.0);
-  __VERIFIER_assert(nearbyint(2.5) == 2.0);
-  __VERIFIER_assert(nearbyint(3.5) == 4.0);
-  __VERIFIER_assert(nearbyint(-2.3) == -2.0);
-  __VERIFIER_assert(nearbyint(-2.5) == -2.0);
-  __VERIFIER_assert(nearbyint(-3.5) == -4.0);
+  if (!(nearbyint(2.3) == 2.0)) __VERIFIER_error();
+  if (!(nearbyint(2.5) == 2.0)) __VERIFIER_error();
+  if (!(nearbyint(3.5) == 4.0)) __VERIFIER_error();
+  if (!(nearbyint(-2.3) == -2.0)) __VERIFIER_error();
+  if (!(nearbyint(-2.5) == -2.0)) __VERIFIER_error();
+  if (!(nearbyint(-3.5) == -4.0)) __VERIFIER_error();
 
   fesetround(FE_DOWNWARD);
-  __VERIFIER_assert(nearbyint(2.3) == 2.0);
-  __VERIFIER_assert(nearbyint(2.5) == 2.0);
-  __VERIFIER_assert(nearbyint(3.5) == 3.0);
-  __VERIFIER_assert(nearbyint(-2.3) == -3.0);
-  __VERIFIER_assert(nearbyint(-2.5) == -3.0);
-  __VERIFIER_assert(nearbyint(-3.5) == -4.0);
+  if (!(nearbyint(2.3) == 2.0)) __VERIFIER_error();
+  if (!(nearbyint(2.5) == 2.0)) __VERIFIER_error();
+  if (!(nearbyint(3.5) == 3.0)) __VERIFIER_error();
+  if (!(nearbyint(-2.3) == -3.0)) __VERIFIER_error();
+  if (!(nearbyint(-2.5) == -3.0)) __VERIFIER_error();
+  if (!(nearbyint(-3.5) == -4.0)) __VERIFIER_error();
 
-  __VERIFIER_assert(signbit(nearbyint(-0.0)));
-  __VERIFIER_assert(nearbyint(-INFINITY) == -INFINITY);
+  if (!(signbit(nearbyint(-0.0)))) __VERIFIER_error();
+  if (!(nearbyint(-INFINITY) == -INFINITY)) __VERIFIER_error();
 }
 

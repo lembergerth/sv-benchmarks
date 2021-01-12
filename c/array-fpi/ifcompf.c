@@ -53,7 +53,7 @@ int main()
 
 	for(i=0; i<N; i++)
 	{
-		__VERIFIER_assert(c[i] == i*i*i);
+		if (!(c[i] == i*i*i)) __VERIFIER_error();
 	}
 	return 1;
 }

@@ -117,7 +117,7 @@ double SIN_0_180(double x)
   i = dx; 
   i_dx = i;
 
-  __VERIFIER_assert(i >= 0 && i+1 < sizeof(T)/sizeof(T[0]));
+  if (!(i >= 0 && i+1 < sizeof(T)/sizeof(T[0]))) __VERIFIER_error();
 
   v_inf = T[i]; 
   v_sup = T[i+1];

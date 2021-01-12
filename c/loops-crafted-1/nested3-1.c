@@ -22,14 +22,14 @@ int main()
 	while (z <0x0fffffff) {
 	  z++;
 	}
-    	__VERIFIER_assert(z % 4);
+    	if (!(z % 4)) __VERIFIER_error();
 	y++;
     }
-    __VERIFIER_assert(y % 2);
+    if (!(y % 2)) __VERIFIER_error();
 
     x++;
   }
-  __VERIFIER_assert(x % 2);
+  if (!(x % 2)) __VERIFIER_error();
   return 0;
 
 }

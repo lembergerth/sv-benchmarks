@@ -16,6 +16,6 @@ int main() {
         i = i + j;
         k ++;
     }
-    __VERIFIER_assert(k <= 1000000);
+    if (!(k <= 1000000)) __VERIFIER_error();
     return 0;
 }

@@ -17,5 +17,5 @@ int main()
     x--;
     y++;
   }
-  __VERIFIER_assert(y!=n);
+  if (!(y!=n)) __VERIFIER_error();
 }

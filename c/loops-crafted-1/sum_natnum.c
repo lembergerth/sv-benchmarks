@@ -19,6 +19,6 @@ int main() {
       i = i + 1; 
       sum += i;
   }
-  __VERIFIER_assert( sum == ((SIZE *(SIZE+1))/2));
+  if (!( sum == ((SIZE *(SIZE+1))/2))) __VERIFIER_error();
   return 0;
 }

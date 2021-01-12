@@ -992,35 +992,35 @@ int main(void) {
   fesetround(modes[i]);
   switch (modes[i]) {
   case 0x400:
-   __VERIFIER_assert(rint(12.9) == 12.);
-   __VERIFIER_assert(rint(-12.1) == -13.);
+   if (!(rint(12.9) == 12.)) __VERIFIER_error();
+   if (!(rint(-12.1) == -13.)) __VERIFIER_error();
    break;
   case 0:
-   __VERIFIER_assert(rint(12.4) == 12.);
-   __VERIFIER_assert(rint(-12.4) == -12.);
+   if (!(rint(12.4) == 12.)) __VERIFIER_error();
+   if (!(rint(-12.4) == -12.)) __VERIFIER_error();
    break;
   case 0xc00:
-   __VERIFIER_assert(rint(12.9) == 12.);
-   __VERIFIER_assert(rint(-12.9) == -12.);
+   if (!(rint(12.9) == 12.)) __VERIFIER_error();
+   if (!(rint(-12.9) == -12.)) __VERIFIER_error();
    break;
   case 0x800:
-   __VERIFIER_assert(rint(12.1) == 13.);
-   __VERIFIER_assert(rint(-12.9) == -12.);
+   if (!(rint(12.1) == 13.)) __VERIFIER_error();
+   if (!(rint(-12.9) == -12.)) __VERIFIER_error();
    break;
   }
  }
 
  fesetround(0x400);
- __VERIFIER_assert(rint(12.9) == 12.);
- __VERIFIER_assert(rint(-12.1) == -13.);
+ if (!(rint(12.9) == 12.)) __VERIFIER_error();
+ if (!(rint(-12.1) == -13.)) __VERIFIER_error();
  fesetround(0);
- __VERIFIER_assert(rint(12.4) == 12.);
- __VERIFIER_assert(rint(-12.4) == -12.);
+ if (!(rint(12.4) == 12.)) __VERIFIER_error();
+ if (!(rint(-12.4) == -12.)) __VERIFIER_error();
  fesetround(0xc00);
- __VERIFIER_assert(rint(12.9) == 12.);
- __VERIFIER_assert(rint(-12.9) == -12.);
+ if (!(rint(12.9) == 12.)) __VERIFIER_error();
+ if (!(rint(-12.9) == -12.)) __VERIFIER_error();
  fesetround(0x800);
- __VERIFIER_assert(rint(12.1) == 13.);
- __VERIFIER_assert(rint(-12.9) == -12.);
+ if (!(rint(12.1) == 13.)) __VERIFIER_error();
+ if (!(rint(-12.9) == -12.)) __VERIFIER_error();
  return 0;
 }

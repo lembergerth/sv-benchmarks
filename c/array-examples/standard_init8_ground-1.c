@@ -48,7 +48,7 @@ int main ( ) {
 
   int x;
   for ( x = 0 ; x < N ; x++ ) {
-    __VERIFIER_assert(  a[x] == 48  );
+    if (!(  a[x] == 48  )) __VERIFIER_error();
   }
   return 0;
 }

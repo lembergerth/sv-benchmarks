@@ -246,7 +246,7 @@ void * P3(void *arg)
   z$w_buff0 = 1;
   z$w_buff1_used = z$w_buff0_used;
   z$w_buff0_used = TRUE;
-  __VERIFIER_assert(!(z$w_buff1_used && z$w_buff0_used));
+  if (!(!(z$w_buff1_used && z$w_buff0_used))) __VERIFIER_error();
   z$r_buff1_thd0 = z$r_buff0_thd0;
   z$r_buff1_thd1 = z$r_buff0_thd1;
   z$r_buff1_thd2 = z$r_buff0_thd2;
@@ -335,7 +335,7 @@ int main()
   main$tmp_guard1 = !(x == 2 && __unbuffered_p1_EAX == 0 && __unbuffered_p2_EAX == 0 && __unbuffered_p3_EAX == 1 && __unbuffered_p3_EBX == 0);
   __VERIFIER_atomic_end();
   /* Program proven to be relaxed for X86, model checker says YES. */
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }
 

@@ -57,7 +57,7 @@ int main()
 
   y = sqrt_custom(x);
 
-  __VERIFIER_assert(y >= 0. && y <= 1e6);
+  if (!(y >= 0. && y <= 1e6)) __VERIFIER_error();
   return 0;
 }
 

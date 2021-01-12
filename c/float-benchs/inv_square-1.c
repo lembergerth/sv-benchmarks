@@ -16,7 +16,7 @@ int main()
 
   if (x != 0.f) {
     y = x * x;
-    __VERIFIER_assert(y != 0.f);
+    if (!(y != 0.f)) __VERIFIER_error();
     z = 1.f / y;
   }
   return 0;

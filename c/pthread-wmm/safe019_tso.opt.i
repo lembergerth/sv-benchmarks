@@ -788,6 +788,6 @@ int main()
   __VERIFIER_atomic_begin();
   main$tmp_guard1 = !(y == 2 && __unbuffered_p0_EAX == 2 && __unbuffered_p0_EBX == 0 && __unbuffered_p2_EAX == 1);
   __VERIFIER_atomic_end();
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }

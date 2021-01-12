@@ -2689,6 +2689,6 @@ void aws_is_power_of_two_harness() {
 
 
 
-    __VERIFIER_assert(rval == (popcount == 1));
+    if (!(rval == (popcount == 1))) __VERIFIER_error();
 }
 int main() { aws_is_power_of_two_harness(); return 0; }

@@ -32,7 +32,7 @@ int main()
     if (y > 0 && x % y == 0) {
         g = gcd_test(x, y);
 
-        __VERIFIER_assert(g == y);
+        if (!(g == y)) __VERIFIER_error();
     }
 
     return 0;

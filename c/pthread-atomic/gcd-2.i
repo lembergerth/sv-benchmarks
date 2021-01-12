@@ -724,9 +724,9 @@ void check_gcd(unsigned a_in, unsigned b_in, unsigned gcd)
   __VERIFIER_assume(guessed_gcd>1);
   __VERIFIER_assume(a_in%guessed_gcd==0);
   __VERIFIER_assume(b_in%guessed_gcd==0);
-  __VERIFIER_assert(a_in%gcd==0);
-  __VERIFIER_assert(b_in%gcd==0);
-  __VERIFIER_assert(gcd>=guessed_gcd);
+  if (!(a_in%gcd==0)) __VERIFIER_error();
+  if (!(b_in%gcd==0)) __VERIFIER_error();
+  if (!(gcd>=guessed_gcd)) __VERIFIER_error();
 }
 int main()
 {

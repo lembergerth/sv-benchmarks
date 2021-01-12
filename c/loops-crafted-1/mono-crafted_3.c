@@ -18,6 +18,6 @@ int main()
 		z++;
 		y=y-2;
 	}
-	__VERIFIER_assert(x==z);
+	if (!(x==z)) __VERIFIER_error();
 	return 0;
 }

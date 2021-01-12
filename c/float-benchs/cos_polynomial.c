@@ -48,6 +48,6 @@ int main()
 
   r = mcos(a);
 
-  __VERIFIER_assert(r >= 0. && r <= 1.1);
+  if (!(r >= 0. && r <= 1.1)) __VERIFIER_error();
   return 0;
 }

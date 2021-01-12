@@ -109,7 +109,7 @@ int main()
 
     r = mp_add(a, b);
 
-    __VERIFIER_assert(r == a + b);
+    if (!(r == a + b)) __VERIFIER_error();
     
     return 0;
 }

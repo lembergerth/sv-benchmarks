@@ -868,10 +868,10 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 
 int main(void)
 {
-    __VERIFIER_assert(__builtin_isgreater(2.0, 1.0));
-    __VERIFIER_assert(!__builtin_isgreater(1.0, 2.0));
-    __VERIFIER_assert(__builtin_isgreater((__builtin_inff()), 1.0));
-    __VERIFIER_assert(!__builtin_isgreater(1.0, (__builtin_nanf (""))));
+    if (!(__builtin_isgreater(2.0, 1.0))) __VERIFIER_error();
+    if (!(!__builtin_isgreater(1.0, 2.0))) __VERIFIER_error();
+    if (!(__builtin_isgreater((__builtin_inff()), 1.0))) __VERIFIER_error();
+    if (!(!__builtin_isgreater(1.0, (__builtin_nanf (""))))) __VERIFIER_error();
 
     return 0;
 }

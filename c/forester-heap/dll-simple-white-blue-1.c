@@ -89,7 +89,7 @@ int main()
     while (x)
 	{
 		if (x->data != BLUE)
-			__VERIFIER_assert(0);
+			if (!(0)) __VERIFIER_error();
         x = x->next;
     }
 

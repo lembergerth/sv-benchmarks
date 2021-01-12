@@ -10,6 +10,6 @@ int main()
   double x;
   x = __VERIFIER_nondet_double();
 
-  __VERIFIER_assert(x==x);
+  if (!(x==x)) __VERIFIER_error();
   return 0;
 }

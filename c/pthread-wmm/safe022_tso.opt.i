@@ -756,6 +756,6 @@ int main()
   __VERIFIER_atomic_begin();
   main$tmp_guard1 = !(__unbuffered_p1_EAX == 1 && __unbuffered_p1_EBX == 0);
   __VERIFIER_atomic_end();
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }

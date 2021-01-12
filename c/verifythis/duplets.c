@@ -51,11 +51,11 @@ int main() {
     int i,j;
     int r = finddup(a, n, &i, &j);
 
-    __VERIFIER_assert(r);
-    __VERIFIER_assert(0 <= i && i < n);
-    __VERIFIER_assert(0 <= j && j < n);
-    __VERIFIER_assert(i != j);
-    __VERIFIER_assert(a[i] == a[j]);
+    if (!(r)) __VERIFIER_error();
+    if (!(0 <= i && i < n)) __VERIFIER_error();
+    if (!(0 <= j && j < n)) __VERIFIER_error();
+    if (!(i != j)) __VERIFIER_error();
+    if (!(a[i] == a[j])) __VERIFIER_error();
     free(a);
     return 0;
 }

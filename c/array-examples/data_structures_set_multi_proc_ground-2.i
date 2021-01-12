@@ -26,7 +26,7 @@ int main( ) {
 	
   for ( x = 0 ; x < n ; x++ ) {
     for ( y = x + 1 ; y < n ; y++ ) {
-      __VERIFIER_assert( set[ x ] != set[ y ] );
+      if (!( set[ x ] != set[ y ] )) __VERIFIER_error();
     }
   }
   int values[ 100000 ];
@@ -44,7 +44,7 @@ int main( ) {
   }
   for ( x = 0 ; x < n ; x++ ) {
     for ( y = x + 1 ; y < n ; y++ ) {
-      __VERIFIER_assert( set[ x ] != set[ y ] );
+      if (!( set[ x ] != set[ y ] )) __VERIFIER_error();
     }
   }
   return 0;

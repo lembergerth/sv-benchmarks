@@ -33,10 +33,10 @@ int main() {
         k = 0;
 
         while (1) {
-            __VERIFIER_assert(a == k * b + c);
-            __VERIFIER_assert(a == y*r + x*p);
-            __VERIFIER_assert(b == x * q + y * s);
-	    __VERIFIER_assert(q*x*y + s*y*y - q*x - b*y - s*y + b == 0);
+            if (!(a == k * b + c)) __VERIFIER_error();
+            if (!(a == y*r + x*p)) __VERIFIER_error();
+            if (!(b == x * q + y * s)) __VERIFIER_error();
+	    if (!(q*x*y + s*y*y - q*x - b*y - s*y + b == 0)) __VERIFIER_error();
             if (!(c >= b))
                 break;
             c = c - b;
@@ -56,7 +56,7 @@ int main() {
     }
     
 
-    __VERIFIER_assert(q*x + s*y == 0);
-    __VERIFIER_assert(p*x + r*y == a);
+    if (!(q*x + s*y == 0)) __VERIFIER_error();
+    if (!(p*x + r*y == a)) __VERIFIER_error();
     return a;
 }

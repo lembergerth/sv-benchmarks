@@ -10,6 +10,6 @@ int __VERIFIER_nondet_int();
 int main() {
     int i;
     for (i = 0; i < 1000000; i++) ;
-    __VERIFIER_assert(i == 1000000);
+    if (!(i == 1000000)) __VERIFIER_error();
     return 0;
 }

@@ -52,7 +52,7 @@ int main()
 
 		for(i = 0; i < CELLCOUNT; i++)
 		{
-			__VERIFIER_assert(volArray[i] >= MINVAL || volArray[i] == 0 );
+			if (!(volArray[i] >= MINVAL || volArray[i] == 0 )) __VERIFIER_error();
 		}
 	}
 	return 1;

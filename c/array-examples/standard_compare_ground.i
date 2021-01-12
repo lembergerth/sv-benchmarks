@@ -22,7 +22,7 @@ int main( ) {
   if ( rv ) {
     int x;
     for ( x = 0 ; x < 100000 ; x++ ) {
-      __VERIFIER_assert( a[x] == b[x] );
+      if (!( a[x] == b[x] )) __VERIFIER_error();
     }
   }
   return 0;

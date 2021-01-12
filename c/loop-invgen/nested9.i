@@ -20,7 +20,7 @@ int main() {
     for (i=0;i<n;i++)
         for (j = 2*i;j<3*i;j++)
             for (k = i; k< j; k++)
-                __VERIFIER_assert( k-i <= 2*n );
+                if (!( k-i <= 2*n )) __VERIFIER_error();
 END:
     return 0;
 }

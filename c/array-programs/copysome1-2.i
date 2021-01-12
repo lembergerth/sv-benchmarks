@@ -19,7 +19,7 @@ int main( ) {
   z = 150001;
   for ( x = 0 ; x < 200000 ; x++ ) {
       if (x != z)
-    __VERIFIER_assert( a1[x] == a2[x] );
+    if (!( a1[x] == a2[x] )) __VERIFIER_error();
   }
   return 0;
 }

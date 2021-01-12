@@ -21,7 +21,7 @@ int main() {
     else
 	    k = k+3;
     if(n>0)
-	  __VERIFIER_assert( (i/2<=j) );
+	  if (!( (i/2<=j) )) __VERIFIER_error();
   }
   return 0;
 }

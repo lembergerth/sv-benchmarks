@@ -29,7 +29,7 @@ int main() {
         }
     }
     if (flag) {
-        __VERIFIER_assert(a == b);
+        if (!(a == b)) __VERIFIER_error();
     }
     return 0;
 }

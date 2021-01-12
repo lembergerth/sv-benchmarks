@@ -931,5 +931,5 @@ int main()
  __VERIFIER_assume(b2[1] == __CS_cp_b2[2]);
  __VERIFIER_assume(X[0] == __CS_cp_X[1]);
  __VERIFIER_assume(X[1] == __CS_cp_X[2]);
- __VERIFIER_assert(__CS_error != 1);
+ if (!(__CS_error != 1)) __VERIFIER_error();
 }

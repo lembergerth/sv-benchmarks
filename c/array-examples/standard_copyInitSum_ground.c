@@ -24,7 +24,7 @@ int main ( ) {
 
   int x;
   for ( x = 0 ; x < N ; x++ ) {
-    __VERIFIER_assert(  b[x] == 42 + incr  );
+    if (!(  b[x] == 42 + incr  )) __VERIFIER_error();
   }
   return 0;
 }

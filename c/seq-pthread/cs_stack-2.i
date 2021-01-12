@@ -1116,5 +1116,5 @@ int main(void)
  __VERIFIER_assume(arr[0][4] == __CS_cp_arr[1][4]);
  __VERIFIER_assume(m[0] == __CS_cp_m[1]);
  __VERIFIER_assume(flag[0] == __CS_cp_flag[1]);
- __VERIFIER_assert(__CS_error != 1);
+ if (!(__CS_error != 1)) __VERIFIER_error();
 }

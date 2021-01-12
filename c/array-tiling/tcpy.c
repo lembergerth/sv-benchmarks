@@ -34,7 +34,7 @@ int main()
 		//assert
 		for(i=0; i<SIZE; i++)
 		{
-			__VERIFIER_assert(acopy[i] == a[i]);
+			if (!(acopy[i] == a[i])) __VERIFIER_error();
 		}
 	}
 	return 1;

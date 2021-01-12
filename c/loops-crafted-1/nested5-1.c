@@ -19,7 +19,7 @@ int main()
 	   for(y=0;y< 10;y++)
 		for(z=0;z< 10;z++) {
 			for(v=0;v< 10;v++);
-			__VERIFIER_assert(v % 4);
+			if (!(v % 4)) __VERIFIER_error();
 	   }
   return 0;
 }

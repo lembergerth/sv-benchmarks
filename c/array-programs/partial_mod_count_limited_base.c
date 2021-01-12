@@ -15,7 +15,7 @@ int i,j=0,k=0,a[N];
   }
   for(i=0;i<N;i++){
     if (a[i]==0) j++;
-     __VERIFIER_assert(j < 2);
+     if (!(j < 2)) __VERIFIER_error();
   }
   return 0;
 }

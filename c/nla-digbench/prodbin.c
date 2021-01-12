@@ -25,7 +25,7 @@ int main() {
     z = 0;
 
     while (1) {
-        __VERIFIER_assert(z + x * y == a * b);
+        if (!(z + x * y == a * b)) __VERIFIER_error();
         if (!(y != 0))
             break;
 
@@ -36,7 +36,7 @@ int main() {
         x = 2 * x;
         y = y / 2;
     }
-    __VERIFIER_assert(z == a * b);
+    if (!(z == a * b)) __VERIFIER_error();
     
     return 0;
 }

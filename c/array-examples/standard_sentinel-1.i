@@ -17,7 +17,7 @@ int main ( ) {
     while( a[ i ] != marker ) {
       i = i + 1;
     }
-    __VERIFIER_assert( i <= pos );
+    if (!( i <= pos )) __VERIFIER_error();
   }
   return 0;
 }

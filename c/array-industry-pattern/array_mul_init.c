@@ -27,7 +27,7 @@ int main()
 
 	for (i=0; i< SIZE; i++)
 	{
-		__VERIFIER_assert(a[i] == b[i] || b[i]  == a[i] * a[i]);
+		if (!(a[i] == b[i] || b[i]  == a[i] * a[i])) __VERIFIER_error();
 	}
 }
 

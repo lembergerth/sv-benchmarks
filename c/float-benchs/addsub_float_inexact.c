@@ -11,6 +11,6 @@ int main()
   y = x + 1.f;
   z = x - 1.f;
   r = y - z; 
-  __VERIFIER_assert(r == 0.f);
+  if (!(r == 0.f)) __VERIFIER_error();
   return 0;
 }

@@ -43,7 +43,7 @@ int main()
 
 	for(i=0; i<N; i++)
 	{
-		__VERIFIER_assert(b[i] == 4*i*i + 4*i + 1);
+		if (!(b[i] == 4*i*i + 4*i + 1)) __VERIFIER_error();
 	}
 	return 1;
 }

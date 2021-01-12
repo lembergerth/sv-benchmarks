@@ -677,7 +677,7 @@ volatile int x;
 volatile int n;
 pthread_mutex_t mut = { { 0, 0, 0, 0, 0, { { 0, 0 } } } };
 void* thr1(void* arg) {
-  __VERIFIER_assert(x <= n);
+  if (!(x <= n)) __VERIFIER_error();
 }
 void* thr2(void* arg) {
   int t;

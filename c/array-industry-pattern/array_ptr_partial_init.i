@@ -16,7 +16,7 @@ int main ()
  }
  for(i = 0; i < 100000 / 2; i++)
  {
-  __VERIFIER_assert(a[i] != 0);
+  if (!(a[i] != 0)) __VERIFIER_error();
  }
 return 0;
 }

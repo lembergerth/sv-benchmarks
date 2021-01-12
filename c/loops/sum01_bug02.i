@@ -15,5 +15,5 @@ int main() {
     sn = sn + (2);
     j--;
   }
-  __VERIFIER_assert(sn==n*(2) || sn == 0);
+  if (!(sn==n*(2) || sn == 0)) __VERIFIER_error();
 }

@@ -21,7 +21,7 @@ int main()
       y = y +4;
       
       
-      __VERIFIER_assert(x!=30);
+      if (!(x!=30)) __VERIFIER_error();
     }
     return 0;
 }

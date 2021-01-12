@@ -827,5 +827,5 @@ int main()
  __VERIFIER_assume(turn[1] == __CS_cp_turn[2]);
  __VERIFIER_assume(x[0] == __CS_cp_x[1]);
  __VERIFIER_assume(x[1] == __CS_cp_x[2]);
- __VERIFIER_assert(__CS_error != 1);
+ if (!(__CS_error != 1)) __VERIFIER_error();
 }

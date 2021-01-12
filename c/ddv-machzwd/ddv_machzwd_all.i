@@ -675,7 +675,7 @@ extern inline int pthread_mutex_lock(pthread_mutex_t *__mutex)
 extern inline int pthread_mutex_unlock(pthread_mutex_t *__mutex)
 {
   __VERIFIER_HIDE:
-  __VERIFIER_assert(__mutex->locked, "pthread_mutex_unlock without lock");
+  if (!(__mutex->locked, "pthread_mutex_unlock without lock")) __VERIFIER_error();
   __mutex->locked=0;
   return 0;
 }
@@ -3962,7 +3962,7 @@ inline void release_region(unsigned long start, unsigned long len)
 inline unsigned char inb(unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 
     return __VERIFIER_nondet_uchar();
 }
@@ -3970,13 +3970,13 @@ inline unsigned char inb(unsigned int port)
 inline void outb(unsigned char byte, unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 }
 
 inline unsigned short inw(unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 
     return __VERIFIER_nondet_ushort();
 }
@@ -3984,13 +3984,13 @@ inline unsigned short inw(unsigned int port)
 inline void outw(unsigned short word, unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 }
 
 inline unsigned inl(unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 
     return __VERIFIER_nondet_unsigned();
 }
@@ -3998,13 +3998,13 @@ inline unsigned inl(unsigned int port)
 inline void outl(unsigned doubleword, unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 }
 
 inline unsigned char inb_p(unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 
     return __VERIFIER_nondet_uchar();
 }
@@ -4012,13 +4012,13 @@ inline unsigned char inb_p(unsigned int port)
 inline void outb_p(unsigned char byte, unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 }
 
 inline unsigned short inw_p(unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 
     return __VERIFIER_nondet_ushort();
 }
@@ -4026,13 +4026,13 @@ inline unsigned short inw_p(unsigned int port)
 inline void outw_p(unsigned short word, unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 }
 
 inline unsigned inl_p(unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 
     return __VERIFIER_nondet_unsigned();
 }
@@ -4040,7 +4040,7 @@ inline unsigned inl_p(unsigned int port)
 inline void outl_p(unsigned doubleword, unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 }
 
 

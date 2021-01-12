@@ -868,27 +868,27 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 
 int main(void)
 {
-  __VERIFIER_assert(round(2.3) == 2.0);
-  __VERIFIER_assert(round(2.5) == 3.0);
-  __VERIFIER_assert(round(2.7) == 3.0);
+  if (!(round(2.3) == 2.0)) __VERIFIER_error();
+  if (!(round(2.5) == 3.0)) __VERIFIER_error();
+  if (!(round(2.7) == 3.0)) __VERIFIER_error();
 
-  __VERIFIER_assert(round(-2.3) == -2.0);
-  __VERIFIER_assert(round(-2.5) == -3.0);
-  __VERIFIER_assert(round(-2.7) == -3.0);
+  if (!(round(-2.3) == -2.0)) __VERIFIER_error();
+  if (!(round(-2.5) == -3.0)) __VERIFIER_error();
+  if (!(round(-2.7) == -3.0)) __VERIFIER_error();
 
   double c = round(-0.0);
-  __VERIFIER_assert((c == -0.0) && (sizeof (c) == sizeof (float) ? __signbitf (c) : sizeof (c) == sizeof (double) ? __signbit (c) : __signbitl (c)));
+  if (!((c == -0.0) && (sizeof (c) == sizeof (float) ? __signbitf (c) : sizeof (c) == sizeof (double) ? __signbit (c) : __signbitl (c)))) __VERIFIER_error();
 
   c = round(-(__builtin_inff()));
-  __VERIFIER_assert((sizeof ((__builtin_inff())) == sizeof (float) ? __isinff ((__builtin_inff())) : sizeof ((__builtin_inff())) == sizeof (double) ? __isinf ((__builtin_inff())) : __isinfl ((__builtin_inff()))) && (sizeof (c) == sizeof (float) ? __signbitf (c) : sizeof (c) == sizeof (double) ? __signbit (c) : __signbitl (c)));
+  if (!((sizeof ((__builtin_inff())) == sizeof (float) ? __isinff ((__builtin_inff())) : sizeof ((__builtin_inff())) == sizeof (double) ? __isinf ((__builtin_inff())) : __isinfl ((__builtin_inff()))) && (sizeof (c) == sizeof (float) ? __signbitf (c) : sizeof (c) == sizeof (double) ? __signbit (c) : __signbitl (c)))) __VERIFIER_error();
 
-  __VERIFIER_assert(lround(2.3) == 2);
-  __VERIFIER_assert(lround(2.5) == 3);
-  __VERIFIER_assert(lround(2.7) == 3);
+  if (!(lround(2.3) == 2)) __VERIFIER_error();
+  if (!(lround(2.5) == 3)) __VERIFIER_error();
+  if (!(lround(2.7) == 3)) __VERIFIER_error();
 
-  __VERIFIER_assert(lround(-2.3) == -2);
-  __VERIFIER_assert(lround(-2.5) == -3);
-  __VERIFIER_assert(lround(-2.7) == -3);
+  if (!(lround(-2.3) == -2)) __VERIFIER_error();
+  if (!(lround(-2.5) == -3)) __VERIFIER_error();
+  if (!(lround(-2.7) == -3)) __VERIFIER_error();
 
-  __VERIFIER_assert(lround(-0.0) == 0);
+  if (!(lround(-0.0) == 0)) __VERIFIER_error();
 }

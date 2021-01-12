@@ -25,7 +25,7 @@ int main()
   struct S* u = a[i];
   if (u->t == 10)
   {
-   __VERIFIER_assert(u->p1 != (void *) 0);
+   if (!(u->p1 != (void *) 0)) __VERIFIER_error();
   }
  }
 }

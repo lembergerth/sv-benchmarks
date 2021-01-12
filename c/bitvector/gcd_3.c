@@ -32,7 +32,7 @@ int main()
     g = gcd_test(x, y);
 
     if (x > (signed char)0) {
-        __VERIFIER_assert(x >= g);
+        if (!(x >= g)) __VERIFIER_error();
     }
 
     return 0;

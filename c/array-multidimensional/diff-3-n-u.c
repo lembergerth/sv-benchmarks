@@ -69,7 +69,7 @@ int main()
 		while(j < n){
 			k=0;
 			while(k < p){
-					__VERIFIER_assert(C[i][j][k]==A[i][j][k]+B[i][j][k]);
+					if (!(C[i][j][k]==A[i][j][k]+B[i][j][k])) __VERIFIER_error();
 					k=k+1;
 			}
 			j=j+1;

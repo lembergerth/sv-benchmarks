@@ -25,7 +25,7 @@ int main()
           maior = matriz[j][k];                          
     }                       
     
-  __VERIFIER_assert(matriz[0][0]<=maior);    
+  if (!(matriz[0][0]<=maior)) __VERIFIER_error();    
 
   return 0;
 }

@@ -20,7 +20,7 @@ int main()
 
 	for(i = 0; i < SIZE / 2; i++)
 	{
-		__VERIFIER_assert(a[i] != NULL);
+		if (!(a[i] != NULL)) __VERIFIER_error();
 	}
 	return 0;
 }	

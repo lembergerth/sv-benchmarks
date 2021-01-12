@@ -56,7 +56,7 @@ int main()
 
 	for(i=0; i<N; i++)
 	{
-		__VERIFIER_assert(a[i] == N*(N+2));
+		if (!(a[i] == N*(N+2))) __VERIFIER_error();
 	}
 	return 1;
 }

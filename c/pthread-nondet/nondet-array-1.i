@@ -695,6 +695,6 @@ int main(int argc, char* argv[]) {
   for (i = 0; i < n; i++) {
     sum += a[i];
   }
-  __VERIFIER_assert(sum == 10 - 1);
+  if (!(sum == 10 - 1)) __VERIFIER_error();
   return 0;
 }

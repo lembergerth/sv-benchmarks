@@ -1041,5 +1041,5 @@ int main()
  __VERIFIER_assume(m[0] == __CS_cp_m[1]);
  __VERIFIER_assume(empty[0] == __CS_cp_empty[1]);
  __VERIFIER_assume(full[0] == __CS_cp_full[1]);
- __VERIFIER_assert(__CS_error != 1);
+ if (!(__CS_error != 1)) __VERIFIER_error();
 }

@@ -24,6 +24,6 @@ int main()
     z--;
   }
 
-  __VERIFIER_assert(x==n);
+  if (!(x==n)) __VERIFIER_error();
   return 0;
 }

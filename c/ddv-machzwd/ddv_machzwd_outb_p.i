@@ -3977,7 +3977,7 @@ inline unsigned char inb_p(unsigned int port)
 inline void outb_p(unsigned char byte, unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 }
 
 inline unsigned short inw_p(unsigned int port)

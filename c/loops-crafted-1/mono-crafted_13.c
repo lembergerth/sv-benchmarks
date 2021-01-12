@@ -16,6 +16,6 @@ int main(){
 		y--;
 		x--;
 	}
-	__VERIFIER_assert((x%2==0));
+	if (!((x%2==0))) __VERIFIER_error();
 	return 0;
 }

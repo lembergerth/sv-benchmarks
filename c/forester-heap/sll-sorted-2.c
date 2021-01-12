@@ -50,19 +50,19 @@ int main()
 
 	x = head;
 	// check the invariant
-	__VERIFIER_assert(NULL != x);
+	if (!(NULL != x)) __VERIFIER_error();
 	marked = 0;
 
 	while (x->next != NULL && x->next->data == 0)
 	{
-		__VERIFIER_assert(x->data == 0);
+		if (!(x->data == 0)) __VERIFIER_error();
 		x = x->next;
 	}
 
 	while (x->next != NULL && __VERIFIER_nondet_int())
 	{
 		x = x->next;
-		__VERIFIER_assert(x->data == 1);
+		if (!(x->data == 1)) __VERIFIER_error();
 	}
 
 	SLL* tmp = malloc(sizeof(SLL));
@@ -81,15 +81,15 @@ int main()
 	while (x != NULL && x->data != 1)
 	{
 		marked = x->data;
-		__VERIFIER_assert(x->data == 0);
-		__VERIFIER_assert(marked == 0);
+		if (!(x->data == 0)) __VERIFIER_error();
+		if (!(marked == 0)) __VERIFIER_error();
 		x = x->next;
 	}
 	while (x != NULL)
 	{
 		marked = x->data;
-		__VERIFIER_assert(x->data == 1);
-		__VERIFIER_assert(marked == 1);
+		if (!(x->data == 1)) __VERIFIER_error();
+		if (!(marked == 1)) __VERIFIER_error();
 		x = x->next;
 	}
 
@@ -99,7 +99,7 @@ int main()
 	while (x != NULL)
 	{
 		marked = x->data;
-		__VERIFIER_assert(x->data == 1 || marked == 0);
+		if (!(x->data == 1 || marked == 0)) __VERIFIER_error();
 		x = x->next;
 	}
 	*/

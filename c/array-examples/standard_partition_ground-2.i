@@ -31,7 +31,7 @@ int main( ) {
   }
   int x;
   for ( x = 0 ; x < b ; x++ ) {
-    __VERIFIER_assert( bb[ x ] >= 0 );
+    if (!( bb[ x ] >= 0 )) __VERIFIER_error();
   }
   return 0;
 }

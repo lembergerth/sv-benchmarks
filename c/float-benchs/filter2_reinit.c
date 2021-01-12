@@ -45,7 +45,7 @@ int main()
     S0 = S;
     S = 0.7*E - E0*1.3 + E1*1.1 + S0*1.4 - S1*0.7;
 
-    __VERIFIER_assert(S >= -4. && S <= 4.);
+    if (!(S >= -4. && S <= 4.)) __VERIFIER_error();
   }
   return 0;
 }

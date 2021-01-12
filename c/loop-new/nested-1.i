@@ -19,6 +19,6 @@ int main() {
      k ++;
  }
     }
-    __VERIFIER_assert(k >= 100);
+    if (!(k >= 100)) __VERIFIER_error();
     return 0;
 }

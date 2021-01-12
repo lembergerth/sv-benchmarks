@@ -33,6 +33,6 @@ int main()
      C[i]=A[i]+B[i];
   
   for(i=0;i<M;i++)
-     __VERIFIER_assert(C[i]==A[i]+B[i]);
+     if (!(C[i]==A[i]+B[i])) __VERIFIER_error();
 }
 

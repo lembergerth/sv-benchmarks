@@ -798,5 +798,5 @@ int main()
  __VERIFIER_assume(mb[0] == __CS_cp_mb[1]);
  __VERIFIER_assume(data1[0] == __CS_cp_data1[1]);
  __VERIFIER_assume(data2[0] == __CS_cp_data2[1]);
- __VERIFIER_assert(__CS_error != 1);
+ if (!(__CS_error != 1)) __VERIFIER_error();
 }

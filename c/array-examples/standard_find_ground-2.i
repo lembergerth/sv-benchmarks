@@ -14,7 +14,7 @@ int main ( ) {
   }
   int x;
   for ( x = 0 ; x < i ; x++ ) {
-    __VERIFIER_assert( a[x] != e );
+    if (!( a[x] != e )) __VERIFIER_error();
   }
   return 0;
 }

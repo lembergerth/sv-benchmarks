@@ -14,7 +14,7 @@ int main( ) {
   }
   int x;
   for ( x = 0 ; x < 100000 ; x++ ) {
-    __VERIFIER_assert( a1[x] == a2[x] );
+    if (!( a1[x] == a2[x] )) __VERIFIER_error();
   }
   return 0;
 }

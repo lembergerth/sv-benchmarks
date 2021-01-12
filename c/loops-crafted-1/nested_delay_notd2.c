@@ -34,7 +34,7 @@ int main() {
 			b = 1;
 		}
 			
-		__VERIFIER_assert(a==b && c==SIZE);
+		if (!(a==b && c==SIZE)) __VERIFIER_error();
 	}
 	return 0;
 }

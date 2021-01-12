@@ -53,7 +53,7 @@ int main()
 		j=0;
 		while(j < n){
 			
-                            __VERIFIER_assert(A[i][j]==B[m-i-1][n-j-1]);
+                            if (!(A[i][j]==B[m-i-1][n-j-1])) __VERIFIER_error();
 		
 			j=j+1;
 		}

@@ -23,6 +23,6 @@ int main(void) {
     j++;
   }
   if(j >= 100) goto STUCK;
-  __VERIFIER_assert( i < 200 );
+  if (!( i < 200 )) __VERIFIER_error();
   return 0;
 }

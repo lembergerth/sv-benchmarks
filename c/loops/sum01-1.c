@@ -14,5 +14,5 @@ int main() {
     if (i<10)
     sn = sn + a;
   }
-  __VERIFIER_assert(sn==n*a || sn == 0);
+  if (!(sn==n*a || sn == 0)) __VERIFIER_error();
 }

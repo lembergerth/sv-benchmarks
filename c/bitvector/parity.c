@@ -42,7 +42,7 @@ int main()
         parity2 = (char)1;
     }
 
-    __VERIFIER_assert(parity1 == parity2);
+    if (!(parity1 == parity2)) __VERIFIER_error();
 
     return 0;
 }

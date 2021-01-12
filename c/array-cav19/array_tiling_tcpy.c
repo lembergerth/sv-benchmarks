@@ -17,7 +17,7 @@ int main()
   }
 
   for(i=0;i<2*S;i++)
-    __VERIFIER_assert(acopy[i] == a[i]);
+    if (!(acopy[i] == a[i])) __VERIFIER_error();
   return 0;
 }
 

@@ -47,7 +47,7 @@ int main()
 
     r = SqrtR(d);
 
-    __VERIFIER_assert(r >= 1.0 && r <= 5.0);
+    if (!(r >= 1.0 && r <= 5.0)) __VERIFIER_error();
   }
   return 0;
 }

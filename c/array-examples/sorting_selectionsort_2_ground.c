@@ -34,11 +34,11 @@ int main( ) {
     
     for ( x = 0 ; x < i ; x++ ) {
       for ( y = x + 1 ; y < i ; y++ ) {
-        __VERIFIER_assert(  a[x] <= a[y]  );
+        if (!(  a[x] <= a[y]  )) __VERIFIER_error();
       }
     }
     for ( x = i+1 ; x < N ; x ++ ) {
-      __VERIFIER_assert(  a[x] >= a[i]  );
+      if (!(  a[x] >= a[i]  )) __VERIFIER_error();
     }
     
     i = i+1;
@@ -46,7 +46,7 @@ int main( ) {
     
   for ( x = 0 ; x < N ; x++ ) {
     for ( y = x + 1 ; y < N ; y++ ) {
-      __VERIFIER_assert(  a[x] <= a[y]  );
+      if (!(  a[x] <= a[y]  )) __VERIFIER_error();
     }
   }
   return 0;

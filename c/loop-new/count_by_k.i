@@ -13,6 +13,6 @@ int main() {
     k = __VERIFIER_nondet_int();
     if (!(0 <= k && k <= 10)) return 0;
     for (i = 0; i < 1000000*k; i += k) ;
-    __VERIFIER_assert(i == 1000000*k);
+    if (!(i == 1000000*k)) __VERIFIER_error();
     return 0;
 }

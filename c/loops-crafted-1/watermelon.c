@@ -58,7 +58,7 @@ int main(){
   {
     is_divisible1 = correct_version(w);
     is_divisible2 = student_version(w);
-    __VERIFIER_assert(is_divisible1 == is_divisible2);
+    if (!(is_divisible1 == is_divisible2)) __VERIFIER_error();
   }
   return 0;
 

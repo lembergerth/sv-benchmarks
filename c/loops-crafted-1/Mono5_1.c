@@ -9,6 +9,6 @@ unsigned int z=5000000;
 			z--;
 		x++;
 	}
-  __VERIFIER_assert(z!=0);
+  if (!(z!=0)) __VERIFIER_error();
 }
 

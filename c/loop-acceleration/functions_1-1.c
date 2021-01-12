@@ -18,5 +18,5 @@ int main(void) {
     x = f(x);
   }
 
-  __VERIFIER_assert(!(x % 2));
+  if (!(!(x % 2))) __VERIFIER_error();
 }

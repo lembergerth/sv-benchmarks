@@ -1340,7 +1340,7 @@ int main(void)
     {
       exit(-1);
     }
-    __VERIFIER_assert(myglobal != 40);
+    if (!(myglobal != 40)) __VERIFIER_error();
     printf("\nValue of myglobal in thread_function_datarace is :  %d\n",myglobal);
     printf("\n ----------------------------------------------------------------------------------------------------\n");
     exit(0);

@@ -30,7 +30,7 @@ int main()
 
 		for(i = 0; i < SIZE; i++)
 		{
-			__VERIFIER_assert(a[i] >= low);
+			if (!(a[i] >= low)) __VERIFIER_error();
 		}
 	}
 	return 1;

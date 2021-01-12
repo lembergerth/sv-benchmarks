@@ -603,8 +603,8 @@ int main()
   }
   __VERIFIER_assume(is_list_containing_x(&list, x));
   remove(x);
-  __VERIFIER_assert(&list==x || !is_list_containing_x(&list, x));
+  if (!(&list==x || !is_list_containing_x(&list, x))) __VERIFIER_error();
   re_insert(x);
-  __VERIFIER_assert(is_list_containing_x(&list, x));
+  if (!(is_list_containing_x(&list, x))) __VERIFIER_error();
   return 0;
 }

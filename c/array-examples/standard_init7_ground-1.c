@@ -43,7 +43,7 @@ int main ( ) {
 
   int x;
   for ( x = 0 ; x < N ; x++ ) {
-    __VERIFIER_assert(  a[x] == 47  );
+    if (!(  a[x] == 47  )) __VERIFIER_error();
   }
   return 0;
 }

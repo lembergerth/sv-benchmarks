@@ -5,10 +5,10 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
  
 int main(void)
 {
-    __VERIFIER_assert(isgreater(2.0, 1.0));
-    __VERIFIER_assert(!isgreater(1.0, 2.0));
-    __VERIFIER_assert(isgreater(INFINITY, 1.0));
-    __VERIFIER_assert(!isgreater(1.0, NAN));
+    if (!(isgreater(2.0, 1.0))) __VERIFIER_error();
+    if (!(!isgreater(1.0, 2.0))) __VERIFIER_error();
+    if (!(isgreater(INFINITY, 1.0))) __VERIFIER_error();
+    if (!(!isgreater(1.0, NAN))) __VERIFIER_error();
  
     return 0;
 }

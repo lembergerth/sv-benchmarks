@@ -34,7 +34,7 @@ int main()
 		x->next->prev = x;
 		x = x->next;
 		x->data = 0;
-		__VERIFIER_assert(NULL != x);
+		if (!(NULL != x)) __VERIFIER_error();
 	}
 	x->data = 1;
 	x->next = malloc(sizeof(SLL));
@@ -43,16 +43,16 @@ int main()
 
 	x = head;
 	// check the invariant
-	__VERIFIER_assert(NULL != x);
+	if (!(NULL != x)) __VERIFIER_error();
 
 	while (1 != x->data)
 	{
-		__VERIFIER_assert(0 == x->data);
+		if (!(0 == x->data)) __VERIFIER_error();
 		x = x->next;
 	}
-	__VERIFIER_assert(1 == x->data);
+	if (!(1 == x->data)) __VERIFIER_error();
 	x = x->next;
-	__VERIFIER_assert(2 == x->data);
+	if (!(2 == x->data)) __VERIFIER_error();
 
 	x = head;
 	// destroy the list
@@ -62,7 +62,7 @@ int main()
 		x = x->next;
 		free(head);
 	}
-	__VERIFIER_assert(1 == x->data);
+	if (!(1 == x->data)) __VERIFIER_error();
 	free(x->next);
 	free(x);
 

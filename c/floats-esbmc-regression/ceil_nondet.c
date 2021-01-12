@@ -18,15 +18,15 @@ int main(void)
   double result = rint(d);
   fesetround(save_round);
 
-  __VERIFIER_assert(ceil(d) == result);
+  if (!(ceil(d) == result)) __VERIFIER_error();
 
   double d1 = __VERIFIER_nondet_double();
   __VERIFIER_assume(isinf(d1));
-  __VERIFIER_assert(isinf(ceil(d1)));
+  if (!(isinf(ceil(d1)))) __VERIFIER_error();
 
   double d2 = __VERIFIER_nondet_double();
   __VERIFIER_assume(isinf(d2));
-  __VERIFIER_assert(isinf(ceil(d2)));
+  if (!(isinf(ceil(d2)))) __VERIFIER_error();
 
   return 0;
 }

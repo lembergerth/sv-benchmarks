@@ -17,34 +17,34 @@ int main()
   --tagbuf_len;
   while (1) {
     if (t == tagbuf_len) {
-      __VERIFIER_assert(0 <= t);
-      __VERIFIER_assert(t <= tagbuf_len);
+      if (!(0 <= t)) __VERIFIER_error();
+      if (!(t <= tagbuf_len)) __VERIFIER_error();
       goto END;
     }
     if (__VERIFIER_nondet_int()) {
       break;
     }
-     __VERIFIER_assert(0 <= t);
-     __VERIFIER_assert(t <= tagbuf_len);
+     if (!(0 <= t)) __VERIFIER_error();
+     if (!(t <= tagbuf_len)) __VERIFIER_error();
     t++;
   }
-   __VERIFIER_assert(0 <= t);
-   __VERIFIER_assert(t <= tagbuf_len);
+   if (!(0 <= t)) __VERIFIER_error();
+   if (!(t <= tagbuf_len)) __VERIFIER_error();
   t++;
   while (1) {
     if (t == tagbuf_len) {
-      __VERIFIER_assert(0 <= t);
-      __VERIFIER_assert(t <= tagbuf_len);
+      if (!(0 <= t)) __VERIFIER_error();
+      if (!(t <= tagbuf_len)) __VERIFIER_error();
       goto END;
     }
     if (__VERIFIER_nondet_int()) {
       if ( __VERIFIER_nondet_int()) {
-  __VERIFIER_assert(0 <= t);
- __VERIFIER_assert(t <= tagbuf_len);
+  if (!(0 <= t)) __VERIFIER_error();
+ if (!(t <= tagbuf_len)) __VERIFIER_error();
         t++;
         if (t == tagbuf_len) {
-   __VERIFIER_assert(0 <= t);
-   __VERIFIER_assert(t <= tagbuf_len);
+   if (!(0 <= t)) __VERIFIER_error();
+   if (!(t <= tagbuf_len)) __VERIFIER_error();
           goto END;
         }
       }
@@ -52,12 +52,12 @@ int main()
     else if ( __VERIFIER_nondet_int()) {
       break;
     }
-    __VERIFIER_assert(0 <= t);
-    __VERIFIER_assert(t <= tagbuf_len);
+    if (!(0 <= t)) __VERIFIER_error();
+    if (!(t <= tagbuf_len)) __VERIFIER_error();
     t++;
   }
-  __VERIFIER_assert(0 <= t);
-  __VERIFIER_assert(t <= tagbuf_len);
+  if (!(0 <= t)) __VERIFIER_error();
+  if (!(t <= tagbuf_len)) __VERIFIER_error();
  END:
   return 0;
 }

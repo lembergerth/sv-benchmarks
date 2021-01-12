@@ -26,7 +26,7 @@ int main()
 	for(i = 0; i < SIZE; i++)
 	{
 		if(c <= 5)
-			__VERIFIER_assert(s[i].n != NULL);
+			if (!(s[i].n != NULL)) __VERIFIER_error();
 	}
 
 	return 0;

@@ -55,10 +55,10 @@ int main()
 	x = head;
 	while (x->next != NULL && __VERIFIER_nondet_int())
 	{
-		__VERIFIER_assert(x != NULL);
+		if (!(x != NULL)) __VERIFIER_error();
 		x = x->next;
 	}
-	__VERIFIER_assert(x != NULL);
+	if (!(x != NULL)) __VERIFIER_error();
 
 	x->data = GREEN;
 	
@@ -94,7 +94,7 @@ int main()
 		int t2 = 0;
 		if (t1 == RED)
 			t2 = x->next->data;
-		__VERIFIER_assert(t1 != RED || t2 == GREEN);
+		if (!(t1 != RED || t2 == GREEN)) __VERIFIER_error();
 		// if (x->data == RED)
 		// 	__VERIFIER_assert(x->next->data == GREEN);
 		if (x->data == RED)

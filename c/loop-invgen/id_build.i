@@ -12,8 +12,8 @@ int main() {
   int i, j;
   for (i=0; i<nlen; i++) {
     for (j=0; j<8; j++) {
-      __VERIFIER_assert(0 <= nlen-1-i);
-      __VERIFIER_assert(nlen-1-i < nlen);
+      if (!(0 <= nlen-1-i)) __VERIFIER_error();
+      if (!(nlen-1-i < nlen)) __VERIFIER_error();
     }
   }
   return 0;

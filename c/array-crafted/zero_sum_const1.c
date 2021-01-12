@@ -31,7 +31,7 @@ int main()
 		{
 			sum = sum - a[i];
 		}
-		__VERIFIER_assert(sum == 0);
+		if (!(sum == 0)) __VERIFIER_error();
 	}
 	return 1;
 }

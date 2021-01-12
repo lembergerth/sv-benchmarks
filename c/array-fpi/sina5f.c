@@ -52,7 +52,7 @@ int main()
 
 	for(i=0; i<N; i++)
 	{
-		__VERIFIER_assert(a[i] == 2*N);
+		if (!(a[i] == 2*N)) __VERIFIER_error();
 	}
 	return 1;
 }

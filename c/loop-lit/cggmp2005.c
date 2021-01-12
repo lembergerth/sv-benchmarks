@@ -12,6 +12,6 @@ int main() {
         i = i + 2;
         j = -1 + j;
     }
-    __VERIFIER_assert(j == 6);
+    if (!(j == 6)) __VERIFIER_error();
     return 0;
 }

@@ -26,7 +26,7 @@ int main() {
 	    k = k+1;
     l = l+1;
   }
-  __VERIFIER_assert((i+j+k) == l);
+  if (!((i+j+k) == l)) __VERIFIER_error();
   return 0;
 }
 

@@ -547,7 +547,7 @@ int main(void){
   insert_list(mylist,1);
   insert_list(mylist,3);
   temp = search_list(head,2);
-  __VERIFIER_assert(temp->key==1);
+  if (!(temp->key==1)) __VERIFIER_error();
   while(head!=0) {
     mlist *tmp = head->next;
     free(head);

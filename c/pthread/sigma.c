@@ -44,7 +44,7 @@ int main()
 		sum += array[tid];
 	}
 
-	__VERIFIER_assert(sum == SIGMA);  // <-- wrong, different threads might use the same array offset when writing
+	if (!(sum == SIGMA)) __VERIFIER_error();  // <-- wrong, different threads might use the same array offset when writing
 
 	return 0;
 }

@@ -167,7 +167,7 @@ static int parse_expression_list(char *str)
         /* valid word */
         /* BAD */
         r_strncpy(str2, str+start, j-start+1);
-        __VERIFIER_assert(j - start + 1 < 2);
+        if (!(j - start + 1 < 2)) __VERIFIER_error();
         str2[j-start+1] = EOS;
       } else {
         /* parsing error */

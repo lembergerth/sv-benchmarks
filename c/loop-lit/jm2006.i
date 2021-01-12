@@ -19,7 +19,7 @@ int main() {
         y--;
     }
     if (i == j) {
-        __VERIFIER_assert(y == 0);
+        if (!(y == 0)) __VERIFIER_error();
     }
     return 0;
 }

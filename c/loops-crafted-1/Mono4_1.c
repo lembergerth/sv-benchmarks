@@ -12,6 +12,6 @@ int main() {
 	    y = y + 1;
 	}
     }
-    __VERIFIER_assert(y!=x);
+    if (!(y!=x)) __VERIFIER_error();
     return 0;
 }

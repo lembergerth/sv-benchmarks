@@ -28,7 +28,7 @@ int main()
   }
 
   for (index = 0; index < 10000; index++) {
-     __VERIFIER_assert((array[index] == 2*index) || (array[index] == 0));
+     if (!((array[index] == 2*index) || (array[index] == 0))) __VERIFIER_error();
   }
 
 }

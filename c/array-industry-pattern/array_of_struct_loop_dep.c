@@ -22,7 +22,7 @@ int main()
 	{
 	//	__VERIFIER_assert(a[i].n == 10 || a[i].n == 20);
 
-		__VERIFIER_assert(a[i].n == 10);	
+		if (!(a[i].n == 10)) __VERIFIER_error();	
 		if(i+1 != 15000)
 			a[i+1].n = 20;
 		

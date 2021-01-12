@@ -5,14 +5,14 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 
 int main(void)
 {
-  __VERIFIER_assert(copysign(1.0, +2.0) == 1.0);
-  __VERIFIER_assert(copysign(1.0, -2.0) == -1.0);
-  __VERIFIER_assert(copysign(-1.0, +2.0) == 1.0);
-  __VERIFIER_assert(copysign(-1.0, -2.0) == -1.0);
+  if (!(copysign(1.0, +2.0) == 1.0)) __VERIFIER_error();
+  if (!(copysign(1.0, -2.0) == -1.0)) __VERIFIER_error();
+  if (!(copysign(-1.0, +2.0) == 1.0)) __VERIFIER_error();
+  if (!(copysign(-1.0, -2.0) == -1.0)) __VERIFIER_error();
 
-  __VERIFIER_assert(copysign(INFINITY, -2.0) == -INFINITY);
+  if (!(copysign(INFINITY, -2.0) == -INFINITY)) __VERIFIER_error();
 
   double snan = copysign(NAN, -2.0);
-  __VERIFIER_assert(isnan(snan) && signbit(snan));
+  if (!(isnan(snan) && signbit(snan))) __VERIFIER_error();
 }
 

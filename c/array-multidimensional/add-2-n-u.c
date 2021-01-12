@@ -50,7 +50,7 @@ int main()
 	while(i < m){
 		j=0;
 		while(j < n){
-					__VERIFIER_assert(C[i][j]==A[i][j]+B[i][j]);
+					if (!(C[i][j]==A[i][j]+B[i][j])) __VERIFIER_error();
 
 			j=j+1;
 		}

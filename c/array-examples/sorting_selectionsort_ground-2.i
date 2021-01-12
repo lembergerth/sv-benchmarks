@@ -30,17 +30,17 @@ int main( ) {
     }
     for ( x = 0 ; x < i ; x++ ) {
       for ( y = x + 1 ; y < i ; y++ ) {
-        __VERIFIER_assert( a[x] <= a[y] );
+        if (!( a[x] <= a[y] )) __VERIFIER_error();
       }
     }
     for ( x = i ; x < 100000 ; x++ ) {
-      __VERIFIER_assert( a[x] >= a[i] );
+      if (!( a[x] >= a[i] )) __VERIFIER_error();
     }
     i = i+1;
   }
   for ( x = 0 ; x < 100000 ; x++ ) {
     for ( y = x + 1 ; y < 100000 ; y++ ) {
-      __VERIFIER_assert( a[x] <= a[y] );
+      if (!( a[x] <= a[y] )) __VERIFIER_error();
     }
   }
   return 0;

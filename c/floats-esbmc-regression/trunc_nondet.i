@@ -1003,15 +1003,15 @@ int main(void)
   double result = rint(d);
   fesetround(save_round);
 
-  __VERIFIER_assert(trunc(d) == result);
+  if (!(trunc(d) == result)) __VERIFIER_error();
 
   double d1 = __VERIFIER_nondet_double();
   __VERIFIER_assume((sizeof (d1) == sizeof (float) ? __isinff (d1) : sizeof (d1) == sizeof (double) ? __isinf (d1) : __isinfl (d1)));
-  __VERIFIER_assert((sizeof (trunc(d1)) == sizeof (float) ? __isinff (trunc(d1)) : sizeof (trunc(d1)) == sizeof (double) ? __isinf (trunc(d1)) : __isinfl (trunc(d1))));
+  if (!((sizeof (trunc(d1)) == sizeof (float) ? __isinff (trunc(d1)) : sizeof (trunc(d1)) == sizeof (double) ? __isinf (trunc(d1)) : __isinfl (trunc(d1))))) __VERIFIER_error();
 
   double d2 = __VERIFIER_nondet_double();
   __VERIFIER_assume((sizeof (d2) == sizeof (float) ? __isinff (d2) : sizeof (d2) == sizeof (double) ? __isinf (d2) : __isinfl (d2)));
-  __VERIFIER_assert((sizeof (trunc(d2)) == sizeof (float) ? __isinff (trunc(d2)) : sizeof (trunc(d2)) == sizeof (double) ? __isinf (trunc(d2)) : __isinfl (trunc(d2))));
+  if (!((sizeof (trunc(d2)) == sizeof (float) ? __isinff (trunc(d2)) : sizeof (trunc(d2)) == sizeof (double) ? __isinf (trunc(d2)) : __isinfl (trunc(d2))))) __VERIFIER_error();
 
   return 0;
 }

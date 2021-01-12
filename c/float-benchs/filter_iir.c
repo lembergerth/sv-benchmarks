@@ -46,7 +46,7 @@ int main()
   
     iir4(&X, &P);
 
-    __VERIFIER_assert(P >= -1e30 && P <= 1e30);
+    if (!(P >= -1e30 && P <= 1e30)) __VERIFIER_error();
   }
   return 0;
 }

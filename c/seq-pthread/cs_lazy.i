@@ -791,5 +791,5 @@ int main()
  __VERIFIER_assume(__CS_thread_lockedon[0][3] == __CS_cp___CS_thread_lockedon[1][3]);
  __VERIFIER_assume(mutex[0] == __CS_cp_mutex[1]);
  __VERIFIER_assume(data[0] == __CS_cp_data[1]);
- __VERIFIER_assert(__CS_error != 1);
+ if (!(__CS_error != 1)) __VERIFIER_error();
 }

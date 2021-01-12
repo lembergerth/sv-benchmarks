@@ -30,7 +30,7 @@ int main()
  for(i = 0; i < 1000000; i++)
  {
   if (flag == 0)
-  __VERIFIER_assert(a[i].n == 0 );
+  if (!(a[i].n == 0 )) __VERIFIER_error();
  }
  return 0;
 }

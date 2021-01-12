@@ -53,7 +53,7 @@ loff_t nvram_llseek(struct file *file, loff_t offset, int origin)
 		return -EINVAL;
 
 	file->f_pos = offset;
-	__VERIFIER_assert(file->f_pos == offset);
+	if (!(file->f_pos == offset)) __VERIFIER_error();
 
 	return file->f_pos;
 }
@@ -72,7 +72,7 @@ ssize_t read_nvram(struct file *file, char __user *buf,
 		if (__put_user(nvram_read_byte(i), p))
 			return -EFAULT;
 	*ppos = i;
-	__VERIFIER_assert(*ppos == i);
+	if (!(*ppos == i)) __VERIFIER_error();
 
 	return p - buf;
 }
@@ -94,7 +94,7 @@ ssize_t write_nvram(struct file *file, const char __user *buf,
 		nvram_write_byte(c, i);
 	}
 	*ppos = i;
-	__VERIFIER_assert(*ppos == i);
+	if (!(*ppos == i)) __VERIFIER_error();
 
 	return p - buf;
 }

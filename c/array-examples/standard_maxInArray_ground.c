@@ -22,7 +22,7 @@ int main( ) {
   
   int x;
   for ( x = 0 ; x < N ; x++ ) {
-    __VERIFIER_assert(  a[x] <= max  );
+    if (!(  a[x] <= max  )) __VERIFIER_error();
   }
   return 0;
 }

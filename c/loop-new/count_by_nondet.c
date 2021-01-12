@@ -8,6 +8,6 @@ int main() {
         i = i + j;
         k ++;
     }
-    __VERIFIER_assert(k <= LARGE_INT);
+    if (!(k <= LARGE_INT)) __VERIFIER_error();
     return 0;
 }

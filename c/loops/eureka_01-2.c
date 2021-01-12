@@ -52,7 +52,7 @@ int main(){
 
   for(i = 0; i < nodecount; i++)
     {
-      __VERIFIER_assert(distance[i]>=0);
+      if (!(distance[i]>=0)) __VERIFIER_error();
     }
 
   return 0;

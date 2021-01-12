@@ -15,5 +15,5 @@ int main(void) {
     x++;
   }
 
-  __VERIFIER_assert(x >= 0x0fffffff);
+  if (!(x >= 0x0fffffff)) __VERIFIER_error();
 }

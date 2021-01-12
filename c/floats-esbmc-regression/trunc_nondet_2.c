@@ -17,7 +17,7 @@ int main(void)
   __VERIFIER_assume(d < LLONG_MAX && d > LLONG_MIN);
 
   double d1 = (long long) d;
-  __VERIFIER_assert(trunc(d) == d1);
+  if (!(trunc(d) == d1)) __VERIFIER_error();
 
   return 0;
 }

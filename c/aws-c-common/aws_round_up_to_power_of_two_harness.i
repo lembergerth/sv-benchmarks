@@ -2707,9 +2707,9 @@ void aws_round_up_to_power_of_two_harness() {
 
 
     if (rval == (0)) {
-        __VERIFIER_assert(popcount == 1);
-        __VERIFIER_assert(test_val <= result);
-        __VERIFIER_assert(test_val >= result >> 1);
+        if (!(popcount == 1)) __VERIFIER_error();
+        if (!(test_val <= result)) __VERIFIER_error();
+        if (!(test_val >= result >> 1)) __VERIFIER_error();
     } else {
 
         __VERIFIER_assert(test_val > ((

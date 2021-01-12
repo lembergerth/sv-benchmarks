@@ -25,6 +25,6 @@ int main() {
 		else {	a+=2; b+=2; } 
 		if(c==last && st==0) 
 			a = a+1;
-		__VERIFIER_assert(a==b && c==200000);
+		if (!(a==b && c==200000)) __VERIFIER_error();
 	}
 }

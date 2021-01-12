@@ -737,7 +737,7 @@ void * P0(void *arg)
   a$w_buff0 = 1;
   a$w_buff1_used = a$w_buff0_used;
   a$w_buff0_used = (_Bool)1;
-  __VERIFIER_assert(!(a$w_buff1_used && a$w_buff0_used));
+  if (!(!(a$w_buff1_used && a$w_buff0_used))) __VERIFIER_error();
   a$r_buff1_thd0 = a$r_buff0_thd0;
   a$r_buff1_thd1 = a$r_buff0_thd1;
   a$r_buff1_thd2 = a$r_buff0_thd2;
@@ -869,6 +869,6 @@ int main()
   __VERIFIER_atomic_begin();
   main$tmp_guard1 = !(x == 2 && z == 2 && __unbuffered_p1_EAX == 0 && __unbuffered_p3_EAX == 2 && __unbuffered_p3_EBX == 0);
   __VERIFIER_atomic_end();
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }

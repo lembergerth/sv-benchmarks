@@ -376,7 +376,7 @@ This likely is a bug in the tool chain. */
   __VERIFIER_atomic_end();
   /* Program was expected to be safe for X86, model checker should have said NO.
 This likely is a bug in the tool chain. */
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }
 

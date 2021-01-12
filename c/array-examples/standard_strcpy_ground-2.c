@@ -23,7 +23,7 @@ int main( ) {
   
   int x;
   for ( x = 0 ; x < i ; x++ ) {
-    __VERIFIER_assert(  dst[x] == src[x]  );
+    if (!(  dst[x] == src[x]  )) __VERIFIER_error();
   }
   return 0;
 }

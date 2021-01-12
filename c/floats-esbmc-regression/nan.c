@@ -10,9 +10,9 @@ const char* __VERIFIER_nondet_const_char_pointer();
 int main(void)
 {
   float f1 = nan("1");
-  __VERIFIER_assert(f1 != f1);
+  if (!(f1 != f1)) __VERIFIER_error();
 
   float f2 = nan(__VERIFIER_nondet_const_char_pointer());
-  __VERIFIER_assert(isnan(f2));
+  if (!(isnan(f2))) __VERIFIER_error();
 }
 

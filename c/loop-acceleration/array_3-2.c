@@ -22,5 +22,5 @@ int main(void) {
   for (i = 0; i < N && A[i] != 0; i++) {
   }
 
-  __VERIFIER_assert(i <= N / 2);
+  if (!(i <= N / 2)) __VERIFIER_error();
 }

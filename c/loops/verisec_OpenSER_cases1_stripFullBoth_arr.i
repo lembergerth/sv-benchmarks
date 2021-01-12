@@ -59,7 +59,7 @@ static int parse_expression_list(char *str)
       if ((0 < j) && (str[j] == '"')) j--;
       if (start<=j) {
         r_strncpy(str2, str+start, j-start+1);
-        __VERIFIER_assert(j - start + 1 < 2);
+        if (!(j - start + 1 < 2)) __VERIFIER_error();
         str2[j-start+1] = 0;
       } else {
         return -1;

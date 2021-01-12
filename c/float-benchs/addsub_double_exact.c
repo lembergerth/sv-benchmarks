@@ -11,6 +11,6 @@ int main()
   y = x + 1;
   z = x - 1;
   r = y - z;  
-  __VERIFIER_assert(r == 2.);
+  if (!(r == 2.)) __VERIFIER_error();
   return 0;
 }

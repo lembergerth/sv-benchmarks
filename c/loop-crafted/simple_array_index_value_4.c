@@ -27,7 +27,7 @@ int main()
   __VERIFIER_assume(index2 < SIZE);
   
   while (index1 < index2) {
-    __VERIFIER_assert((index1 < SIZE) && (index2 < SIZE));
+    if (!((index1 < SIZE) && (index2 < SIZE))) __VERIFIER_error();
     __VERIFIER_assume(array[index1] == array[index2]);
     index1++;
     index2--;
@@ -36,7 +36,7 @@ int main()
 
   if (loop_entered) {
     while (index2 < index1) {
-      __VERIFIER_assert(array[index1] == array[index2]);
+      if (!(array[index1] == array[index2])) __VERIFIER_error();
       index2++;
       index1--;
     }

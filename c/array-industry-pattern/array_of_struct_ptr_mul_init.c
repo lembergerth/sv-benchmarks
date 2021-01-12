@@ -32,7 +32,7 @@ int main()
 
 	for (i = 0; i < SIZE; i++)
 	{
-		__VERIFIER_assert(a[i].p == a[i].q || a[i].q == a[i].p * a[i].p);
+		if (!(a[i].p == a[i].q || a[i].q == a[i].p * a[i].p)) __VERIFIER_error();
 	}
 
 	return 0;

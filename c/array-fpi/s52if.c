@@ -48,6 +48,6 @@ int main()
 		}
 	}
 
-	__VERIFIER_assert(sum[0] == 6*N);
+	if (!(sum[0] == 6*N)) __VERIFIER_error();
 	return 1;
 }

@@ -18,6 +18,6 @@ int main()
   }
   z = (t - min[i]) / (max[i] - min[i]);
 
-  __VERIFIER_assert(z >= 0.f && z <= 1.f);
+  if (!(z >= 0.f && z <= 1.f)) __VERIFIER_error();
   return 0;
 }

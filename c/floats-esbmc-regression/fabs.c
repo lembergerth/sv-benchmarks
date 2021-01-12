@@ -5,10 +5,10 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 
 int main(void)
 {
-  __VERIFIER_assert(fabs(+3.0) == +3.0);
-  __VERIFIER_assert(fabs(-3.0) == +3.0);
-  __VERIFIER_assert(fabs(-0.0) == -0.0);
-  __VERIFIER_assert(fabs(-0.0) == +0.0);
-  __VERIFIER_assert(fabs(-INFINITY) == INFINITY);
-  __VERIFIER_assert(isnan(fabs(-NAN)));
+  if (!(fabs(+3.0) == +3.0)) __VERIFIER_error();
+  if (!(fabs(-3.0) == +3.0)) __VERIFIER_error();
+  if (!(fabs(-0.0) == -0.0)) __VERIFIER_error();
+  if (!(fabs(-0.0) == +0.0)) __VERIFIER_error();
+  if (!(fabs(-INFINITY) == INFINITY)) __VERIFIER_error();
+  if (!(isnan(fabs(-NAN)))) __VERIFIER_error();
 }

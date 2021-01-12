@@ -5,10 +5,10 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
  
 int main(void)
 {
-    __VERIFIER_assert(!isless(2.0, 1.0));
-    __VERIFIER_assert(isless(1.0, 2.0));
-    __VERIFIER_assert(!isless(INFINITY, 1.0));
-    __VERIFIER_assert(!isless(1.0, NAN));
+    if (!(!isless(2.0, 1.0))) __VERIFIER_error();
+    if (!(isless(1.0, 2.0))) __VERIFIER_error();
+    if (!(!isless(INFINITY, 1.0))) __VERIFIER_error();
+    if (!(!isless(1.0, NAN))) __VERIFIER_error();
  
     return 0;
 }

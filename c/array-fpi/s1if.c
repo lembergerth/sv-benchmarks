@@ -38,6 +38,6 @@ int main()
 		}
 	}
 
-	__VERIFIER_assert(sum[0] == N);
+	if (!(sum[0] == N)) __VERIFIER_error();
 	return 1;
 }

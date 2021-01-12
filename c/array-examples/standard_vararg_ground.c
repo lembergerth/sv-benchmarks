@@ -19,7 +19,7 @@ int main( ){
   
   int x;
   for ( x = 0 ; x < a ; x++ ) {
-    __VERIFIER_assert(  aa[x] >= 0  );
+    if (!(  aa[x] >= 0  )) __VERIFIER_error();
   }
   return 0;
 }

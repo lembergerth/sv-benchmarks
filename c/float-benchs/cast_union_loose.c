@@ -31,6 +31,6 @@ int main()
   __VERIFIER_assume(a >= -10000 && a <= 10000);
 
   r = cast(a);
-  __VERIFIER_assert(r >= -10000. && r <= 10000.);
+  if (!(r >= -10000. && r <= 10000.)) __VERIFIER_error();
   return 0;
 }

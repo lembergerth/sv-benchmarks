@@ -1015,7 +1015,7 @@ void* thr(void* arg) {
     }
     release();
     while (c < end) {
- __VERIFIER_assert(0 <= c && c < len);
+ if (!(0 <= c && c < len)) __VERIFIER_error();
  data[c] = 0;
  c = c + 1;
     }

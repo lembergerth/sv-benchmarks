@@ -101,9 +101,9 @@ unsigned int addflt(unsigned int a , unsigned int b )
   mb = b & ((1U << 24U) - 1U);
   eb = (int )(b >> 24U) - 128;
   mb = mb | (1U << 24U);
-  __VERIFIER_assert(ea >= eb);
+  if (!(ea >= eb)) __VERIFIER_error();
   delta = ea - eb;
-  __VERIFIER_assert(delta < sizeof(mb) * 8);
+  if (!(delta < sizeof(mb) * 8)) __VERIFIER_error();
   mb = mb >> delta;
   }
   if (! mb) {
@@ -126,7 +126,7 @@ unsigned int addflt(unsigned int a , unsigned int b )
 
   }
   {
-  __VERIFIER_assert(ma < 1U << 25U);
+  if (!(ma < 1U << 25U)) __VERIFIER_error();
   ma = ma & ((1U << 24U) - 1U);
   res = ma | (unsigned int )((ea + 128) << 24U);
   }
@@ -201,8 +201,8 @@ unsigned int mulflt(unsigned int a , unsigned int b )
 
   }
   {
-  __VERIFIER_assert(accu < (unsigned long long )(1U << 25U));
-  __VERIFIER_assert(accu & (unsigned long long )(1U << 24U));
+  if (!(accu < (unsigned long long )(1U << 25U))) __VERIFIER_error();
+  if (!(accu & (unsigned long long )(1U << 24U))) __VERIFIER_error();
   ma = accu;
   ma = ma & ~ (1U << 24U);
   res = ma | (unsigned int )((ea + 128) << 24U);
@@ -245,7 +245,7 @@ int main(void)
     tmp___0 = tmp;
   }
   {
-  __VERIFIER_assert(tmp___0 == 0);
+  if (!(tmp___0 == 0)) __VERIFIER_error();
   }
   __retres14 = 0;
   return (__retres14);

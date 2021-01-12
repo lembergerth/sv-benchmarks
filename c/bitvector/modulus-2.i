@@ -40,7 +40,7 @@ int main()
         if (m == d) {
             m = 0;
         }
-        __VERIFIER_assert(m == n % d);
+        if (!(m == n % d)) __VERIFIER_error();
     }
     return 0;
 }

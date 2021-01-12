@@ -28,7 +28,7 @@ int main()
   }
 
   for (index = 0; index < 10000; index++) {
-    __VERIFIER_assert(array[index] > index);
+    if (!(array[index] > index)) __VERIFIER_error();
   }
 
 }

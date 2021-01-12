@@ -24,7 +24,7 @@ int main() {
   while( k < n ) {
     k = k+1;
   }
-  __VERIFIER_assert((i+j+k)/3 <= SIZE);
+  if (!((i+j+k)/3 <= SIZE)) __VERIFIER_error();
   return 0;
 }
 

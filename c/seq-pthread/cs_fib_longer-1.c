@@ -527,7 +527,7 @@ int main(int argc, char **argv)
 
 
 	//cseq: Error check
-	__VERIFIER_assert(__CS_error != 1);
+	if (!(__CS_error != 1)) __VERIFIER_error();
 }
 
 

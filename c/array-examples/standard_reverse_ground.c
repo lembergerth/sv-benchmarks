@@ -17,7 +17,7 @@ int main( ) {
   
   int x;
   for ( x = 0 ; x < N ; x++ ) {
-    __VERIFIER_assert(  a[x] == b[N-x-1]  );
+    if (!(  a[x] == b[N-x-1]  )) __VERIFIER_error();
   }
   return 0;
 }

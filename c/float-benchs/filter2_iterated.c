@@ -69,7 +69,7 @@ int main()
       INIT2 = FALSE;
     }
 
-    __VERIFIER_assert(X >= -1155. && X <= 4251.);
+    if (!(X >= -1155. && X <= 4251.)) __VERIFIER_error();
   }
   return 0;
 }

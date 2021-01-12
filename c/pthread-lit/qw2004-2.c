@@ -39,7 +39,7 @@ void* BCSP_PnpAdd(void* arg) {
     int status;
     status = BCSP_IoIncrement();
     if (status == 0) {
-	__VERIFIER_assert(!stopped);
+	if (!(!stopped)) __VERIFIER_error();
     }
     BCSP_IoDecrement();
     return 0;

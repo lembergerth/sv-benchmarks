@@ -37,8 +37,8 @@ int main()
     goto END;
 
   for (i = 0; i < ielen && bufsize > 2; i++) {
-    __VERIFIER_assert(0<=p);
-    __VERIFIER_assert(p+1<bufsize_0);
+    if (!(0<=p)) __VERIFIER_error();
+    if (!(p+1<bufsize_0)) __VERIFIER_error();
       //    *p = 'x';
       //    *(p+1) = 'x';
     p += 2;

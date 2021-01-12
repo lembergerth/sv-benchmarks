@@ -767,7 +767,7 @@ void * P1(void *arg)
   y$w_buff0 = 1;
   y$w_buff1_used = y$w_buff0_used;
   y$w_buff0_used = (_Bool)1;
-  __VERIFIER_assert(!(y$w_buff1_used && y$w_buff0_used));
+  if (!(!(y$w_buff1_used && y$w_buff0_used))) __VERIFIER_error();
   y$r_buff1_thd0 = y$r_buff0_thd0;
   y$r_buff1_thd1 = y$r_buff0_thd1;
   y$r_buff1_thd2 = y$r_buff0_thd2;
@@ -855,6 +855,6 @@ int main()
   __unbuffered_p2_EAX = __unbuffered_p2_EAX$read_delayed ? (weak$$choice1 ? *__unbuffered_p2_EAX$read_delayed_var : __unbuffered_p2_EAX) : __unbuffered_p2_EAX;
   main$tmp_guard1 = !(__unbuffered_p0_EAX == 1 && __unbuffered_p1_EAX == 1 && __unbuffered_p2_EAX == 1);
   __VERIFIER_atomic_end();
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }

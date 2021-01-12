@@ -868,10 +868,10 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 
 int main(void)
 {
-  __VERIFIER_assert(fabs(+3.0) == +3.0);
-  __VERIFIER_assert(fabs(-3.0) == +3.0);
-  __VERIFIER_assert(fabs(-0.0) == -0.0);
-  __VERIFIER_assert(fabs(-0.0) == +0.0);
-  __VERIFIER_assert(fabs(-(__builtin_inff())) == (__builtin_inff()));
-  __VERIFIER_assert((sizeof (fabs(-(__builtin_nanf ("")))) == sizeof (float) ? __isnanf (fabs(-(__builtin_nanf ("")))) : sizeof (fabs(-(__builtin_nanf ("")))) == sizeof (double) ? __isnan (fabs(-(__builtin_nanf ("")))) : __isnanl (fabs(-(__builtin_nanf (""))))));
+  if (!(fabs(+3.0) == +3.0)) __VERIFIER_error();
+  if (!(fabs(-3.0) == +3.0)) __VERIFIER_error();
+  if (!(fabs(-0.0) == -0.0)) __VERIFIER_error();
+  if (!(fabs(-0.0) == +0.0)) __VERIFIER_error();
+  if (!(fabs(-(__builtin_inff())) == (__builtin_inff()))) __VERIFIER_error();
+  if (!((sizeof (fabs(-(__builtin_nanf ("")))) == sizeof (float) ? __isnanf (fabs(-(__builtin_nanf ("")))) : sizeof (fabs(-(__builtin_nanf ("")))) == sizeof (double) ? __isnan (fabs(-(__builtin_nanf ("")))) : __isnanl (fabs(-(__builtin_nanf (""))))))) __VERIFIER_error();
 }

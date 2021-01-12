@@ -9,7 +9,7 @@ int main() {
   if (!(n < LARGE_INT)) return 0;
   for (k=1;k<n;k++){
     for (i=l;i<n;i++){  
-      __VERIFIER_assert(1<=i);
+      if (!(1<=i)) __VERIFIER_error();
     }
     if(__VERIFIER_nondet_int())
       l = l + 1;

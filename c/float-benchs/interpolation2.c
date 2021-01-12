@@ -20,6 +20,6 @@ int main()
   }
   z = org[i] + slope[i] * (t - min[i]) / (max[i] - min[i]);
 
-  __VERIFIER_assert(z >= -10.f && z <= 30.f);
+  if (!(z >= -10.f && z <= 30.f)) __VERIFIER_error();
   return 0;
 }

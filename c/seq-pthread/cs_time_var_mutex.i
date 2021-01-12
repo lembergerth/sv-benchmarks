@@ -849,5 +849,5 @@ int main()
  __VERIFIER_assume(m_inode[1] == __CS_cp_m_inode[2]);
  __VERIFIER_assume(m_busy[0] == __CS_cp_m_busy[1]);
  __VERIFIER_assume(m_busy[1] == __CS_cp_m_busy[2]);
- __VERIFIER_assert(__CS_error != 1);
+ if (!(__CS_error != 1)) __VERIFIER_error();
 }

@@ -25,6 +25,6 @@ int main()
     else if (R >= D) Y = S + D;
   }
 
-  __VERIFIER_assert(Y >= -129.f && Y <= 129.f);
+  if (!(Y >= -129.f && Y <= 129.f)) __VERIFIER_error();
   return 0;
 }

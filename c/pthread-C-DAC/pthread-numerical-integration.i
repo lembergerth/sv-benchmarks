@@ -1394,7 +1394,7 @@ int main(int argc, char *argv[])
     }
     printf("\n\t\t Computation Of PI value Using Numerical Integration Method ......Done\n");
     printf("\n\t\t Computed Value Of PI        :  %lf", area);
-    __VERIFIER_assert(area - 3.14159265388372456789123456789456 < 1.0E-5 || 3.14159265388372456789123456789456 - area < 1.0E-5);
+    if (!(area - 3.14159265388372456789123456789456 < 1.0E-5 || 3.14159265388372456789123456789456 - area < 1.0E-5)) __VERIFIER_error();
     printf("\n\t\t..........................................................................\n");
     free(threads);
     return 0;

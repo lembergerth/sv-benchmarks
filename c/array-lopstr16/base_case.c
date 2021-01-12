@@ -38,7 +38,7 @@ int main()
 		struct S *s2 = a[i];
 		if (s2->n == 0)
 		{
-			__VERIFIER_assert(s2->p != NULL);
+			if (!(s2->p != NULL)) __VERIFIER_error();
 		}
 	}
 

@@ -12,7 +12,7 @@ int check(int x, int y, int *a, int n) {
     if(x >= y) return x;
 
     /* This should be taken as the precondition */
-    __VERIFIER_assert(0 <= x && y < n);
+    if (!(0 <= x && y < n)) __VERIFIER_error();
 
     int x0 = x;
     int y0 = y;
@@ -28,7 +28,7 @@ int check(int x, int y, int *a, int n) {
     __VERIFIER_assume(x0 <= i && i <= y0);
     int ai = a[i];
     int ax = a[x1];
-    __VERIFIER_assert(ai <= ax);
+    if (!(ai <= ax)) __VERIFIER_error();
 
     return x1;
 }

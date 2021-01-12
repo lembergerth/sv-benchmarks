@@ -54,7 +54,7 @@ int main()
 		j=0;
 		while(j < n){
 			
-                            __VERIFIER_assert(A[i][j]==B[i][j]);
+                            if (!(A[i][j]==B[i][j])) __VERIFIER_error();
 
 			j=j+1;
 		}

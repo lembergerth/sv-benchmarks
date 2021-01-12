@@ -2,10 +2,10 @@ extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 extern int __VERIFIER_nondet_int(void);
 void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 void printEven( int i ) {
-  __VERIFIER_assert( ( i % 2 ) == 0 );
+  if (!( ( i % 2 ) == 0 )) __VERIFIER_error();
 }
 void printOdd( int i ) {
-  __VERIFIER_assert( ( i % 2 ) != 0 );
+  if (!( ( i % 2 ) != 0 )) __VERIFIER_error();
 }
 int main()
 {

@@ -26,7 +26,7 @@ int main() {
     c = 1;
 
     while (1) {
-        __VERIFIER_assert(1 + x*z - x - z*y == 0);
+        if (!(1 + x*z - x - z*y == 0)) __VERIFIER_error();
 
         if (!(c < k))
             break;
@@ -35,6 +35,6 @@ int main() {
         x = x * z + 1;
         y = y * z;
     }
-    __VERIFIER_assert(1 + x*z - x - z*y == 0);
+    if (!(1 + x*z - x - z*y == 0)) __VERIFIER_error();
     return 0;
 }

@@ -66,7 +66,7 @@ int main()
 		while(j < n){
 			k=0;
 			while(k < p){
-					__VERIFIER_assert(A[i][j][k]>=min);
+					if (!(A[i][j][k]>=min)) __VERIFIER_error();
 					k=k+1;
 			}
 			j=j+1;

@@ -3955,7 +3955,7 @@ inline void outb(unsigned char byte, unsigned int port)
 inline unsigned short inw(unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 
     return __VERIFIER_nondet_ushort();
 }

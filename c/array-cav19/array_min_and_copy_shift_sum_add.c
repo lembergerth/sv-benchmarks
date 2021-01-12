@@ -27,6 +27,6 @@ int main()
     k = k+b[i]+i;
   }
       
-  __VERIFIER_assert(k >= 0);
+  if (!(k >= 0)) __VERIFIER_error();
   return 0;
 }

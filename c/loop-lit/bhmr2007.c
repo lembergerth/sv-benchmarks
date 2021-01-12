@@ -16,6 +16,6 @@ int main() {
         }
         i = i + 1;
     }
-    __VERIFIER_assert(a + b == 3*n);
+    if (!(a + b == 3*n)) __VERIFIER_error();
     return 0;
 }

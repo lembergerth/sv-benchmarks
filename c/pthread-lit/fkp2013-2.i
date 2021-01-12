@@ -682,7 +682,7 @@ extern void __VERIFIER_atomic_end();
 int __VERIFIER_nondet_int();
 volatile int x;
 void* thr1(void* arg) {
-    __VERIFIER_assert(x <= 50);
+    if (!(x <= 50)) __VERIFIER_error();
     return 0;
 }
 void* thr2(void* arg) {

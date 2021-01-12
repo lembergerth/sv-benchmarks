@@ -19,7 +19,7 @@ int main() {
     k = k+3;
   }
   if(n>0)
-	  __VERIFIER_assert( i==j && j==k && (i%(SIZE+2)) );
+	  if (!( i==j && j==k && (i%(SIZE+2)) )) __VERIFIER_error();
   return 0;
 }
 

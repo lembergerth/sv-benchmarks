@@ -14,7 +14,7 @@ int main()
   __VERIFIER_assume(x >= -10 && x <= 10);
 
   y = x*x - 4.f;
-  __VERIFIER_assert(y != 0.f);
+  if (!(y != 0.f)) __VERIFIER_error();
   z = 1.f / y;
   return 0;
 }

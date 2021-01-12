@@ -21,7 +21,7 @@ int main()
       y = y +4*__VERIFIER_nondet_int();
       z = z +8*__VERIFIER_nondet_int();
 
-      __VERIFIER_assert(4*x+2*y+z!=4);
+      if (!(4*x+2*y+z!=4)) __VERIFIER_error();
     }
     return 0;
 }

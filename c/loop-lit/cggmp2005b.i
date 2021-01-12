@@ -22,6 +22,6 @@ int main() {
      k = k + 1;
  }
     }
-    __VERIFIER_assert(k == 4);
+    if (!(k == 4)) __VERIFIER_error();
     return 0;
 }

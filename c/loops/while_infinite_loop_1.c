@@ -12,8 +12,8 @@ int main() {
 
   while(1)
   {
-    __VERIFIER_assert(x==0);    
+    if (!(x==0)) __VERIFIER_error();    
   }
 
-  __VERIFIER_assert(x!=0);
+  if (!(x!=0)) __VERIFIER_error();
 }

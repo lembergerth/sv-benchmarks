@@ -18,6 +18,6 @@ int main()
 			y++;
 		}
 	}
-	 __VERIFIER_assert(x==1000000);
+	 if (!(x==1000000)) __VERIFIER_error();
 	return 0;
 }

@@ -881,6 +881,6 @@ int main()
   x = x$flush_delayed ? x$mem_tmp : x;
   x$flush_delayed = (_Bool)0;
   __VERIFIER_atomic_end();
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }

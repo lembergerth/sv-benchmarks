@@ -988,20 +988,20 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 int main(void)
 {
   fesetround(0);
-  __VERIFIER_assert(lrint(2.3) == 2);
-  __VERIFIER_assert(lrint(2.5) == 2);
-  __VERIFIER_assert(lrint(3.5) == 4);
-  __VERIFIER_assert(lrint(-2.3) == -2);
-  __VERIFIER_assert(lrint(-2.5) == -2);
-  __VERIFIER_assert(lrint(-3.5) == -4);
+  if (!(lrint(2.3) == 2)) __VERIFIER_error();
+  if (!(lrint(2.5) == 2)) __VERIFIER_error();
+  if (!(lrint(3.5) == 4)) __VERIFIER_error();
+  if (!(lrint(-2.3) == -2)) __VERIFIER_error();
+  if (!(lrint(-2.5) == -2)) __VERIFIER_error();
+  if (!(lrint(-3.5) == -4)) __VERIFIER_error();
 
   fesetround(0x400);
-  __VERIFIER_assert(lrint(2.3) == 2);
-  __VERIFIER_assert(lrint(2.5) == 2);
-  __VERIFIER_assert(lrint(3.5) == 3);
-  __VERIFIER_assert(lrint(-2.3) == -3);
-  __VERIFIER_assert(lrint(-2.5) == -3);
-  __VERIFIER_assert(lrint(-3.5) == -4);
+  if (!(lrint(2.3) == 2)) __VERIFIER_error();
+  if (!(lrint(2.5) == 2)) __VERIFIER_error();
+  if (!(lrint(3.5) == 3)) __VERIFIER_error();
+  if (!(lrint(-2.3) == -3)) __VERIFIER_error();
+  if (!(lrint(-2.5) == -3)) __VERIFIER_error();
+  if (!(lrint(-3.5) == -4)) __VERIFIER_error();
 
-  __VERIFIER_assert(!(sizeof (lrint(-0.0)) == sizeof (float) ? __signbitf (lrint(-0.0)) : sizeof (lrint(-0.0)) == sizeof (double) ? __signbit (lrint(-0.0)) : __signbitl (lrint(-0.0))));
+  if (!(!(sizeof (lrint(-0.0)) == sizeof (float) ? __signbitf (lrint(-0.0)) : sizeof (lrint(-0.0)) == sizeof (double) ? __signbit (lrint(-0.0)) : __signbitl (lrint(-0.0))))) __VERIFIER_error();
 }

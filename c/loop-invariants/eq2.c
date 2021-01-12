@@ -15,6 +15,6 @@ int main(void) {
     y++;
     z++;
   }
-  __VERIFIER_assert(y == z);
+  if (!(y == z)) __VERIFIER_error();
   return 0;
 }

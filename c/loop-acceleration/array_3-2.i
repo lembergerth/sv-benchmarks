@@ -14,5 +14,5 @@ int main(void) {
   }
   for (i = 0; i < 1024 && A[i] != 0; i++) {
   }
-  __VERIFIER_assert(i <= 1024 / 2);
+  if (!(i <= 1024 / 2)) __VERIFIER_error();
 }

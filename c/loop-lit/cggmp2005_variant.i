@@ -18,6 +18,6 @@ int main() {
         hi = hi - 1;
         mid = mid - 1;
     }
-    __VERIFIER_assert(lo == hi);
+    if (!(lo == hi)) __VERIFIER_error();
     return 0;
 }

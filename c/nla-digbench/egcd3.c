@@ -40,10 +40,10 @@ int main() {
             v = b;
 
             while (1) {
-                __VERIFIER_assert(a == y * r + x * p);
-                __VERIFIER_assert(b == x * q + y * s);
-                __VERIFIER_assert(a == k * b + c);
-                __VERIFIER_assert(v == b * d);
+                if (!(a == y * r + x * p)) __VERIFIER_error();
+                if (!(b == x * q + y * s)) __VERIFIER_error();
+                if (!(a == k * b + c)) __VERIFIER_error();
+                if (!(v == b * d)) __VERIFIER_error();
 
                 if (!(c >= 2 * v))
                     break;
@@ -64,6 +64,6 @@ int main() {
         r = s;
         s = temp - s * k;
     }
-    __VERIFIER_assert(p*x - q*x + r*y - s*y  == a);
+    if (!(p*x - q*x + r*y - s*y  == a)) __VERIFIER_error();
     return 0;
 }

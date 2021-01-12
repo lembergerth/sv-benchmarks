@@ -85,18 +85,18 @@ void task(struct node *t) {
     __VERIFIER_assume(n != 0);
     int *x = calloc(n, sizeof(int));
     tree_inorder(t, x, n);
-    __VERIFIER_assert(a == x[0]);
+    if (!(a == x[0])) __VERIFIER_error();
 
     struct node *r = tree_del(t, &b);
-    __VERIFIER_assert(a == b);
+    if (!(a == b)) __VERIFIER_error();
     int m = size(t);
     int *y = calloc(n, sizeof(int));
     tree_inorder(r, y, m);
 
-    __VERIFIER_assert(n == m + 1);
+    if (!(n == m + 1)) __VERIFIER_error();
     int i;
     for(i=0; i<m; i++)
-        __VERIFIER_assert(x[i+1] == y[i]);
+        if (!(x[i+1] == y[i])) __VERIFIER_error();
     free(x);
     free(y);
 }

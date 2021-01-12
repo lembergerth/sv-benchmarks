@@ -25,6 +25,6 @@ int main() {
   if (SIZE > 1 && SIZE < MAX) {
     int *a = malloc(sizeof(int)*SIZE);
     a[SIZE/2]=3;
-    __VERIFIER_assert(linear_search(a,SIZE,3));
+    if (!(linear_search(a,SIZE,3))) __VERIFIER_error();
   }
 }

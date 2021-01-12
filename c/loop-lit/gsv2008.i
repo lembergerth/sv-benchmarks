@@ -16,6 +16,6 @@ int main() {
  x = x + y;
  y++;
     }
-    __VERIFIER_assert(y > 0);
+    if (!(y > 0)) __VERIFIER_error();
     return 0;
 }

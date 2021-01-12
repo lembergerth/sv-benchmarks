@@ -73,6 +73,6 @@ int main(void)
       exit(-1);
     }
 
-    __VERIFIER_assert(myglobal == 40);
+    if (!(myglobal == 40)) __VERIFIER_error();
     exit(0);
 }

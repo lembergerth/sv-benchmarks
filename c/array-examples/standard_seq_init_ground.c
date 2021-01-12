@@ -15,7 +15,7 @@ int main( ) {
   
   int x;
   for ( x = 1 ; x < SIZE ; x++ ) {
-    __VERIFIER_assert(  a[x] >= a[x-1]  );
+    if (!(  a[x] >= a[x-1]  )) __VERIFIER_error();
   }
   return 0;
 }

@@ -42,7 +42,7 @@ int rand()
 
 void write_signed16(int val)
 {
-        __VERIFIER_assert(val >= 0 && val <= 65535);
+        if (!(val >= 0 && val <= 65535)) __VERIFIER_error();
 }
 
 
@@ -248,7 +248,7 @@ void init_tables()
 /* linear interpolation */
 double interp(double org, double dst)
 {
-        __VERIFIER_assert(m_framelength != 0);
+        if (!(m_framelength != 0)) __VERIFIER_error();
 	return org + ((dst - org) * m_framepos) / m_framelength;
 }
 

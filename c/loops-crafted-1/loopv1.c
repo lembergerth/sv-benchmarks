@@ -24,6 +24,6 @@ int main() {
     else
      i = i + 3;    
   }
-  __VERIFIER_assert( (i%3) == 0 );
+  if (!( (i%3) == 0 )) __VERIFIER_error();
   return 0;
 }

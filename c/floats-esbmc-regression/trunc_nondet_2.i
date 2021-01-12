@@ -1004,7 +1004,7 @@ int main(void)
   __VERIFIER_assume(d < 9223372036854775807LL && d > (-9223372036854775807LL -1LL));
 
   double d1 = (long long) d;
-  __VERIFIER_assert(trunc(d) == d1);
+  if (!(trunc(d) == d1)) __VERIFIER_error();
 
   return 0;
 }

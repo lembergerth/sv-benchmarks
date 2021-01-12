@@ -3993,7 +3993,7 @@ inline void outw_p(unsigned short word, unsigned int port)
 inline unsigned inl_p(unsigned int port)
 {
  __VERIFIER_HIDE:
-    __VERIFIER_assert(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested");
+    if (!(port >= ddv_ioport_request_start && port < ddv_ioport_request_start + ddv_ioport_request_len, "I/O port is requested")) __VERIFIER_error();
 
     return __VERIFIER_nondet_unsigned();
 }

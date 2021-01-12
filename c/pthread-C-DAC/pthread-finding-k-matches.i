@@ -1385,7 +1385,7 @@ int main(int argc, char *argv[]) {
       if (a[i] == search_no)
  temp++;
     }
-    __VERIFIER_assert(count == temp);
+    if (!(count == temp)) __VERIFIER_error();
     printf("Number of search element found in list Count= %d\n",count);
     ret_count = pthread_attr_destroy(&attr);
     if(ret_count)

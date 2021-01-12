@@ -53,16 +53,16 @@ int main()
 	end = list;
 
 	// check the invariant
-	__VERIFIER_assert(NULL != end);
-	__VERIFIER_assert(BLACK == end->colour);
+	if (!(NULL != end)) __VERIFIER_error();
+	if (!(BLACK == end->colour)) __VERIFIER_error();
 
 	while (NULL != end)
 	{
 		if (RED == end->colour)
 		{
 			end = end->next;
-			__VERIFIER_assert(NULL != end);
-			__VERIFIER_assert(BLACK == end->colour);
+			if (!(NULL != end)) __VERIFIER_error();
+			if (!(BLACK == end->colour)) __VERIFIER_error();
 		}
 
 		end = end->next;

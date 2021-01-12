@@ -868,13 +868,13 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 
 int main(void)
 {
-  __VERIFIER_assert(copysign(1.0, +2.0) == 1.0);
-  __VERIFIER_assert(copysign(1.0, -2.0) == -1.0);
-  __VERIFIER_assert(copysign(-1.0, +2.0) == 1.0);
-  __VERIFIER_assert(copysign(-1.0, -2.0) == -1.0);
+  if (!(copysign(1.0, +2.0) == 1.0)) __VERIFIER_error();
+  if (!(copysign(1.0, -2.0) == -1.0)) __VERIFIER_error();
+  if (!(copysign(-1.0, +2.0) == 1.0)) __VERIFIER_error();
+  if (!(copysign(-1.0, -2.0) == -1.0)) __VERIFIER_error();
 
-  __VERIFIER_assert(copysign((__builtin_inff()), -2.0) == -(__builtin_inff()));
+  if (!(copysign((__builtin_inff()), -2.0) == -(__builtin_inff()))) __VERIFIER_error();
 
   double snan = copysign((__builtin_nanf ("")), -2.0);
-  __VERIFIER_assert((sizeof (snan) == sizeof (float) ? __isnanf (snan) : sizeof (snan) == sizeof (double) ? __isnan (snan) : __isnanl (snan)) && (sizeof (snan) == sizeof (float) ? __signbitf (snan) : sizeof (snan) == sizeof (double) ? __signbit (snan) : __signbitl (snan)));
+  if (!((sizeof (snan) == sizeof (float) ? __isnanf (snan) : sizeof (snan) == sizeof (double) ? __isnan (snan) : __isnanl (snan)) && (sizeof (snan) == sizeof (float) ? __signbitf (snan) : sizeof (snan) == sizeof (double) ? __signbit (snan) : __signbitl (snan)))) __VERIFIER_error();
 }

@@ -20,10 +20,10 @@ int main()
     x1 = 3.f * x / 4.f + y / 4.f;
     y1 = x / 4.f + 3.f * y / 4.f;
 
-    __VERIFIER_assert(x1 >= 0.f && x1 <= 100.f);
-    __VERIFIER_assert(y1 >= 0.f && y1 <= 100.f);
+    if (!(x1 >= 0.f && x1 <= 100.f)) __VERIFIER_error();
+    if (!(y1 >= 0.f && y1 <= 100.f)) __VERIFIER_error();
   }
   
-  __VERIFIER_assert(x1-y1 >= -0.1f && x1-y1 <= 0.1f);
+  if (!(x1-y1 >= -0.1f && x1-y1 <= 0.1f)) __VERIFIER_error();
   return 0;
 }

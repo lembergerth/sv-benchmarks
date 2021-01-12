@@ -53,7 +53,7 @@ int main()
 		//assert
 		for(i=0; i<SIZE; i++)
 		{
-			__VERIFIER_assert(a[i] == a_copy[SIZE-i-1]);
+			if (!(a[i] == a_copy[SIZE-i-1])) __VERIFIER_error();
 			//__VERIFIER_assert(b[i] == b_copy[SIZE-i-1]);
 		}
 	}

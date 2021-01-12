@@ -26,7 +26,7 @@ int main() {
   }
   int j1 = 0;
   while( j1 < n0 + n1 ) {
-      __VERIFIER_assert(k > 0);
+      if (!(k > 0)) __VERIFIER_error();
       j1++;
       k--;
   }

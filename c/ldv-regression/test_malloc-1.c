@@ -33,7 +33,7 @@ int main(void) {
 #endif
 */
 	if(p1!=0 && p2!=0) {
-		__VERIFIER_assert(p1!=p2);
+		if (!(p1!=p2)) __VERIFIER_error();
 	}
 	return 0;
 }

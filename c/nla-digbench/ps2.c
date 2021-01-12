@@ -18,7 +18,7 @@ int main() {
     c = 0;
 
     while (1) {
-        __VERIFIER_assert((y * y) - 2 * x + y == 0);
+        if (!((y * y) - 2 * x + y == 0)) __VERIFIER_error();
 
         if (!(c < k))
             break;
@@ -27,7 +27,7 @@ int main() {
         y = y + 1;
         x = y + x;
     }
-    __VERIFIER_assert((y*y) - 2*x + y == 0);
+    if (!((y*y) - 2*x + y == 0)) __VERIFIER_error();
      
     return 0;
 }

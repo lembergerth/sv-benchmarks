@@ -30,6 +30,6 @@ int main()
     wait_for_clock();
   }
 
-  __VERIFIER_assert(x >= -1000.f && x <= 1000.f);
+  if (!(x >= -1000.f && x <= 1000.f)) __VERIFIER_error();
   return 0;
 }

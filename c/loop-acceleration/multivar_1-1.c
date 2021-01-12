@@ -17,5 +17,5 @@ int main(void) {
     y++;
   }
 
-  __VERIFIER_assert(x == y);
+  if (!(x == y)) __VERIFIER_error();
 }

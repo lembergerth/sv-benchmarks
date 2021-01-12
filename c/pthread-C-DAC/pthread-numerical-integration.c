@@ -156,7 +156,7 @@ int main(int argc, char *argv[])
     printf("\n\t\t Computation Of PI value Using Numerical Integration Method ......Done\n");
     printf("\n\t\t Computed Value Of PI        :  %lf", area);
     //  printf("\n\t\t Time in Seconds (T)         :  %lf", time_end - time_start);
-    __VERIFIER_assert(area - Actual_pi < tolerance || Actual_pi - area < tolerance);
+    if (!(area - Actual_pi < tolerance || Actual_pi - area < tolerance)) __VERIFIER_error();
     printf("\n\t\t..........................................................................\n");
     free(threads);
 

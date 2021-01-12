@@ -9,12 +9,12 @@ void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 #define SIZE 100000
 
 void printEven( int i ) {
-  __VERIFIER_assert(  ( i % 2 ) == 0  );
+  if (!(  ( i % 2 ) == 0  )) __VERIFIER_error();
   // printf( "%d" , i );
 }
 
 void printOdd( int i ) {
-  __VERIFIER_assert(  ( i % 2 ) != 0  );
+  if (!(  ( i % 2 ) != 0  )) __VERIFIER_error();
   // printf( "%d" , i );
 }
 

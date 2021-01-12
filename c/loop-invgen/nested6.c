@@ -15,12 +15,12 @@ int main() {
         for (j=2*i;j<n;j++) {
             if( __VERIFIER_nondet_int() ) {
                 for (k=j;k<n;k++) {
-                    __VERIFIER_assert(k>=2*i);
+                    if (!(k>=2*i)) __VERIFIER_error();
                 }
             }
             else {
-                __VERIFIER_assert( k >= n );
-                __VERIFIER_assert( k <= n );
+                if (!( k >= n )) __VERIFIER_error();
+                if (!( k <= n )) __VERIFIER_error();
             }
         }
     }

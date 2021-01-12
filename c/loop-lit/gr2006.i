@@ -20,6 +20,6 @@ int main() {
         if (y < 0) break;
         x++;
     }
-    __VERIFIER_assert(x == 100);
+    if (!(x == 100)) __VERIFIER_error();
     return 0;
 }

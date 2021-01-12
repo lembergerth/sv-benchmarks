@@ -333,7 +333,7 @@ int main()
   main$tmp_guard1 = !(y == 2 && __unbuffered_p0_EAX == 1 && __unbuffered_p1_EAX == 2 && __unbuffered_p1_EBX == 0);
   __VERIFIER_atomic_end();
   /* Program proven to be relaxed for X86, model checker says YES. */
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }
 

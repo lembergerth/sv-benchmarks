@@ -31,7 +31,7 @@ int main( ) {
   int y;
   for ( x = 0 ; x < N ; x++ ) {
     for ( y = x+1 ; y < N ; y++ ) {
-      __VERIFIER_assert(  a[x] <= a[y]  );
+      if (!(  a[x] <= a[y]  )) __VERIFIER_error();
     }
   }
   return 0;

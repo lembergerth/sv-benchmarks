@@ -48,7 +48,7 @@ int main()
 		struct S *s1 = a[i];
 		if (i != 3 && s1 != NULL && s1->n == 0)
 		{
-			__VERIFIER_assert(s1->p != NULL); 
+			if (!(s1->p != NULL)) __VERIFIER_error(); 
 		}
 	}
 	return 0;

@@ -20,5 +20,5 @@ int main(void) {
     B[i] = tmp;
   }
 
-  __VERIFIER_assert(A[SZ/2] == B[SZ/2]);
+  if (!(A[SZ/2] == B[SZ/2])) __VERIFIER_error();
 }

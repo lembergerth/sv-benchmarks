@@ -18,6 +18,6 @@ int main(void) {
     j++;
   }
   if(j >= 100) goto STUCK; // assume( j < 100 );
-  __VERIFIER_assert( i < 200 ); /* prove we don't overflow z */
+  if (!( i < 200 )) __VERIFIER_error(); /* prove we don't overflow z */
   return 0;
 }

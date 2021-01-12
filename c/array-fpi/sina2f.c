@@ -41,7 +41,7 @@ int main()
 
 	for(i=0; i<N; i++)
 	{
-		__VERIFIER_assert(a[i] == N);
+		if (!(a[i] == N)) __VERIFIER_error();
 	}
 	return 1;
 }

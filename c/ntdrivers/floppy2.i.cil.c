@@ -4645,7 +4645,7 @@ NTSTATUS FlQueueIrpToThread(PIRP Irp , PDISKETTE_EXTENSION DisketteExtension )
     pended = 1;
   } else {
     {
-    __VERIFIER_assert(0);
+    if (!(0)) __VERIFIER_error();
     }
   }
   {
@@ -5390,7 +5390,7 @@ NTSTATUS FloppyDeviceControl(PDEVICE_OBJECT DeviceObject , PIRP Irp )
       s = 3;
     } else {
       {
-      __VERIFIER_assert(0);
+      if (!(0)) __VERIFIER_error();
       }
     }
     {
@@ -6373,7 +6373,7 @@ NTSTATUS FloppyDeviceControl(PDEVICE_OBJECT DeviceObject , PIRP Irp )
                               s = 3;
                             } else {
                               {
-                              __VERIFIER_assert(0);
+                              if (!(0)) __VERIFIER_error();
                               }
                             }
                             {
@@ -7037,7 +7037,7 @@ NTSTATUS FloppyPnp(PDEVICE_OBJECT DeviceObject , PIRP Irp )
                       s = 3;
                     } else {
                       {
-                      __VERIFIER_assert(0);
+                      if (!(0)) __VERIFIER_error();
                       }
                     }
                     {
@@ -7139,7 +7139,7 @@ NTSTATUS FloppyPnp(PDEVICE_OBJECT DeviceObject , PIRP Irp )
                       s = 3;
                     } else {
                       {
-                      __VERIFIER_assert(0);
+                      if (!(0)) __VERIFIER_error();
                       }
                     }
                     {
@@ -7231,7 +7231,7 @@ NTSTATUS FloppyPnp(PDEVICE_OBJECT DeviceObject , PIRP Irp )
                       s = 3;
                     } else {
                       {
-                      __VERIFIER_assert(0);
+                      if (!(0)) __VERIFIER_error();
                       }
                     }
                     {
@@ -7307,12 +7307,12 @@ NTSTATUS FloppyPnp(PDEVICE_OBJECT DeviceObject , PIRP Irp )
                     }
                     if (s != 1) {
                       {
-                      __VERIFIER_assert(0);
+                      if (!(0)) __VERIFIER_error();
                       }
                     } else {
                       if (compRegistered != 0) {
                         {
-                        __VERIFIER_assert(0);
+                        if (!(0)) __VERIFIER_error();
                         }
                       } else {
                         compRegistered = 1;
@@ -7434,7 +7434,7 @@ NTSTATUS FloppyPnp(PDEVICE_OBJECT DeviceObject , PIRP Irp )
                     s = 3;
                   } else {
                     {
-                    __VERIFIER_assert(0);
+                    if (!(0)) __VERIFIER_error();
                     }
                   }
                   {
@@ -7504,7 +7504,7 @@ NTSTATUS FloppyPnp(PDEVICE_OBJECT DeviceObject , PIRP Irp )
                     s = 3;
                   } else {
                     {
-                    __VERIFIER_assert(0);
+                    if (!(0)) __VERIFIER_error();
                     }
                   }
                   {
@@ -7642,7 +7642,7 @@ NTSTATUS FloppyPnp(PDEVICE_OBJECT DeviceObject , PIRP Irp )
                     s = 3;
                   } else {
                     {
-                    __VERIFIER_assert(0);
+                    if (!(0)) __VERIFIER_error();
                     }
                   }
                   {
@@ -8013,12 +8013,12 @@ NTSTATUS FloppyStartDevice(PDEVICE_OBJECT DeviceObject , PIRP Irp )
   }
   if (s != 1) {
     {
-    __VERIFIER_assert(0);
+    if (!(0)) __VERIFIER_error();
     }
   } else {
     if (compRegistered != 0) {
       {
-      __VERIFIER_assert(0);
+      if (!(0)) __VERIFIER_error();
       }
     } else {
       compRegistered = 1;
@@ -8694,7 +8694,7 @@ NTSTATUS FloppyPower(PDEVICE_OBJECT DeviceObject , PIRP Irp )
     s = 3;
   } else {
     {
-    __VERIFIER_assert(0);
+    if (!(0)) __VERIFIER_error();
     }
   }
   {
@@ -20206,7 +20206,7 @@ NTSTATUS FloppyQueueRequest(PDISKETTE_EXTENSION DisketteExtension , PIRP Irp )
       pended = 1;
     } else {
       {
-      __VERIFIER_assert(0);
+      if (!(0)) __VERIFIER_error();
       }
     }
     {
@@ -20869,7 +20869,7 @@ int main(void)
               if (s == 2) {
                 if (status == 259L) {
                   {
-                  __VERIFIER_assert(0);
+                  if (!(0)) __VERIFIER_error();
                   }
                 } else {
 
@@ -20879,7 +20879,7 @@ int main(void)
                 __cil_tmp23 = (long )lowerDriverReturn;
                 if (status != __cil_tmp23) {
                   {
-                  __VERIFIER_assert(0);
+                  if (!(0)) __VERIFIER_error();
                   }
                 } else {
 
@@ -21411,7 +21411,7 @@ void stubMoreProcessingRequired(void)
     s = 5;
   } else {
     {
-    __VERIFIER_assert(0);
+    if (!(0)) __VERIFIER_error();
     }
   }
   return;
@@ -21491,7 +21491,7 @@ NTSTATUS ( __attribute__((__fastcall__)) IofCallDriver)(PDEVICE_OBJECT DeviceObj
         lowerDriverReturn = (int )returnVal2;
       } else {
         {
-        __VERIFIER_assert(0);
+        if (!(0)) __VERIFIER_error();
         }
       }
     }
@@ -21509,7 +21509,7 @@ void ( __attribute__((__fastcall__)) IofCompleteRequest)(PIRP Irp , CCHAR Priori
     s = 2;
   } else {
     {
-    __VERIFIER_assert(0);
+    if (!(0)) __VERIFIER_error();
     }
   }
   return;
@@ -21618,7 +21618,7 @@ NTSTATUS KeWaitForSingleObject(PVOID Object , KWAIT_REASON WaitReason , KPROCESS
     } else {
       if (s == 6) {
         {
-        __VERIFIER_assert(0);
+        if (!(0)) __VERIFIER_error();
         }
       } else {
 

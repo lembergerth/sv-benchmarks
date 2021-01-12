@@ -878,12 +878,12 @@ int main()
   double plus_zero = 0.0;
   double plus_zero_mod = fmod(plus_zero, a);
   _Bool plus_zero_mod_sign = (sizeof (plus_zero) == sizeof (float) ? __signbitf (plus_zero) : sizeof (plus_zero) == sizeof (double) ? __signbit (plus_zero) : __signbitl (plus_zero));
-  __VERIFIER_assert((plus_zero_mod == 0.0) && !plus_zero_mod_sign);
+  if (!((plus_zero_mod == 0.0) && !plus_zero_mod_sign)) __VERIFIER_error();
 
   double minus_zero = -0.0;
   double minus_zero_mod = fmod(minus_zero, a);
   _Bool minus_zero_mod_sign = (sizeof (minus_zero) == sizeof (float) ? __signbitf (minus_zero) : sizeof (minus_zero) == sizeof (double) ? __signbit (minus_zero) : __signbitl (minus_zero));
-  __VERIFIER_assert((minus_zero_mod == 0.0) && minus_zero_mod_sign);
+  if (!((minus_zero_mod == 0.0) && minus_zero_mod_sign)) __VERIFIER_error();
 
   return 0;
 }

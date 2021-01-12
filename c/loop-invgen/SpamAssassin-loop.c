@@ -16,32 +16,32 @@ int main()
     for (i = 0; i < len; ) {
         for (j = 0; i < len && j < limit; ){
             if (i + 1 < len){ 
-                __VERIFIER_assert(i+1<len);
-                __VERIFIER_assert(0<=i);
+                if (!(i+1<len)) __VERIFIER_error();
+                if (!(0<=i)) __VERIFIER_error();
                 if( __VERIFIER_nondet_int() ) goto ELSE;
-                __VERIFIER_assert(i<len);
-                __VERIFIER_assert(0<=i);
-                __VERIFIER_assert(j<bufsize);
-                __VERIFIER_assert(0<=j);
+                if (!(i<len)) __VERIFIER_error();
+                if (!(0<=i)) __VERIFIER_error();
+                if (!(j<bufsize)) __VERIFIER_error();
+                if (!(0<=j)) __VERIFIER_error();
 
                 j++;
                 i++;
-                __VERIFIER_assert(i<len);
-                __VERIFIER_assert(0<=i);
-                __VERIFIER_assert(j<bufsize);
-                __VERIFIER_assert(0<=j);
+                if (!(i<len)) __VERIFIER_error();
+                if (!(0<=i)) __VERIFIER_error();
+                if (!(j<bufsize)) __VERIFIER_error();
+                if (!(0<=j)) __VERIFIER_error();
 
                 j++;
                 i++;
-                __VERIFIER_assert(j<bufsize);
-                __VERIFIER_assert(0<=j);
+                if (!(j<bufsize)) __VERIFIER_error();
+                if (!(0<=j)) __VERIFIER_error();
                 j++;
             } else {
 ELSE:
-                __VERIFIER_assert(i<len);
-                __VERIFIER_assert(0<=i);
-                __VERIFIER_assert(j<bufsize);
-                __VERIFIER_assert(0<=j);
+                if (!(i<len)) __VERIFIER_error();
+                if (!(0<=i)) __VERIFIER_error();
+                if (!(j<bufsize)) __VERIFIER_error();
+                if (!(0<=j)) __VERIFIER_error();
                 j++;
                 i++;
             }

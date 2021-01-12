@@ -20,7 +20,7 @@ int main()
  for(i = 0; i < 1000000; i++)
  {
   if(c <= 5)
-   __VERIFIER_assert(s[i].n != 0);
+   if (!(s[i].n != 0)) __VERIFIER_error();
  }
  return 0;
 }

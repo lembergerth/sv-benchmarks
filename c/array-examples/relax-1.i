@@ -587,7 +587,7 @@ int main()
   int *a=malloc(sizeof(int)*a_len);
   if(is_relaxed_prefix(pat, pat_len, a, a_len))
   {
-    __VERIFIER_assert(pat_len<=a_len+1);
+    if (!(pat_len<=a_len+1)) __VERIFIER_error();
     unsigned long different = __VERIFIER_nondet_ulong();
     if(pat_len>a_len)
       different=pat_len-1;
@@ -600,7 +600,7 @@ int main()
         else if(i==different)
           __VERIFIER_assume(pat[i]!=a[i]);
         else if(i>different)
-          __VERIFIER_assert(pat[i]==a[i-1]);
+          if (!(pat[i]==a[i-1])) __VERIFIER_error();
     }
   }
   else if(pat_len<=a_len+1)
@@ -613,7 +613,7 @@ int main()
     }
     if(pat_len>a_len)
       ++differences;
-    __VERIFIER_assert(differences>1);
+    if (!(differences>1)) __VERIFIER_error();
   }
   free(pat);
   free(a);

@@ -30,7 +30,7 @@ int main(){
   n = i;
   while (1) {
 
-    __VERIFIER_assert(k >= 0);
+    if (!(k >= 0)) __VERIFIER_error();
     k = k -1;
     i = i - 1;
     j = j + 1;

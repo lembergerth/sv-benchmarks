@@ -20,7 +20,7 @@ int main() {
   }
   int j = 0;
   while( j < n/3 ) {
-    __VERIFIER_assert(k > 0);
+    if (!(k > 0)) __VERIFIER_error();
     k--;
     j++;
   }

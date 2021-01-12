@@ -11,6 +11,6 @@ int main(void) {
   while (__VERIFIER_nondet_int()) {
     x += 8;
   }
-  __VERIFIER_assert((x & 5) == 5);
+  if (!((x & 5) == 5)) __VERIFIER_error();
   return 0;
 }

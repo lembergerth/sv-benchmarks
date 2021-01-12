@@ -47,6 +47,6 @@ int main()
 		}
 	}
 
-	__VERIFIER_assert(sum[0] == 2*N);
+	if (!(sum[0] == 2*N)) __VERIFIER_error();
 	return 1;
 }

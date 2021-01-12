@@ -20,7 +20,7 @@ int main()
       y = y +2*__VERIFIER_nondet_int();
 
 
-      __VERIFIER_assert(x+y!=1);
+      if (!(x+y!=1)) __VERIFIER_error();
     }
     return 0;
 }

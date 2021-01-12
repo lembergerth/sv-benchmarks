@@ -854,11 +854,11 @@ int main(int argc, char **argv)
  __VERIFIER_assume(j[2] == __CS_cp_j[3]);
  __VERIFIER_assume(j[3] == __CS_cp_j[4]);
  __VERIFIER_assume(j[4] == __CS_cp_j[5]);
- __VERIFIER_assert(__CS_error_detail != __ERR_MAXTHREADS_REACHED);
- __VERIFIER_assert(__CS_error_detail != __ERR_ASSERT_FAILURE);
- __VERIFIER_assert(__CS_error_detail != __ERR_ERROR_LABEL_REACHED);
- __VERIFIER_assert(__CS_error_detail != __ERR_UNLOCK_ATTEMPT);
- __VERIFIER_assert(__CS_error_detail != __ERR_JOIN_FAILED_WRONG_THREAD_ID);
- __VERIFIER_assert(__CS_error_detail != __ERR_JOIN_FAILED_THREAD_NOT_CREATED);
- __VERIFIER_assert(__CS_error != 1);
+ if (!(__CS_error_detail != __ERR_MAXTHREADS_REACHED)) __VERIFIER_error();
+ if (!(__CS_error_detail != __ERR_ASSERT_FAILURE)) __VERIFIER_error();
+ if (!(__CS_error_detail != __ERR_ERROR_LABEL_REACHED)) __VERIFIER_error();
+ if (!(__CS_error_detail != __ERR_UNLOCK_ATTEMPT)) __VERIFIER_error();
+ if (!(__CS_error_detail != __ERR_JOIN_FAILED_WRONG_THREAD_ID)) __VERIFIER_error();
+ if (!(__CS_error_detail != __ERR_JOIN_FAILED_THREAD_NOT_CREATED)) __VERIFIER_error();
+ if (!(__CS_error != 1)) __VERIFIER_error();
 }

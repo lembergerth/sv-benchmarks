@@ -1017,7 +1017,7 @@ void* thr(void* arg) {
     while (c < end) {
  data[c] = 0;
  data[c] = 1;
- __VERIFIER_assert(data[c] == 1);
+ if (!(data[c] == 1)) __VERIFIER_error();
  c = c + 1;
     }
     return 0;

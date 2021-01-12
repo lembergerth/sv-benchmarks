@@ -29,6 +29,6 @@ int main()
   a = __VERIFIER_nondet_int();
 
   r = cast(a);
-  __VERIFIER_assert(r == a);
+  if (!(r == a)) __VERIFIER_error();
   return 0;
 }

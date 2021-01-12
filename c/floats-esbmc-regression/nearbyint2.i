@@ -988,21 +988,21 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 int main(void)
 {
   fesetround(0);
-  __VERIFIER_assert(nearbyint(2.3) == 2.0);
-  __VERIFIER_assert(nearbyint(2.5) == 2.0);
-  __VERIFIER_assert(nearbyint(3.5) == 4.0);
-  __VERIFIER_assert(nearbyint(-2.3) == -2.0);
-  __VERIFIER_assert(nearbyint(-2.5) == -2.0);
-  __VERIFIER_assert(nearbyint(-3.5) == -4.0);
+  if (!(nearbyint(2.3) == 2.0)) __VERIFIER_error();
+  if (!(nearbyint(2.5) == 2.0)) __VERIFIER_error();
+  if (!(nearbyint(3.5) == 4.0)) __VERIFIER_error();
+  if (!(nearbyint(-2.3) == -2.0)) __VERIFIER_error();
+  if (!(nearbyint(-2.5) == -2.0)) __VERIFIER_error();
+  if (!(nearbyint(-3.5) == -4.0)) __VERIFIER_error();
 
   fesetround(0x400);
-  __VERIFIER_assert(nearbyint(2.3) == 2.0);
-  __VERIFIER_assert(nearbyint(2.5) == 2.0);
-  __VERIFIER_assert(nearbyint(3.5) == 3.0);
-  __VERIFIER_assert(nearbyint(-2.3) == -3.0);
-  __VERIFIER_assert(nearbyint(-2.5) == -3.0);
-  __VERIFIER_assert(nearbyint(-3.5) == -4.0);
+  if (!(nearbyint(2.3) == 2.0)) __VERIFIER_error();
+  if (!(nearbyint(2.5) == 2.0)) __VERIFIER_error();
+  if (!(nearbyint(3.5) == 3.0)) __VERIFIER_error();
+  if (!(nearbyint(-2.3) == -3.0)) __VERIFIER_error();
+  if (!(nearbyint(-2.5) == -3.0)) __VERIFIER_error();
+  if (!(nearbyint(-3.5) == -4.0)) __VERIFIER_error();
 
-  __VERIFIER_assert((sizeof (nearbyint(-0.0)) == sizeof (float) ? __signbitf (nearbyint(-0.0)) : sizeof (nearbyint(-0.0)) == sizeof (double) ? __signbit (nearbyint(-0.0)) : __signbitl (nearbyint(-0.0))));
-  __VERIFIER_assert(nearbyint(-(__builtin_inff())) == -(__builtin_inff()));
+  if (!((sizeof (nearbyint(-0.0)) == sizeof (float) ? __signbitf (nearbyint(-0.0)) : sizeof (nearbyint(-0.0)) == sizeof (double) ? __signbit (nearbyint(-0.0)) : __signbitl (nearbyint(-0.0))))) __VERIFIER_error();
+  if (!(nearbyint(-(__builtin_inff())) == -(__builtin_inff()))) __VERIFIER_error();
 }

@@ -36,6 +36,6 @@ int main()
     y++;
   }
 
-  __VERIFIER_assert(y==n);
+  if (!(y==n)) __VERIFIER_error();
   return 0;
 }

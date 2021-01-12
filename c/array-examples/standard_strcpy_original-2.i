@@ -18,7 +18,7 @@ int main( ) {
   }
   i = 0;
   while ( i < 100000 && src[i] != 0 ) {
-    __VERIFIER_assert( dst[i] == src[i] );
+    if (!( dst[i] == src[i] )) __VERIFIER_error();
     i = i + 1;
   }
   return 0;

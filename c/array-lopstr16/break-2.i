@@ -17,7 +17,7 @@ int main()
  for(i = 0; i < 1000000; i++)
  {
   if(i <= 1000000 /2 )
-   __VERIFIER_assert(s[i].n == 10);
+   if (!(s[i].n == 10)) __VERIFIER_error();
  }
  return 0;
 }

@@ -15,10 +15,10 @@ int main() {
   material_length = __VERIFIER_nondet_int();
     if (!( nlen == idBitLength / 32 )) return 0;
   for (j = 0; (j < idBitLength / 8) && (j < material_length); j++) {
-    __VERIFIER_assert( 0 <= j);
-    __VERIFIER_assert( j < material_length );
-    __VERIFIER_assert( 0 <= j/4 );
-    __VERIFIER_assert( j/4 < nlen);
+    if (!( 0 <= j)) __VERIFIER_error();
+    if (!( j < material_length )) __VERIFIER_error();
+    if (!( 0 <= j/4 )) __VERIFIER_error();
+    if (!( j/4 < nlen)) __VERIFIER_error();
   }
   return 0;
 }

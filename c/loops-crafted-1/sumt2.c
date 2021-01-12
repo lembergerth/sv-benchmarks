@@ -23,7 +23,7 @@ int main() {
 		  j = j+1;
     l = l+1;
   }
-  __VERIFIER_assert((i+j) == l);
+  if (!((i+j) == l)) __VERIFIER_error();
   return 0;
 }
 

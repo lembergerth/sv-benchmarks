@@ -58,11 +58,11 @@ int main()
 
 		bcki = bucket;
 
-		__VERIFIER_assert(bcki != NULL);
-		__VERIFIER_assert(item != NULL);
+		if (!(bcki != NULL)) __VERIFIER_error();
+		if (!(item != NULL)) __VERIFIER_error();
 		while (bcki->data != item->data)
 			bcki = bcki->next;
-		__VERIFIER_assert(bcki != NULL);
+		if (!(bcki != NULL)) __VERIFIER_error();
 
 		if (bcki->list == NULL)
 			bcki->list = item;
@@ -85,10 +85,10 @@ int main()
 		{
 			itr = item;
 			item = item->next;
-			__VERIFIER_assert(itr->data != bcki->data);
+			if (!(itr->data != bcki->data)) __VERIFIER_error();
 			free(itr);
 		}
-		__VERIFIER_assert(item == NULL);
+		if (!(item == NULL)) __VERIFIER_error();
 		bucket = bcki;
 		bcki = bcki->next;
 		free(bucket);

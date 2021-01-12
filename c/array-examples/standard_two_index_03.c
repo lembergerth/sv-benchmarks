@@ -27,7 +27,7 @@ int main( )
   j = 0;
   while( i < size )
   {
-	__VERIFIER_assert( a[j] == b[3*j+1] );
+	if (!( a[j] == b[3*j+1] )) __VERIFIER_error();
         i = i+3;
         j = j+1;
   }

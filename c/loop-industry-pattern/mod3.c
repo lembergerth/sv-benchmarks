@@ -28,7 +28,7 @@ int main(){
     }
   }
   if(y == 0)
-    __VERIFIER_assert(x % 3 == 0);
+    if (!(x % 3 == 0)) __VERIFIER_error();
   return 0;
 }
 

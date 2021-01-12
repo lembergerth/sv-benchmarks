@@ -752,6 +752,6 @@ int main()
   __VERIFIER_atomic_begin();
   main$tmp_guard1 = !(x == 2 && y == 2);
   __VERIFIER_atomic_end();
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }

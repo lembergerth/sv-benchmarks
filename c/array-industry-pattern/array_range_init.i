@@ -13,7 +13,7 @@ int main()
  }
  for(i = 0; i < 100000; i++)
  {
-  __VERIFIER_assert(a[i] == 10);
+  if (!(a[i] == 10)) __VERIFIER_error();
  }
  return 0;
 }

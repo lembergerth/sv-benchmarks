@@ -125,7 +125,7 @@ void * P0(void *arg)
   y$w_buff0 = 2;
   y$w_buff1_used = y$w_buff0_used;
   y$w_buff0_used = TRUE;
-  __VERIFIER_assert(!(y$w_buff1_used && y$w_buff0_used));
+  if (!(!(y$w_buff1_used && y$w_buff0_used))) __VERIFIER_error();
   y$r_buff1_thd0 = y$r_buff0_thd0;
   y$r_buff1_thd1 = y$r_buff0_thd1;
   y$r_buff1_thd2 = y$r_buff0_thd2;
@@ -256,7 +256,7 @@ This likely is a bug in the tool chain. */
   __VERIFIER_atomic_end();
   /* Program was expected to be safe for X86, model checker should have said NO.
 This likely is a bug in the tool chain. */
-  __VERIFIER_assert(main$tmp_guard1);
+  if (!(main$tmp_guard1)) __VERIFIER_error();
   return 0;
 }
 

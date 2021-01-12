@@ -25,7 +25,7 @@ int main() {
     q = 0;
 
     while (1) {
-        __VERIFIER_assert(q + a * b * p == x * y);
+        if (!(q + a * b * p == x * y)) __VERIFIER_error();
 
         if (!(a != 0 && b != 0))
             break;
@@ -47,7 +47,7 @@ int main() {
         }
     }
 
-    __VERIFIER_assert(q == x * y);
-    __VERIFIER_assert(a * b == 0);
+    if (!(q == x * y)) __VERIFIER_error();
+    if (!(a * b == 0)) __VERIFIER_error();
     return 0;
 }

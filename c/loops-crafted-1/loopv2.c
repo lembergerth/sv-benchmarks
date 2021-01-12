@@ -24,6 +24,6 @@ int main() {
    j-=4;
    k -=4; 
   }
-  __VERIFIER_assert( (k%2) == 0 );
+  if (!( (k%2) == 0 )) __VERIFIER_error();
   return 0;
 }

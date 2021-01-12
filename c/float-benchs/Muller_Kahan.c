@@ -22,6 +22,6 @@ int main()
     x1 = x2;
   }
 
-  __VERIFIER_assert(x0 >= 99. && x0 <= 101.);
+  if (!(x0 >= 99. && x0 <= 101.)) __VERIFIER_error();
   return 0;
 }

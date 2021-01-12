@@ -31,7 +31,7 @@ int main()
 		//assert
 		for(i=0; i<SIZE; i++)
 		{
-			__VERIFIER_assert(a[i] == 0);
+			if (!(a[i] == 0)) __VERIFIER_error();
 		}
 	}
 	return 1;

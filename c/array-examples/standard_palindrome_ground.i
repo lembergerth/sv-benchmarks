@@ -12,7 +12,7 @@ int main( ) {
   }
   int x;
   for ( x = 0 ; x < 100000/2 ; x++ ) {
-    __VERIFIER_assert( A[x] == A[100000 - x - 1] );
+    if (!( A[x] == A[100000 - x - 1] )) __VERIFIER_error();
   }
   return 0;
 }

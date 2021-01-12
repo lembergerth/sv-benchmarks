@@ -67,7 +67,7 @@ int main()
 	x = head;
 	while (x != NULL)
 	{
-		__VERIFIER_assert(x->data == 2 && x->opt == x);
+		if (!(x->data == 2 && x->opt == x)) __VERIFIER_error();
 		x = x->next;
 	}
 

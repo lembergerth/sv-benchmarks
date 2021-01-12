@@ -30,6 +30,6 @@ int main()
     y--;
   }
 
-  __VERIFIER_assert(x==0);
+  if (!(x==0)) __VERIFIER_error();
   return 0;
 }

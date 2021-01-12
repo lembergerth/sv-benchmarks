@@ -32,7 +32,7 @@ int main() {
     }
 
     while (1) {
-        __VERIFIER_assert(A == q * b + r);
+        if (!(A == q * b + r)) __VERIFIER_error();
         if (!(b != B)) break;
 
         q = 2 * q;
@@ -43,6 +43,6 @@ int main() {
         }
     }
 
-    __VERIFIER_assert(A == q * b + r);
+    if (!(A == q * b + r)) __VERIFIER_error();
     return 0;
 }

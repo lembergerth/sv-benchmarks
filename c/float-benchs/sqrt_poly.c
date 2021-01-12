@@ -22,7 +22,7 @@ int main()
   if (I >= 2.) S = sqrt2 * (1.+(I/2.- 1.)*(.5-0.125*(I/2.-1.)));
   else S = 1.+(I-1.) * (.5+(I-1.) * (-.125+(I-1.)*.0625));
 
-  __VERIFIER_assert(S >= 1. && S <= 2.);
+  if (!(S >= 1. && S <= 2.)) __VERIFIER_error();
   return 0;
 }
 

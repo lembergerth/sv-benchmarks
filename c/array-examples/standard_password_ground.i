@@ -22,7 +22,7 @@ int main( ) {
   if ( result ) {
     int x;
     for ( x = 0 ; x < 100000 ; x++ ) {
-      __VERIFIER_assert( password[ x ] == guess[ x ] );
+      if (!( password[ x ] == guess[ x ] )) __VERIFIER_error();
     }
   }
   return 0;

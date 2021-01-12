@@ -11,6 +11,6 @@ int main(void)
 			z++;
 		x++;
 	}
-	__VERIFIER_assert(z==x);
+	if (!(z==x)) __VERIFIER_error();
 	return 0;
 }

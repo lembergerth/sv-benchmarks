@@ -23,7 +23,7 @@ int main()
           menor = array[j];                          
     }                       
     
-    __VERIFIER_assert(array[0]>=menor);    
+    if (!(array[0]>=menor)) __VERIFIER_error();    
 
     return 0;
 }

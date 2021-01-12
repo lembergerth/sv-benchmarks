@@ -172,7 +172,7 @@ static int parse_expression_list(char *str)
         }
         /* OK */
         r_strncpy(str2, str+start, j-start+1);
-        __VERIFIER_assert(j - start + 1 < EXPRESSION_LENGTH);
+        if (!(j - start + 1 < EXPRESSION_LENGTH)) __VERIFIER_error();
         str2[j-start+1] = EOS;
       } else {
         /* parsing error */

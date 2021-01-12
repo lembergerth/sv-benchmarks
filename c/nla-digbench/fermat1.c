@@ -26,12 +26,12 @@ int main() {
 
 
     while (1) {
-        __VERIFIER_assert(4*(A+r) == u*u - v*v - 2*u + 2*v);
+        if (!(4*(A+r) == u*u - v*v - 2*u + 2*v)) __VERIFIER_error();
         if (!(r != 0))
             break;
 
         while (1) {
-	    __VERIFIER_assert(4*(A+r) == u*u - v*v - 2*u + 2*v);
+	    if (!(4*(A+r) == u*u - v*v - 2*u + 2*v)) __VERIFIER_error();
             if (!(r > 0))
                 break;
             r = r - v;
@@ -39,7 +39,7 @@ int main() {
         }
 
         while (1) {
-	    __VERIFIER_assert(4*(A+r) == u*u - v*v - 2*u + 2*v);
+	    if (!(4*(A+r) == u*u - v*v - 2*u + 2*v)) __VERIFIER_error();
             if (!(r < 0))
                 break;
             r = r + u;
@@ -47,6 +47,6 @@ int main() {
         }
     }
 
-    __VERIFIER_assert(4*A == u*u - v*v  - 2*u + 2*v);
+    if (!(4*A == u*u - v*v  - 2*u + 2*v)) __VERIFIER_error();
     return 0;
 }

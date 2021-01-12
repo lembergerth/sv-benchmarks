@@ -46,7 +46,7 @@ int main()
 
 		if(s2 ->n == 1)
 		{
-			__VERIFIER_assert(s2 -> p != (void *)0);
+			if (!(s2 -> p != (void *)0)) __VERIFIER_error();
 		}
 	}
 	return 0;

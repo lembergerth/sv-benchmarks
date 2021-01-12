@@ -11,7 +11,7 @@ int main()
   x = __VERIFIER_nondet_float();  
 
   if (x >= -1e10 && x <= 1e10) {
-    __VERIFIER_assert(x==x);
+    if (!(x==x)) __VERIFIER_error();
   }
   return 0;
 }

@@ -148,7 +148,7 @@ int main()
 
     r = SIN(aa);
 
-    __VERIFIER_assert(r >= -1.1 && r <= 1.1);
+    if (!(r >= -1.1 && r <= 1.1)) __VERIFIER_error();
   }
   return 0;
 }

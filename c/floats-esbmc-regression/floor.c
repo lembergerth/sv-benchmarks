@@ -5,13 +5,13 @@ void __VERIFIER_assert(int cond) { if (!(cond)) { ERROR: __VERIFIER_error(); } r
 
 int main(void)
 {
-  __VERIFIER_assert(floor(2.7) == 2.0);
-  __VERIFIER_assert(floor(-2.7) == -3.0);
+  if (!(floor(2.7) == 2.0)) __VERIFIER_error();
+  if (!(floor(-2.7) == -3.0)) __VERIFIER_error();
 
   double c = floor(-0.0);
-  __VERIFIER_assert((c == -0.0) && signbit(c));
+  if (!((c == -0.0) && signbit(c))) __VERIFIER_error();
 
   c = floor(-INFINITY);
-  __VERIFIER_assert(isinf(INFINITY) && signbit(c));
+  if (!(isinf(INFINITY) && signbit(c))) __VERIFIER_error();
 }
 

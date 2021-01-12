@@ -6839,7 +6839,7 @@ void pc8736x_gpio_set(unsigned minor, int val)
  val = inb_p(pc8736x_gpio_base + port_offset[port] + 1);
  do {} while (0);
  pc8736x_gpio_shadow[port] = val;
- __VERIFIER_assert(pc8736x_gpio_shadow[port] == val);
+ if (!(pc8736x_gpio_shadow[port] == val)) __VERIFIER_error();
 }
 int pc8736x_gpio_current(unsigned minor)
 {
@@ -6848,7 +6848,7 @@ int pc8736x_gpio_current(unsigned minor)
  port = minor >> 3;
  bit = minor & 7;
         u8 tmp = pc8736x_gpio_shadow[port];
-        __VERIFIER_assert(tmp == pc8736x_gpio_shadow[port]);
+        if (!(tmp == pc8736x_gpio_shadow[port])) __VERIFIER_error();
  return ((tmp >> bit) & 0x01);
 }
 void pc8736x_gpio_change(unsigned index)
@@ -6868,7 +6868,7 @@ int pc8736x_gpio_open(struct inode *inode, struct file *file)
 {
  unsigned m = iminor(inode);
  file->private_data = &pc8736x_gpio_ops;
- __VERIFIER_assert(file->private_data == &pc8736x_gpio_ops);
+ if (!(file->private_data == &pc8736x_gpio_ops)) __VERIFIER_error();
  do {} while (0);
  if (m >= 32)
   return -22;
@@ -6909,7 +6909,7 @@ int pc8736x_gpio_init(void)
   goto undo_platform_dev_add;
  }
  pc8736x_gpio_ops.dev = &pdev->dev;
-        __VERIFIER_assert(pc8736x_gpio_ops.dev == &pdev->dev);
+        if (!(pc8736x_gpio_ops.dev == &pdev->dev)) __VERIFIER_error();
  rc = superio_inb(0x21);
  if (!(rc & 0x01)) {
   rc = -19;

@@ -27,7 +27,7 @@ int p = 0;
 void firstFunction()
 {
  p = abs_int(-3);
- __VERIFIER_assert(p >= 0);
+ if (!(p >= 0)) __VERIFIER_error();
 }
 
 int main()

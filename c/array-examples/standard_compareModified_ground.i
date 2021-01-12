@@ -24,11 +24,11 @@ int main( ) {
   int x;
   if ( rv ) {
     for ( x = 0 ; x < 100000 ; x++ ) {
-      __VERIFIER_assert( a[x] == b[x] );
+      if (!( a[x] == b[x] )) __VERIFIER_error();
     }
   }
   for ( x = 0 ; x < 100000 ; x++ ) {
-    __VERIFIER_assert( a[x] == c[x] );
+    if (!( a[x] == c[x] )) __VERIFIER_error();
   }
   return 0;
 }

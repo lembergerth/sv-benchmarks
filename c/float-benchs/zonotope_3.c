@@ -40,6 +40,6 @@ int main()
   }
 
   t = y + 2.f * z;
-  __VERIFIER_assert(t >= 6.9f && t <= 7.1f);
+  if (!(t >= 6.9f && t <= 7.1f)) __VERIFIER_error();
   return 0;
 }
