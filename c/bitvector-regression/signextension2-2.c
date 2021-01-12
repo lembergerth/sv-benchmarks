@@ -10,6 +10,7 @@ int main() {
 
   if (castToInt == -1 && castToLong == 4294967295UL &&
       castToLong2 == -1 && castToULong == 4294967295UL) {
+    __VERIFIER_error();
     goto ERROR;
   }
 

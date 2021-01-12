@@ -7,7 +7,8 @@ extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 int count = 0;
 
 #define assume(e) __VERIFIER_assume(e)
-#define assert_nl(e) { if(!(e)) { goto ERROR; } }
+#define assert_nl(e) { if(!(e)) { __VERIFIER_error();
+ goto ERROR; } }
 #define assert(e) { if(!(e)) { ERROR: __VERIFIER_error();(void)0; } }
 
 void __VERIFIER_atomic_acquire(int * m)

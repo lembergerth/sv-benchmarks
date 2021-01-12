@@ -23,6 +23,7 @@ static void fail(void)
 
   {
   ERROR: __VERIFIER_error();assert(0);
+  __VERIFIER_error();
   goto ERROR;
 }
 }

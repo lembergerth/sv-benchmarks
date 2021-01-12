@@ -3,7 +3,8 @@ extern unsigned int __VERIFIER_nondet_uint();
 
 #include <pthread.h>
 
-#define assert_nl(e) { if(!(e)) { goto ERROR; } }
+#define assert_nl(e) { if(!(e)) { __VERIFIER_error();
+ goto ERROR; } }
 #define assert(e) { if(!(e)) { ERROR: __VERIFIER_error();(void)0; } }
 
 void* thr1(void* arg){

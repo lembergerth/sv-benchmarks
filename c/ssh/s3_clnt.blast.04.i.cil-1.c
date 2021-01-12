@@ -1377,6 +1377,7 @@ int ssl3_connect(SSL *s )
                                                                         switch_1_4433: /* CIL Label */ 
                                                                         ret = __VERIFIER_nondet_int();
                                                                         if (blastFlag == 4) {
+                                                                          __VERIFIER_error();
                                                                           goto ERROR;
                                                                         } else {
 

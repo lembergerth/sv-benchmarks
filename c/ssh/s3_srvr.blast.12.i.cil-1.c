@@ -1571,6 +1571,7 @@ int ssl3_accept(SSL *s )
                                                                             if (blastFlag == 9) {
                                                                               blastFlag = 10;
                                                                             } else {
+                                                                              __VERIFIER_error();
                                                                               goto ERROR;
                                                                             }
                                                                             if (ret <= 0) {

@@ -86,6 +86,7 @@ int main(void) {
   int count = 0;
   do {
     if(data != ptr->data) {
+      __VERIFIER_error();
       goto ERROR;
     }
     ptr = ptr->next;
@@ -93,18 +94,21 @@ int main(void) {
   } while(ptr != s && count != mid_index);
   /* check middle element */
   if(uneq != ptr->data) {
+    __VERIFIER_error();
     goto ERROR;
   }
   ptr = ptr->next;
   count++;
   do {
     if(data != ptr->data) {
+      __VERIFIER_error();
       goto ERROR;
     }
     ptr = ptr->next;
     count++;
   } while(ptr != s);
   if(count != 1 + len) {
+    __VERIFIER_error();
     goto ERROR;
   }
 

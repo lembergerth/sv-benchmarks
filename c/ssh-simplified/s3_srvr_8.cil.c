@@ -478,6 +478,7 @@ int ssl3_accept(int initial_state )
                                                                                 blastFlag = 8;
                                                                               } else {
                                                                                 if (blastFlag == 10) {
+                                                                                  __VERIFIER_error();
                                                                                   goto ERROR;
                                                                                 }
                                                                               }

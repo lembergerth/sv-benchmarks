@@ -4,6 +4,7 @@ int main() {
   float f = 1;
   int i = f;
   if (i == 1){
+    __VERIFIER_error();
     goto ERROR;
   }
   return (0);

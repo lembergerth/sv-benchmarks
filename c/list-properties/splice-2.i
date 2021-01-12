@@ -561,12 +561,14 @@ int main() {
   }
   p = l1;
   while (p != 0) {
-    if (p->h != 1) goto ERROR;
+    if (p->h != 1) __VERIFIER_error();
+ goto ERROR;
     p = p->n;
   }
   p = l2;
   while (p != 0) {
-    if (p->h != 2) goto ERROR;
+    if (p->h != 2) __VERIFIER_error();
+ goto ERROR;
     p = p->n;
   }
   return 0;

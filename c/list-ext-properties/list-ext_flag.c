@@ -58,9 +58,11 @@ int main() {
   while (p->h != 3) {
     if (p->flag) {
         if (p->h != 1)
+            __VERIFIER_error();
             goto ERROR;
     } else {
         if (p->h != 2)
+            __VERIFIER_error();
             goto ERROR;
     }    
     p = p->n;
@@ -68,6 +70,7 @@ int main() {
   }
             
   if (p->h != 3 || i > 20)
+    __VERIFIER_error();
     goto ERROR;
 
   /* free memory */

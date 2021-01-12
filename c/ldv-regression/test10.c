@@ -39,6 +39,7 @@ int main() {
     b = 8;
 
     if (*p1 != 8 || *px != 8) {
+        __VERIFIER_error();
         goto ERROR;
     }
 

@@ -85,6 +85,7 @@ int main() {
     i++;
   }
   if(k + len != sll_length(s)) {
+    __VERIFIER_error();
     goto ERROR;
   }
   sll_destroy(s);

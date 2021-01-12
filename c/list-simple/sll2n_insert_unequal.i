@@ -614,12 +614,14 @@ int main() {
   while(ptr && count != mid_index) {
     SLL temp = ptr->next;
     if(data != ptr->data) {
+      __VERIFIER_error();
       goto ERROR;
     }
     ptr = temp;
     count++;
   }
   if(uneq != ptr->data) {
+    __VERIFIER_error();
     goto ERROR;
   }
   ptr = ptr->next;
@@ -627,12 +629,14 @@ int main() {
   while(ptr) {
     SLL temp = ptr->next;
     if(data != ptr->data) {
+      __VERIFIER_error();
       goto ERROR;
     }
     ptr = temp;
     count++;
   }
   if(count != 1 + len) {
+    __VERIFIER_error();
     goto ERROR;
   }
   sll_destroy(s);

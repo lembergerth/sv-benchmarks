@@ -989,10 +989,12 @@ void *t1(void *arg)
   pthread_mutex_lock(&m);
   value = __VERIFIER_nondet_int();
   if (enqueue(&queue,value)) {
+    __VERIFIER_error();
     goto ERROR;
   }
   stored_elements[0]=value;
   if (empty(&queue)) {
+    __VERIFIER_error();
     goto ERROR;
   }
   pthread_mutex_unlock(&m);
@@ -1038,6 +1040,7 @@ int main(void)
   init(&queue);
   if (!empty(&queue)==(-1)) {
     ERROR: __VERIFIER_error();
+    __VERIFIER_error();
     goto ERROR;
   }
   pthread_mutex_init(&m, 0);

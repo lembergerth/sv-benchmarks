@@ -27,6 +27,7 @@ int main() {
     a = f();
 
     if (a && p1 == p2) {
+        __VERIFIER_error();
         goto ERROR;
 
     }

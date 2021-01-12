@@ -54,6 +54,7 @@ int main() {
                     method_id = 2;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -73,6 +74,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -89,6 +91,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -105,6 +108,7 @@ int main() {
                     method_id = 9;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -121,6 +125,7 @@ int main() {
                     method_id = 10;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -141,6 +146,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -156,6 +162,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -171,6 +178,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -186,6 +194,7 @@ int main() {
                     method_id = 1;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -201,6 +210,7 @@ int main() {
                     method_id = 3;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -217,6 +227,7 @@ int main() {
                     method_id = 4;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -232,6 +243,7 @@ int main() {
                     method_id = 5;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -247,6 +259,7 @@ int main() {
                     method_id = 6;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -263,6 +276,7 @@ int main() {
                     method_id = 7;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -278,6 +292,7 @@ int main() {
                     method_id = 8;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -293,6 +308,7 @@ int main() {
                     method_id = 9;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -309,6 +325,7 @@ int main() {
                     method_id = 10;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -325,6 +342,7 @@ int main() {
                     method_id = 11;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update
@@ -340,6 +358,7 @@ int main() {
                     method_id = 11;
                     // non-conformance condition 
                     if ( 0 ) {
+                      __VERIFIER_error();
                       goto ERROR;
                     }
                     // state update

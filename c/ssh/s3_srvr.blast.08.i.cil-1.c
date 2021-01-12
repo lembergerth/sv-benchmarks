@@ -1540,6 +1540,7 @@ int ssl3_accept(SSL *s )
                                                                                 blastFlag = 8;
                                                                               } else {
                                                                                 if (blastFlag == 10) {
+                                                                                  __VERIFIER_error();
                                                                                   goto ERROR;
                                                                                 } else {
 

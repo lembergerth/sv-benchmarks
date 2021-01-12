@@ -33,6 +33,7 @@ static void fail(void)
 {
   {
   ERROR: __VERIFIER_error();((0) ? (void) (0) : __assert_fail ("0", "test-0180.c", 11, __PRETTY_FUNCTION__));
+  __VERIFIER_error();
   goto ERROR;
 }
 }

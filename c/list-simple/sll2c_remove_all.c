@@ -63,6 +63,7 @@ int main() {
     i++;
   }
   if(NULL != s) {
+    __VERIFIER_error();
     goto ERROR;
   }
   return 0;

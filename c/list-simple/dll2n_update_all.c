@@ -81,6 +81,7 @@ int main() {
   for(i = 0; i < len; i++) {
     int expected = i + len;
     if(expected != dll_get_data_at(s, i)) {
+      __VERIFIER_error();
       goto ERROR;
     }
   }

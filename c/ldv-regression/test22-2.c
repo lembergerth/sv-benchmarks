@@ -39,6 +39,7 @@ int main()
       ++i;
     }
     if (!check(pd2, i)) {
+      __VERIFIER_error();
       goto ERROR;
     }
   }

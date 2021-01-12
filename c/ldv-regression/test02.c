@@ -11,6 +11,7 @@ int main() {
     q = 0;
 
     if (p1 == p2) {
+        __VERIFIER_error();
         goto ERROR;
     }
 

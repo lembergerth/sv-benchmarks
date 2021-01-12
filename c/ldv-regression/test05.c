@@ -32,10 +32,12 @@ int main() {
     a = f(a, &p1, &p2);
 
     if (a != 1) {
+        __VERIFIER_error();
         goto ERROR;
     }
 
     if (*p1) {
+        __VERIFIER_error();
         goto ERROR;
     }
 

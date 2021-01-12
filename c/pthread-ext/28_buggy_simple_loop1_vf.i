@@ -677,7 +677,8 @@ void* thr1(void* arg){
   for(i=0; i<x; i++) {
     for(j=i+1; j<y; j++) {
       for(k = j; k < z; k++) {
- { if(!(k > i)) { goto ERROR; } };
+ { if(!(k > i)) { __VERIFIER_error();
+ goto ERROR; } };
       }
     }
   }

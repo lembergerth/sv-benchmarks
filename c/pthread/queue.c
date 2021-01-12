@@ -92,11 +92,13 @@ void *t1(void *arg)
   pthread_mutex_lock(&m);
   value = __VERIFIER_nondet_int();
   if (enqueue(&queue,value)) {
+    __VERIFIER_error();
     goto ERROR;
   }
 
   stored_elements[0]=value;
   if (empty(&queue)) {
+    __VERIFIER_error();
     goto ERROR;
   }
 
@@ -153,6 +155,7 @@ int main(void)
 
   if (!empty(&queue)==EMPTY) {
     ERROR: __VERIFIER_error();
+    __VERIFIER_error();
     goto ERROR;
   }
 

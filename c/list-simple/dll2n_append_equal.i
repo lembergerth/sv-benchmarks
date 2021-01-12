@@ -614,12 +614,14 @@ int main() {
   int count = 0;
   while(ptr) {
     if(data != ptr->data) {
+      __VERIFIER_error();
       goto ERROR;
     }
     ptr = ptr->next;
     count++;
   }
   if(count != 1 + len) {
+    __VERIFIER_error();
     goto ERROR;
   }
   dll_destroy(s);

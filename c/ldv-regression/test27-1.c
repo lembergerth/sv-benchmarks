@@ -42,6 +42,7 @@ int main()
         ++i;
       }
       if (!check(&cont, i)) {
+        __VERIFIER_error();
         goto ERROR;
       }
     }

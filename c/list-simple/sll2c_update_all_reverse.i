@@ -618,6 +618,7 @@ int main() {
   for(i = len - 1; i > -1; i--) {
     int expected = i + len;
     if(expected != sll_circular_get_data_at(s, i)) {
+      __VERIFIER_error();
       goto ERROR;
     }
   }

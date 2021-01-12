@@ -699,7 +699,8 @@ void* thr1(void* arg)
  }
  if(z == 0)
  {
-  { if(!(x == y)) { goto ERROR; } };
+  { if(!(x == y)) { __VERIFIER_error();
+ goto ERROR; } };
  } else {
   { if(!(x != y)) { ERROR: __VERIFIER_error();(void)0; } };
  }

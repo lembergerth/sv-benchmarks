@@ -85,6 +85,7 @@ int ssl3_accept(int initial_state )
       cb = s__ctx__info_callback;
     }
     if (cb != 0) {
+       __VERIFIER_error();
        goto ERROR;
     }
   }
@@ -508,6 +509,7 @@ int ssl3_accept(int initial_state )
                                                                                     blastFlag = 19;
                                                                                   } else {
                                                                                     if (blastFlag == 21) {
+                                                                                      __VERIFIER_error();
                                                                                       goto ERROR;
                                                                                     }
                                                                                   }

@@ -83,18 +83,21 @@ int main(void) {
 
   DLL ptr = s;
   if(uneq != ptr->data) {
+    __VERIFIER_error();
     goto ERROR;
   }
   ptr = ptr->next;
   int count = 1;
   do {
     if(data != ptr->data) {
+      __VERIFIER_error();
       goto ERROR;
     }
     ptr = ptr->next;
     count++;
   } while(ptr != s);
   if(count != 1 + len) {
+    __VERIFIER_error();
     goto ERROR;
   }
 

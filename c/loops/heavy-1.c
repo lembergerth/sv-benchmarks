@@ -13,6 +13,7 @@ int main(int argc, char **argv)
 				array[i] = array[j] + array[k];
 
 	if (a != 0)
+		__VERIFIER_error();
 		goto ERROR;
 
 	return array[100];

@@ -52,6 +52,7 @@ int main() {
   int data_new = 1;
   do {
     if(data_init != ptr->data) {
+      __VERIFIER_error();
       goto ERROR;
     }
     ptr->data = data_new;
@@ -66,6 +67,7 @@ int main() {
   do {
     data_new--;
     if(data_new != ptr->data) {
+      __VERIFIER_error();
       goto ERROR;
     }
     DLL temp = ptr->prev;

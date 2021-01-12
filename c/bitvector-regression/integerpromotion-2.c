@@ -5,6 +5,7 @@ int main() {
   unsigned char port = 0x5a;
   unsigned char result_8 = ( ~port ) >> 4;
   if (result_8 != 0xfa) {
+    __VERIFIER_error();
     goto ERROR;
   }
 

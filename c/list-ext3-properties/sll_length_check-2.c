@@ -53,6 +53,7 @@ int main() {
   }
   SLL s = sll_create(len);
   if(len != sll_length(s)) {
+    __VERIFIER_error();
     goto ERROR;
   }
   sll_destroy(s);

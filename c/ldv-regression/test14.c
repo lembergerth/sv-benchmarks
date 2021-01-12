@@ -17,6 +17,7 @@ int main() {
         pa = pb = get_dummy();
         if (pc == 0 ||
             pa == pb && *pa != *pb) {
+                __VERIFIER_error();
                 goto ERROR;
         }
 

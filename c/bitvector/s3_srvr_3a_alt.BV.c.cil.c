@@ -548,6 +548,7 @@ int ssl3_accept(int initial_state )
                                                                             switch_1_8673: /* CIL Label */ 
                                                                             ret = __VERIFIER_nondet_int();
                                                                             if (blastFlag == 4) {
+                                                                              __VERIFIER_error();
                                                                               goto ERROR;
                                                                             } else {
 

@@ -19,6 +19,7 @@ int main()
     pd->b = 0;
   }
   if (pd == &d2 && d2.b != 0) {
+    __VERIFIER_error();
     goto ERROR;
   }
 

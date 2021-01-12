@@ -70,6 +70,7 @@ int main() {
     dll_remove_last(&s);
   }
   if(NULL != s) {
+    __VERIFIER_error();
     goto ERROR;
   }
   return 0;

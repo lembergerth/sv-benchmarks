@@ -606,6 +606,7 @@ int main() {
     i++;
   }
   if(((void *)0) != s) {
+    __VERIFIER_error();
     goto ERROR;
   }
   return 0;

@@ -94,6 +94,7 @@ int main() {
   SLL ptr = head;
   for(i = min; NULL != ptr; i++) {
     if(i > max) {
+      __VERIFIER_error();
       goto ERROR;
     }
     while(ptr) {
@@ -106,6 +107,7 @@ int main() {
       } else if(i + 1 == count && i < max) {
 	break;
       } else { /* reachable! */
+	__VERIFIER_error();
 	goto ERROR;
       }
     }

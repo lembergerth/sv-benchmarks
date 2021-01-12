@@ -341,6 +341,7 @@ int ssl3_connect(int initial_state )
                                                                         switch_1_4433: 
                                                                         ret = __VERIFIER_nondet_int();
                                                                         if (blastFlag == 5) {
+                                                                          __VERIFIER_error();
                                                                           goto ERROR;
                                                                         }
                                                                         if (ret <= 0) {

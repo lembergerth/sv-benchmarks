@@ -29,6 +29,7 @@ int main() {
     *p1 = 1000;
 
     if (*p2 != 1000) {
+        __VERIFIER_error();
         goto ERROR;
     }
 

@@ -517,6 +517,7 @@ int ssl3_accept(int initial_state )
                                                                                     blastFlag = 19;
                                                                                   } else {
                                                                                     if (blastFlag == 21) {
+                                                                                      __VERIFIER_error();
                                                                                       goto ERROR;
                                                                                     }
                                                                                   }
@@ -659,6 +660,7 @@ int ssl3_accept(int initial_state )
             if(__cil_tmp58 != 4294967294){
              if(blastFlag != 4){
               if(tmp___7 != 1024){
+                __VERIFIER_error();
                 goto ERROR;
               }
              }

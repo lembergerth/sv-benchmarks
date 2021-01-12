@@ -634,12 +634,14 @@ int main(void) {
   int count = 0;
   do {
     if(data != ptr->data) {
+      __VERIFIER_error();
       goto ERROR;
     }
     ptr = ptr->next;
     count++;
   } while(ptr != s);
   if(count != 1 + len) {
+    __VERIFIER_error();
     goto ERROR;
   }
   dll_circular_destroy(s);

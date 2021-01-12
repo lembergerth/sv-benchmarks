@@ -54,6 +54,7 @@ int main() {
   // Violation: create sll with 1 node more than expected
   SLL s = sll_create(len + 1);
   if(len != sll_length(s)) {
+    __VERIFIER_error();
     goto ERROR;
   }
   sll_destroy(s);

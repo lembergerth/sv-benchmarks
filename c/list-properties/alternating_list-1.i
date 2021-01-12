@@ -543,10 +543,12 @@ int main() {
     if (flag) {
       flag = 0;
       if (p->h != 1)
+ __VERIFIER_error();
  goto ERROR;
     } else {
       flag = 1;
       if (p->h != 2)
+ __VERIFIER_error();
  goto ERROR;
     }
     p = p->n;

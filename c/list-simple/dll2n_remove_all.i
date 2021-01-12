@@ -606,6 +606,7 @@ int main() {
     dll_remove_first(&s);
   }
   if(((void *)0) != s) {
+    __VERIFIER_error();
     goto ERROR;
   }
   return 0;

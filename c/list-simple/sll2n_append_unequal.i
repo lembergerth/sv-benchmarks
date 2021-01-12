@@ -609,17 +609,20 @@ int main() {
     while(ptr->next) {
       SLL temp = ptr->next;
       if(data != ptr->data) {
+ __VERIFIER_error();
  goto ERROR;
       }
       ptr = temp;
       count++;
     }
     if(uneq != ptr->data) {
+      __VERIFIER_error();
       goto ERROR;
     }
     count++;
   }
   if(count != 1 + len) {
+    __VERIFIER_error();
     goto ERROR;
   }
   sll_destroy(s);

@@ -693,7 +693,8 @@ inline void findMax(int offset){
   if(e > my_max) {
    my_max = e;
   }
-  { if(!(e <= my_max)) { goto ERROR; } };
+  { if(!(e <= my_max)) { __VERIFIER_error();
+ goto ERROR; } };
  }
  __VERIFIER_atomic_acquire();
  {
